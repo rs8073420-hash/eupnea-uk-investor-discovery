@@ -944,13 +944,13 @@
       Object.values(btnMap).forEach(btnId => {
         const b = document.getElementById(btnId);
         if (b) {
-          b.className = "px-3.5 py-2 text-xs font-bold rounded-xl text-slate-400 hover:text-white hover:bg-slate-900 whitespace-nowrap transition";
+          b.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-white text-slate-600 hover:text-slate-900 hover:bg-slate-50 border border-slate-200 whitespace-nowrap transition shadow-xs";
         }
       });
 
       const activeBtn = document.getElementById(btnMap[cat]);
       if (activeBtn) {
-        activeBtn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 whitespace-nowrap transition";
+        activeBtn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-blue-600 text-white border border-blue-600 whitespace-nowrap transition shadow-sm";
       }
 
       document.getElementById('activeCategoryTitle').innerText = cat === 'All' ? 'All Early-Stage Investors' : cat;
@@ -972,9 +972,9 @@
     let displayedAngels = [];
     const delay = ms => new Promise(res => setTimeout(res, ms));
 
-    async function openAgentsRosterModal() {
+    async async function openAgentsRosterModal() {
       const grid = document.getElementById('agentsRosterGrid');
-      grid.innerHTML = '<div class="text-cyan-400 py-10 text-center"><i class="fa-solid fa-spinner fa-spin text-2xl mb-2"></i><div>Loading 20 Autonomous AI Specialists...</div></div>';
+      grid.innerHTML = '<div class="text-blue-600 py-10 text-center"><i class="fa-solid fa-spinner fa-spin text-2xl mb-2"></i><div>Loading 20 Autonomous AI Specialists...</div></div>';
       document.getElementById('agentsRosterModal').classList.remove('hidden');
 
       try {
@@ -986,38 +986,38 @@
         Object.keys(squads).forEach(sqKey => {
           const sq = squads[sqKey];
           const div = document.createElement('div');
-          div.className = "glass-card p-4 rounded-xl border border-slate-800 space-y-3";
+          div.className = "bg-white p-4 rounded-xl border border-slate-200 space-y-3 shadow-sm";
           
           let agentsHtml = sq.agents.map((ag, i) => `
-            <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+            <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 hover:bg-slate-100/60 transition">
               <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-700 flex items-center justify-center text-cyan-400 text-sm">
+                <div class="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-700 text-sm shadow-xs">
                   <i class="fa-solid ${ag.icon}"></i>
                 </div>
                 <div>
-                  <div class="text-xs font-bold text-white flex items-center gap-2">
+                  <div class="text-xs font-bold text-slate-900 flex items-center gap-2">
                     ${ag.name}
-                    <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 uppercase">${ag.id}</span>
+                    <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 uppercase font-semibold">${ag.id}</span>
                   </div>
-                  <div class="text-[10px] text-slate-400">${ag.role}</div>
+                  <div class="text-[10px] text-slate-600 font-medium">${ag.role}</div>
                 </div>
               </div>
               <div class="flex items-center gap-2 self-end sm:self-auto">
-                <span class="text-[9px] font-mono px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-500/40 flex items-center gap-1 font-bold">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> ONLINE & ACTIVE
+                <span class="text-[9px] font-mono px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center gap-1 font-bold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-ping"></span> ONLINE & ACTIVE
                 </span>
-                <span class="text-[9px] font-mono text-slate-500">Latency: 0.001s</span>
+                <span class="text-[9px] font-mono text-slate-500 font-semibold">Latency: 0.001s</span>
               </div>
             </div>
           `).join('');
 
           div.innerHTML = `
-            <div class="flex items-center justify-between border-b border-slate-800 pb-2">
-              <div class="text-xs font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <div class="text-xs font-extrabold text-slate-900 flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
                 ${sq.name}
               </div>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 font-bold">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200 font-bold">
                 4 Dedicated AI Agents
               </span>
             </div>
