@@ -106,6 +106,7 @@ async def get_angels(category: Optional[str] = None):
 async def match_angels(payload: AngelMatchRequest):
     """
     Matches startups against UK Angels, Family Offices, Investor Networks & Smart Match Platforms.
+    Powered by Commander Aadarsh's 20 Autonomous AI Agents Fleet (5 Squads).
     Applies Eupnea's Early-Stage Investor Suitability Scoring Standard (0 - 100%).
     """
     start = time.time()
@@ -141,6 +142,12 @@ async def match_angels(payload: AngelMatchRequest):
         )
         enriched.append({**m, "outreach": pitch})
 
+    # Run the 20-agent early-stage UK swarm
+    fleet_exec = fleet.execute_uk_early_stage_swarm(
+        startup_data=payload.model_dump(),
+        total_candidates=len(matches)
+    )
+
     elapsed = round(time.time() - start, 3)
 
     return {
@@ -149,6 +156,10 @@ async def match_angels(payload: AngelMatchRequest):
         "total_matches": len(enriched),
         "qualified_count": qualified_count,
         "borderline_count": borderline_count,
+        "fleet_telemetry": fleet_exec,
+        "squad_logs": fleet_exec.get("squad_logs", []),
+        "fleet_size": 20,
+        "squads_active": 5,
         "matches": enriched
     }
 
@@ -209,6 +220,15 @@ async def get_squads():
         "status": "success",
         "total_agents": 20,
         "squads": fleet.squads
+    }
+
+@app.get("/api/agents")
+async def get_all_agents():
+    return {
+        "status": "success",
+        "total": 20,
+        "squads": fleet.squads,
+        "agents": fleet.get_all_agents()
     }
 
 @app.post("/api/fleet-execute")

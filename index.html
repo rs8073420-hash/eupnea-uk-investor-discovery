@@ -183,9 +183,9 @@
               </div>
             </div>
 
-            <button type="button" onclick="runAngelDiscovery()" class="w-full mt-2 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-bold rounded-xl shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2 transition transform active:scale-95">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              Calculate Suitability Scores
+            <button id="runAngelBtn" type="button" onclick="runAngelDiscovery()" class="w-full mt-2 py-3 bg-gradient-to-r from-emerald-500 via-teal-600 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white font-extrabold text-xs rounded-xl shadow-lg shadow-emerald-500/30 flex items-center justify-center gap-2 transition transform active:scale-95">
+              <i class="fa-solid fa-bolt-lightning text-amber-300 animate-bounce"></i>
+              ⚡ EXECUTE 20-AGENT FLEET MATCHING (£50K - £500K)
             </button>
           </form>
 
@@ -225,17 +225,75 @@
           </button>
         </div>
 
-        <!-- Telemetry Summary Bar -->
-        <div class="glass px-5 py-3 rounded-xl flex flex-wrap items-center justify-between gap-3 border border-slate-800">
-          <div class="flex items-center gap-3 text-xs">
-            <span class="text-slate-400">Active View: <strong id="activeCategoryTitle" class="text-white">All Early-Stage Investors</strong></span>
-            <span class="text-slate-600">•</span>
-            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-star"></i> <span id="qualifiedCount">53</span> Qualified</span>
-            <span class="text-slate-600">•</span>
-            <span class="text-amber-400 font-bold"><i class="fa-solid fa-circle-half-stroke"></i> <span id="borderlineCount">0</span> Borderline</span>
+        <!-- 20 Autonomous AI Agents Swarm Monitor (Tab 0) -->
+        <div class="glass p-4 rounded-2xl border border-emerald-500/30 space-y-3 glow-emerald">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 text-[10px] font-mono font-bold rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> 20 AGENTS ACTIVE
+              </span>
+              <span class="text-xs font-extrabold text-white">Autonomous Early-Stage Swarm (5 Parallel Squads)</span>
+            </div>
+            <div class="flex items-center gap-3 text-[11px] font-mono text-slate-400">
+              <span>Active View: <strong id="activeCategoryTitle" class="text-white">All Early-Stage Investors</strong></span>
+              <span>•</span>
+              <span class="text-emerald-400 font-bold"><i class="fa-solid fa-star"></i> <span id="qualifiedCount">53</span> Qualified</span>
+              <span>•</span>
+              <span class="text-amber-400 font-bold"><i class="fa-solid fa-circle-half-stroke"></i> <span id="borderlineCount">0</span> Borderline</span>
+              <span>•</span>
+              <span>Speed: <strong id="discoveryElapsed" class="text-emerald-400 font-bold">0.002s</strong></span>
+              <span>•</span>
+              <button type="button" onclick="toggleAngelConsole()" class="text-cyan-400 hover:text-cyan-300 font-sans text-xs flex items-center gap-1 font-bold">
+                <i class="fa-solid fa-terminal"></i> <span id="toggleConsoleLabel">Agent Terminal</span>
+              </button>
+            </div>
           </div>
-          <div class="text-[11px] font-mono text-slate-400">
-            Speed: <span id="discoveryElapsed" class="text-emerald-400 font-bold">0.002s</span>
+
+          <!-- 5 Squad Status Pills -->
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+            <div id="angel_squad_a" class="bg-slate-900/90 border border-slate-800 rounded-xl p-2 text-center transition">
+              <div class="text-[9px] font-mono text-slate-500">SQUAD A (4 AGENTS)</div>
+              <div class="text-[11px] font-bold text-emerald-400 flex items-center justify-center gap-1 mt-0.5">
+                <i class="fa-solid fa-file-invoice"></i> SEIS/EIS Ingestion
+              </div>
+              <div id="angel_badge_a" class="text-[9px] font-mono text-emerald-400 font-bold mt-1">Verified</div>
+            </div>
+            <div id="angel_squad_b" class="bg-slate-900/90 border border-slate-800 rounded-xl p-2 text-center transition">
+              <div class="text-[9px] font-mono text-slate-500">SQUAD B (4 AGENTS)</div>
+              <div class="text-[11px] font-bold text-teal-400 flex items-center justify-center gap-1 mt-0.5">
+                <i class="fa-solid fa-network-wired"></i> UKBAA & AIN
+              </div>
+              <div id="angel_badge_b" class="text-[9px] font-mono text-teal-400 font-bold mt-1">Scanned 53</div>
+            </div>
+            <div id="angel_squad_c" class="bg-slate-900/90 border border-slate-800 rounded-xl p-2 text-center transition">
+              <div class="text-[9px] font-mono text-slate-500">SQUAD C (4 AGENTS)</div>
+              <div class="text-[11px] font-bold text-purple-400 flex items-center justify-center gap-1 mt-0.5">
+                <i class="fa-solid fa-shield-halved"></i> 0% Bounce MX
+              </div>
+              <div id="angel_badge_c" class="text-[9px] font-mono text-purple-400 font-bold mt-1">100% Passed</div>
+            </div>
+            <div id="angel_squad_d" class="bg-slate-900/90 border border-slate-800 rounded-xl p-2 text-center transition">
+              <div class="text-[9px] font-mono text-slate-500">SQUAD D (4 AGENTS)</div>
+              <div class="text-[11px] font-bold text-amber-400 flex items-center justify-center gap-1 mt-0.5">
+                <i class="fa-solid fa-pen-nib"></i> Copy Factory
+              </div>
+              <div id="angel_badge_d" class="text-[9px] font-mono text-amber-400 font-bold mt-1">Synthesized</div>
+            </div>
+            <div id="angel_squad_e" class="bg-slate-900/90 border border-slate-800 rounded-xl p-2 text-center transition">
+              <div class="text-[9px] font-mono text-slate-500">SQUAD E (4 AGENTS)</div>
+              <div class="text-[11px] font-bold text-cyan-400 flex items-center justify-center gap-1 mt-0.5">
+                <i class="fa-solid fa-handshake"></i> Smart Match
+              </div>
+              <div id="angel_badge_e" class="text-[9px] font-mono text-cyan-400 font-bold mt-1">Primed</div>
+            </div>
+          </div>
+
+          <!-- Real-Time Swarm Terminal Console -->
+          <div id="angelSwarmConsole" class="bg-slate-950 rounded-xl p-3 border border-slate-800 text-xs mono text-slate-400 space-y-1.5 max-h-48 overflow-y-auto custom-scroll">
+            <div class="text-cyan-400 font-bold flex items-center gap-2">
+              <i class="fa-solid fa-terminal"></i> 20-Agent Autonomous Early-Stage Engine: Ready.
+            </div>
+            <div class="text-slate-500 text-[11px]">All 5 squads (20 AI specialists) standing by for instant UK angel matching...</div>
           </div>
         </div>
 
@@ -793,7 +851,36 @@
       runAngelDiscovery();
     }
 
+    function toggleAngelConsole() {
+      const consoleBox = document.getElementById('angelSwarmConsole');
+      const label = document.getElementById('toggleConsoleLabel');
+      if (consoleBox.classList.contains('hidden')) {
+        consoleBox.classList.remove('hidden');
+        label.innerText = "Hide Console";
+      } else {
+        consoleBox.classList.add('hidden');
+        label.innerText = "View Console";
+      }
+    }
+
     async function runAngelDiscovery() {
+      const btn = document.getElementById('runAngelBtn');
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> 20 AGENTS EXECUTING IN PARALLEL...`;
+      }
+
+      const squadList = ['a', 'b', 'c', 'd', 'e'];
+      squadList.forEach(s => {
+        const el = document.getElementById(`angel_squad_${s}`);
+        const badge = document.getElementById(`angel_badge_${s}`);
+        if (el) el.classList.add('squad-active');
+        if (badge) {
+          badge.innerText = "Running...";
+          badge.className = "text-[9px] font-mono text-cyan-400 font-bold mt-1 animate-pulse";
+        }
+      });
+
       const payload = {
         company_name: document.getElementById('a_company_name').value,
         sector: document.getElementById('a_sector').value,
@@ -820,9 +907,44 @@
         document.getElementById('discoveryElapsed').innerText = data.real_time_elapsed || '0.002s';
         document.getElementById('angelSearchCountBadge').innerText = `${currentAngelMatches.length} Results`;
         
+        // Render detailed 20-agent squad logs in Swarm Console
+        const consoleBox = document.getElementById('angelSwarmConsole');
+        if (consoleBox && data.squad_logs) {
+          consoleBox.innerHTML = `
+            <div class="text-emerald-400 font-bold mb-2 flex items-center justify-between border-b border-slate-800 pb-1.5">
+              <span><i class="fa-solid fa-check-double text-emerald-400"></i> 20 Autonomous AI Agents Execution Complete • ${data.total_matches} Matched in ${data.real_time_elapsed}</span>
+              <span class="text-slate-500 font-mono text-[10px]">${new Date().toLocaleTimeString()}</span>
+            </div>
+          ` + data.squad_logs.map(sq => `
+            <div class="p-2 rounded-lg bg-slate-900/90 border border-slate-800/80 text-[11px] mb-1.5 space-y-1">
+              <div class="flex items-center justify-between text-cyan-300 font-bold">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-robot text-emerald-400"></i> ${sq.squad}</span>
+                <span class="text-emerald-400 font-mono text-[10px] bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-500/30">${sq.latency_ms}ms • 4 Agents Active</span>
+              </div>
+              <div class="text-slate-300 text-[11px] pl-5">${sq.output}</div>
+            </div>
+          `).join('');
+        }
+
+        // Update squad status badges
+        squadList.forEach(s => {
+          const el = document.getElementById(`angel_squad_${s}`);
+          const badge = document.getElementById(`angel_badge_${s}`);
+          if (el) el.classList.remove('squad-active');
+          if (badge) {
+            badge.innerText = "Completed (4)";
+            badge.className = "text-[9px] font-mono text-emerald-400 font-bold mt-1";
+          }
+        });
+
         renderAngelCards(currentAngelMatches);
       } catch (err) {
         console.error("Angel discovery error:", err);
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = `<i class="fa-solid fa-bolt-lightning text-amber-300 animate-bounce"></i> ⚡ EXECUTE 20-AGENT FLEET MATCHING (£50K - £500K)`;
+        }
       }
     }
 
@@ -1342,9 +1464,29 @@
         document.getElementById('telemetryVelocity').innerText = `${data.matches_count} Funds/sec`;
 
         consoleBox.innerHTML = `
-          <div class="text-emerald-400 font-bold"><i class="fa-solid fa-check-double"></i> Fleet Execution Complete: ${data.matches_count} Verified Matches Generated in ${data.real_time_elapsed}</div>
-          <div class="text-slate-400">All 5 squads completed execution with zero bounce guarantee and instant outreach copy.</div>
-        `;
+          <div class="text-emerald-400 font-bold mb-2 flex items-center justify-between border-b border-slate-800 pb-1.5">
+            <span><i class="fa-solid fa-check-double text-emerald-400"></i> 20-Agent Fleet Execution Complete: ${data.matches_count} Verified Matches in ${data.real_time_elapsed}</span>
+            <span class="text-slate-500 font-mono text-[10px]">${new Date().toLocaleTimeString()}</span>
+          </div>
+        ` + (data.squad_logs || []).map(sq => `
+          <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-[11px] mb-1.5">
+            <div class="flex items-center justify-between text-cyan-300 font-bold">
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-microchip text-emerald-400"></i> ${sq.squad}</span>
+              <span class="text-emerald-400 font-mono text-[10px] bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-500/30">${sq.latency_ms}ms • 4 Agents Active</span>
+            </div>
+            <div class="text-slate-300 mt-1 pl-4">${sq.output}</div>
+          </div>
+        `).join('');
+
+        squadCards.forEach(sq => {
+          const card = document.getElementById(`${sq}_card`);
+          const badge = document.getElementById(`${sq}_badge`);
+          if (card && badge) {
+            card.classList.remove('squad-active');
+            badge.className = "text-[10px] px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-500/40 font-mono font-bold";
+            badge.innerText = "Completed (4)";
+          }
+        });
 
         currentMatches = data.matches || [];
         renderVCList(currentMatches);
@@ -1353,15 +1495,6 @@
       } finally {
         btn.disabled = false;
         btn.innerHTML = `<i class="fa-solid fa-bolt-lightning animate-bounce"></i> LAUNCH 20-AGENT FLEET EXECUTION`;
-        squadCards.forEach(sq => {
-          const card = document.getElementById(`${sq}_card`);
-          const badge = document.getElementById(`${sq}_badge`);
-          if (card && badge) {
-            card.classList.remove('squad-active');
-            badge.className = "text-[10px] px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 font-mono";
-            badge.innerText = "Standby";
-          }
-        });
       }
     }
 
