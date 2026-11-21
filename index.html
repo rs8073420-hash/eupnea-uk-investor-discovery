@@ -372,9 +372,31 @@
           <span id="angelSearchCountBadge" class="text-[10px] font-mono text-blue-700 px-2.5 py-1 rounded-lg bg-blue-50 border border-blue-200 whitespace-nowrap font-bold">125 Results</span>
         </div>
 
+        <!-- Pagination Showing Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-1 text-xs text-slate-600">
+          <div id="angelPaginationShowingText" class="font-medium">
+            Showing <strong class="text-slate-900 font-bold">1–20</strong> of <strong class="text-slate-900 font-bold">125</strong> Verified Targets (Page 1 of 7)
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-[11px] bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200 font-semibold text-slate-700">
+              <i class="fa-solid fa-list-ol text-blue-600"></i> 20 per page
+            </span>
+          </div>
+        </div>
+
         <!-- Investor Cards Container -->
         <div id="angelResultsList" class="space-y-4 custom-scroll max-h-[750px] overflow-y-auto pr-2">
-          <!-- Rendered dynamically by JavaScript -->
+          <!-- Rendered dynamically by JavaScript (20 per page) -->
+        </div>
+
+        <!-- Pagination Controls Footer -->
+        <div id="angelPaginationControls" class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div id="angelPaginationBottomText" class="text-xs text-slate-500 font-medium">
+            Page 1 of 7 • 20 targets per page (125 total)
+          </div>
+          <div id="angelPaginationButtons" class="flex items-center gap-1.5 flex-wrap">
+            <!-- Dynamic page buttons -->
+          </div>
         </div>
 
       </div>
@@ -1090,7 +1112,7 @@
         document.getElementById('discoveryElapsed').innerText = data.real_time_elapsed || '0.12s';
         document.getElementById('angelSearchCountBadge').innerText = `${currentAngelMatches.length} Results`;
 
-        renderAngelCards(currentAngelMatches);
+        renderAngelCards(currentAngelMatches, true);
       } catch (err) {
         console.error("Live mining error:", err);
       } finally {
@@ -1199,7 +1221,7 @@
           }
         });
 
-        renderAngelCards(currentAngelMatches);
+        renderAngelCards(currentAngelMatches, true);
       } catch (err) {
         console.error("Angel discovery error:", err);
       } finally {
@@ -1210,12 +1232,49 @@
       }
     }
 
-    function renderAngelCards(matches) {
-      displayedAngels = matches;
+    function renderAngelCards(matches, resetPage = false) {
+      if (matches !== undefined) {
+        filteredAngelMatches = matches;
+        displayedAngels = matches;
+      }
+      if (resetPage) {
+        angelsCurrentPage = 1;
+      }
+
       const container = document.getElementById('angelResultsList');
+      const paginationControls = document.getElementById('angelPaginationControls');
+      const showingText = document.getElementById('angelPaginationShowingText');
+      const bottomText = document.getElementById('angelPaginationBottomText');
+      const paginationButtons = document.getElementById('angelPaginationButtons');
       container.innerHTML = '';
 
-      if (matches.length === 0) {
+      const totalItems = filteredAngelMatches.length;
+      const totalPages = Math.ceil(totalItems / angelsPerPage) || 1;
+
+      if (angelsCurrentPage > totalPages) angelsCurrentPage = totalPages;
+      if (angelsCurrentPage < 1) angelsCurrentPage = 1;
+
+      const startIdx = (angelsCurrentPage - 1) * angelsPerPage;
+      const endIdx = Math.min(startIdx + angelsPerPage, totalItems);
+      const pageItems = filteredAngelMatches.slice(startIdx, endIdx);
+
+      // Update badge and summary text
+      const badge = document.getElementById('angelSearchCountBadge');
+      if (badge) badge.innerText = `${totalItems} Results`;
+
+      if (showingText) {
+        if (totalItems === 0) {
+          showingText.innerHTML = `No matching early-stage investors found`;
+        } else {
+          showingText.innerHTML = `Showing <strong class="text-slate-900 font-bold">${startIdx + 1}–${endIdx}</strong> of <strong class="text-slate-900 font-bold">${totalItems}</strong> Verified Targets (Page ${angelsCurrentPage} of ${totalPages})`;
+        }
+      }
+
+      if (bottomText) {
+        bottomText.innerText = `Page ${angelsCurrentPage} of ${totalPages} • 20 targets per page (${totalItems} total)`;
+      }
+
+      if (totalItems === 0) {
         container.innerHTML = `
           <div class="bg-white rounded-2xl p-10 text-center border border-slate-200 shadow-sm">
             <i class="fa-solid fa-filter-circle-xmark text-slate-400 text-3xl mb-3"></i>
@@ -1223,10 +1282,13 @@
             <p class="text-xs text-slate-500 mt-1">Try lowering the Suitability Score threshold or selecting "All Early-Stage".</p>
           </div>
         `;
+        if (paginationControls) paginationControls.classList.add('hidden');
         return;
       }
 
-      matches.forEach((m, idx) => {
+      if (paginationControls) paginationControls.classList.remove('hidden');
+
+      pageItems.forEach((m, idx) => {
         const card = document.createElement('div');
         const score = m.suitability_score;
         let badgeColor = "bg-emerald-50 text-emerald-800 border-emerald-300";
@@ -1328,7 +1390,7 @@
             </div>
 
             <div class="flex items-center gap-2">
-              <button onclick="openAngelPitchModal(${idx})" class="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-sm transition flex items-center gap-1.5">
+              <button onclick="openAngelPitchModal('${m.id}')" class="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-sm transition flex items-center gap-1.5">
                 <i class="fa-solid fa-paper-plane"></i> Draft Pitch / Sift Copy
               </button>
               <a href="mailto:${m.contact_email}" class="px-3 py-1.5 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-xl border border-slate-300 transition flex items-center gap-1 shadow-xs">
@@ -1340,10 +1402,61 @@
         `;
         container.appendChild(card);
       });
+
+      // Render Pagination Buttons
+      if (paginationButtons) {
+        let pagHtml = `<button onclick="prevAngelPage()" ${angelsCurrentPage === 1 ? 'disabled' : ''} class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-mono text-xs font-bold disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer shadow-xs transition">← Prev</button>`;
+
+        for (let p = 1; p <= totalPages; p++) {
+          const isActive = (p === angelsCurrentPage);
+          pagHtml += `<button onclick="goToAngelPage(${p})" class="px-3 py-1.5 rounded-lg text-xs font-mono font-bold cursor-pointer transition shadow-xs ${isActive ? 'bg-blue-600 text-white border border-blue-600 ring-2 ring-blue-300 font-extrabold' : 'bg-white border border-slate-300 text-slate-700 hover:bg-blue-50 hover:text-blue-700'}">${p}</button>`;
+        }
+
+        pagHtml += `<button onclick="nextAngelPage()" ${angelsCurrentPage === totalPages ? 'disabled' : ''} class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-mono text-xs font-bold disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer shadow-xs transition">Next →</button>`;
+
+        paginationButtons.innerHTML = pagHtml;
+      }
     }
 
-    function openAngelPitchModal(idx) {
-      const inv = displayedAngels[idx] || currentAngelMatches[idx];
+    function prevAngelPage() {
+      if (angelsCurrentPage > 1) {
+        angelsCurrentPage--;
+        renderAngelCards();
+        scrollToAngelResults();
+      }
+    }
+
+    function nextAngelPage() {
+      const totalPages = Math.ceil(filteredAngelMatches.length / angelsPerPage) || 1;
+      if (angelsCurrentPage < totalPages) {
+        angelsCurrentPage++;
+        renderAngelCards();
+        scrollToAngelResults();
+      }
+    }
+
+    function goToAngelPage(p) {
+      angelsCurrentPage = p;
+      renderAngelCards();
+      scrollToAngelResults();
+    }
+
+    function scrollToAngelResults() {
+      const container = document.getElementById('angelResultsList');
+      if (container) {
+        container.scrollTop = 0;
+      }
+    }
+
+    function openAngelPitchModal(identifier) {
+      let inv = null;
+      if (typeof identifier === 'string') {
+        inv = (filteredAngelMatches || []).find(x => x.id === identifier) ||
+              (currentAngelMatches || []).find(x => x.id === identifier) ||
+              (displayedAngels || []).find(x => x.id === identifier);
+      } else if (typeof identifier === 'number') {
+        inv = (filteredAngelMatches || [])[identifier] || (currentAngelMatches || [])[identifier];
+      }
       if (!inv || !inv.outreach) return;
       document.getElementById('modalTitle').innerText = inv.name;
       document.getElementById('modalSubtitle').innerText = `Lead: ${inv.lead_contact} (${inv.contact_email}) • ${inv.access_route}`;
@@ -1368,7 +1481,7 @@
     function filterAngelsLocally() {
       const q = document.getElementById('angelSearchInput').value.toLowerCase().trim();
       if (!q) {
-        renderAngelCards(currentAngelMatches);
+        renderAngelCards(currentAngelMatches, true);
         document.getElementById('angelSearchCountBadge').innerText = `${currentAngelMatches.length} Results`;
         return;
       }
@@ -1381,7 +1494,7 @@
                (m.sectors && m.sectors.some(s => s.toLowerCase().includes(q))) ||
                (m.portfolio && m.portfolio.some(p => p.toLowerCase().includes(q)));
       });
-      renderAngelCards(filtered);
+      renderAngelCards(filtered, true);
       document.getElementById('angelSearchCountBadge').innerText = `${filtered.length} Matched`;
     }
 
