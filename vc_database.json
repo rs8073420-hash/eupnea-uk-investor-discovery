@@ -1,0 +1,1490 @@
+[
+  {
+    "id": "vc_01",
+    "fund_name": "LocalGlobe (Phoenix Court)",
+    "website": "https://localglobe.vc",
+    "location": "London, UK",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 250000,
+    "check_size_max_gbp": 1500000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise Software",
+      "Fintech",
+      "AI",
+      "Digital Health"
+    ],
+    "lead_partner": "Robin Klein",
+    "partner_title": "General Partner",
+    "partner_email": "robin@localglobe.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/robinklein",
+    "portfolio": [
+      "Wise",
+      "Figma",
+      "TravelPerk",
+      "Robinhood",
+      "Tessian"
+    ],
+    "thesis": "High-conviction UK & European pre-seed and seed investments backing mission-driven founders building category-defining software companies."
+  },
+  {
+    "id": "vc_02",
+    "fund_name": "Seedcamp",
+    "website": "https://seedcamp.com",
+    "location": "London, UK",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 300000,
+    "check_size_max_gbp": 1000000,
+    "sectors": [
+      "B2B SaaS",
+      "AI",
+      "Fintech",
+      "Developer Tools",
+      "Healthcare"
+    ],
+    "lead_partner": "Reshma Sohoni",
+    "partner_title": "Managing Partner",
+    "partner_email": "reshma@seedcamp.com",
+    "partner_linkedin": "https://www.linkedin.com/in/reshmasohoni",
+    "portfolio": [
+      "UiPath",
+      "Revolut",
+      "Synthesia",
+      "Pleo",
+      "Sorare"
+    ],
+    "thesis": "Europe's premier seed fund investing in founders solving real-world challenges through technology and scalable software."
+  },
+  {
+    "id": "vc_03",
+    "fund_name": "Episode 1 Ventures",
+    "website": "https://episode1.com",
+    "location": "London, UK",
+    "stages": [
+      "Seed"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 2000000,
+    "sectors": [
+      "B2B SaaS",
+      "Deep Tech",
+      "Infrastructure",
+      "Enterprise"
+    ],
+    "lead_partner": "Hector Mason",
+    "partner_title": "General Partner",
+    "partner_email": "hector@episode1.com",
+    "partner_linkedin": "https://www.linkedin.com/in/hectormason",
+    "portfolio": [
+      "Huboo",
+      "AimBrain",
+      "Attest",
+      "Raise",
+      "Omnipresent"
+    ],
+    "thesis": "Laser-focused on UK B2B software and deep-tech seed rounds with clear product-market fit signals and enterprise defensibility."
+  },
+  {
+    "id": "vc_04",
+    "fund_name": "Point Nine Capital",
+    "website": "https://pointnine.com",
+    "location": "Berlin, Germany / Remote Europe",
+    "stages": [
+      "Seed",
+      "Pre-Seed"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 3000000,
+    "sectors": [
+      "B2B SaaS",
+      "B2B Marketplaces",
+      "Enterprise Software"
+    ],
+    "lead_partner": "Pawel Chudzinski",
+    "partner_title": "Partner",
+    "partner_email": "pawel@pointnine.com",
+    "partner_linkedin": "https://www.linkedin.com/in/pawelchudzinski",
+    "portfolio": [
+      "Zendesk",
+      "Revolut",
+      "Typeform",
+      "Contentful",
+      "Loom"
+    ],
+    "thesis": "The quintessential European SaaS specialist seed fund backing early-stage software companies with extraordinary product craft."
+  },
+  {
+    "id": "vc_05",
+    "fund_name": "Concept Ventures",
+    "website": "https://conceptventures.vc",
+    "location": "London, UK",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 250000,
+    "check_size_max_gbp": 1000000,
+    "sectors": [
+      "B2B SaaS",
+      "Future of Work",
+      "AI",
+      "Consumer Tech"
+    ],
+    "lead_partner": "Oliver Kicks",
+    "partner_title": "Partner",
+    "partner_email": "oliver@conceptventures.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/oliverkicks",
+    "portfolio": [
+      "ElevenLabs",
+      "Cliff",
+      "Playter",
+      "Reachdesk"
+    ],
+    "thesis": "Dedicated UK pre-seed fund investing in software founders reshaping how humans communicate, work, and collaborate."
+  },
+  {
+    "id": "vc_06",
+    "fund_name": "Notion Capital",
+    "website": "https://notion.vc",
+    "location": "London, UK",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 5000000,
+    "sectors": [
+      "B2B SaaS",
+      "Cloud",
+      "Enterprise Tech",
+      "Cybersecurity"
+    ],
+    "lead_partner": "Stephen Chandler",
+    "partner_title": "Managing Partner",
+    "partner_email": "schandler@notion.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/stephenchandler",
+    "portfolio": [
+      "Tradeshift",
+      "GoCardless",
+      "Unbabel",
+      "Paddle",
+      "Workable"
+    ],
+    "thesis": "Founded by SaaS entrepreneurs to back European B2B and enterprise cloud winners aiming for global category leadership."
+  },
+  {
+    "id": "vc_07",
+    "fund_name": "Hoxton Ventures",
+    "website": "https://hoxtonventures.com",
+    "location": "London, UK",
+    "stages": [
+      "Seed"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 3000000,
+    "sectors": [
+      "B2B SaaS",
+      "AI",
+      "Marketplaces",
+      "Fintech"
+    ],
+    "lead_partner": "Hussein Kanji",
+    "partner_title": "Partner",
+    "partner_email": "hussein@hoxtonventures.com",
+    "partner_linkedin": "https://www.linkedin.com/in/hkanji",
+    "portfolio": [
+      "Deliveroo",
+      "Darktrace",
+      "Babylon Health",
+      "Yieldify"
+    ],
+    "thesis": "Investing early in European software companies that can expand rapidly into the US and scale to multi-billion-dollar winners."
+  },
+  {
+    "id": "vc_08",
+    "fund_name": "Crane Venture Partners",
+    "website": "https://crane.vc",
+    "location": "London, UK",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 2500000,
+    "sectors": [
+      "B2B SaaS",
+      "Developer Infrastructure",
+      "Data",
+      "AI Systems"
+    ],
+    "lead_partner": "Krishna Visvanathan",
+    "partner_title": "General Partner",
+    "partner_email": "krishna@crane.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/kvisvanathan",
+    "portfolio": [
+      "DuckDB",
+      "H2O.ai",
+      "OpenGamma",
+      "Synthesia"
+    ],
+    "thesis": "Investing in European enterprise software built by engineers creating deep, data-driven software foundations."
+  },
+  {
+    "id": "vc_09",
+    "fund_name": "Speedinvest",
+    "website": "https://speedinvest.com",
+    "location": "Vienna / London / Berlin",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 300000,
+    "check_size_max_gbp": 2000000,
+    "sectors": [
+      "B2B SaaS",
+      "HealthTech",
+      "Fintech",
+      "Climate",
+      "DeepTech"
+    ],
+    "lead_partner": "Oliver Holle",
+    "partner_title": "CEO & Managing Partner",
+    "partner_email": "oliver.holle@speedinvest.com",
+    "partner_linkedin": "https://www.linkedin.com/in/oliverholle",
+    "portfolio": [
+      "Wefox",
+      "Bitpanda",
+      "GoStudent",
+      "TIER Mobility"
+    ],
+    "thesis": "Europe's most active seed fund with dedicated operational platform teams helping founders scale B2B GTM."
+  },
+  {
+    "id": "vc_10",
+    "fund_name": "MMC Ventures",
+    "website": "https://mmc.vc",
+    "location": "London, UK",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 4000000,
+    "sectors": [
+      "B2B SaaS",
+      "AI & Data Science",
+      "Health",
+      "Fintech"
+    ],
+    "lead_partner": "Oliver Richards",
+    "partner_title": "Partner",
+    "partner_email": "oliver@mmc.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/oliver-richards-mmc",
+    "portfolio": [
+      "Gousto",
+      "Signal AI",
+      "Snowplow",
+      "Current Health"
+    ],
+    "thesis": "Research-led UK venture firm investing in transformational enterprise software, intelligent data systems, and health."
+  },
+  {
+    "id": "vc_11",
+    "fund_name": "Playfair Capital",
+    "website": "https://playfaircapital.com",
+    "location": "London, UK",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 250000,
+    "check_size_max_gbp": 1000000,
+    "sectors": [
+      "B2B SaaS",
+      "Deep Tech",
+      "Future of Work",
+      "Marketplaces"
+    ],
+    "lead_partner": "Chris Smith",
+    "partner_title": "Managing Partner",
+    "partner_email": "chris@playfaircapital.com",
+    "partner_linkedin": "https://www.linkedin.com/in/chrissmithvc",
+    "portfolio": [
+      "Mapillary",
+      "Thought Machine",
+      "Trouva",
+      "Sprout.ai"
+    ],
+    "thesis": "High-conviction early-stage seed investor leading rounds with hands-on talent and GTM support across UK & Europe."
+  },
+  {
+    "id": "vc_12",
+    "fund_name": "Calm/Storm Ventures",
+    "website": "https://calmstorm.vc",
+    "location": "Vienna / London",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 150000,
+    "check_size_max_gbp": 800000,
+    "sectors": [
+      "HealthTech",
+      "Digital Health",
+      "B2B SaaS",
+      "Wellbeing"
+    ],
+    "lead_partner": "Lucanus Polagnoli",
+    "partner_title": "Founder & Managing Partner",
+    "partner_email": "lucanus@calmstorm.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/lucanuspolagnoli",
+    "portfolio": [
+      "Bokki",
+      "LVNDR Health",
+      "Kiko",
+      "Sanity Group"
+    ],
+    "thesis": "Super-early stage European boutique fund backing founders addressing digital health, life sciences, and health SaaS."
+  },
+  {
+    "id": "vc_13",
+    "fund_name": "Frontline Ventures",
+    "website": "https://frontline.vc",
+    "location": "London / Dublin",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 400000,
+    "check_size_max_gbp": 2000000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise Software",
+      "Developer Tools"
+    ],
+    "lead_partner": "William Prendergast",
+    "partner_title": "Partner",
+    "partner_email": "william@frontline.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/williamprendergast",
+    "portfolio": [
+      "Pointy",
+      "Signal",
+      "Navan",
+      "Lattice"
+    ],
+    "thesis": "Leading seed investor helping European B2B software companies expand into the US market."
+  },
+  {
+    "id": "vc_14",
+    "fund_name": "Fly Ventures",
+    "website": "https://fly.vc",
+    "location": "Berlin / London",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 400000,
+    "check_size_max_gbp": 1800000,
+    "sectors": [
+      "B2B SaaS",
+      "AI",
+      "Enterprise Automation"
+    ],
+    "lead_partner": "Gabriel Matuschka",
+    "partner_title": "General Partner",
+    "partner_email": "gabriel@fly.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/gabrielmatuschka",
+    "portfolio": [
+      "GitGuardian",
+      "Tractable",
+      "Metaview",
+      "Grip"
+    ],
+    "thesis": "Deep-tech and automated enterprise software seed fund focused on highly technical European founders."
+  },
+  {
+    "id": "vc_15",
+    "fund_name": "Kindred Capital",
+    "website": "https://kindredcapital.vc",
+    "location": "London, UK",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 350000,
+    "check_size_max_gbp": 1500000,
+    "sectors": [
+      "B2B SaaS",
+      "AI",
+      "Fintech",
+      "HealthTech"
+    ],
+    "lead_partner": "Russell Buckley",
+    "partner_title": "General Partner",
+    "partner_email": "russell@kindredcapital.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/russellbuckley",
+    "portfolio": [
+      "FiveAI",
+      "Paddle",
+      "Disperse",
+      "LabGenius"
+    ],
+    "thesis": "Equitable venture fund sharing carry with all backed founders, investing early in category-defining software."
+  },
+  {
+    "id": "vc_16",
+    "fund_name": "firstminute capital",
+    "website": "https://firstminute.capital",
+    "location": "London, UK",
+    "stages": [
+      "Seed",
+      "Pre-Seed"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 2000000,
+    "sectors": [
+      "B2B SaaS",
+      "Gaming",
+      "AI",
+      "Fintech"
+    ],
+    "lead_partner": "Brent Hoberman",
+    "partner_title": "General Partner",
+    "partner_email": "brent@firstminute.capital",
+    "partner_linkedin": "https://www.linkedin.com/in/brenthoberman",
+    "portfolio": [
+      "Ramp",
+      "Wayve",
+      "Hubilo",
+      "Vitally"
+    ],
+    "thesis": "Global seed fund backed by 120+ unicorn founders investing across Europe and the US."
+  },
+  {
+    "id": "vc_17",
+    "fund_name": "Stride.VC",
+    "website": "https://stride.vc",
+    "location": "London, UK",
+    "stages": [
+      "Seed"
+    ],
+    "check_size_min_gbp": 750000,
+    "check_size_max_gbp": 2500000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise",
+      "Consumer",
+      "Fintech"
+    ],
+    "lead_partner": "Fred Destin",
+    "partner_title": "General Partner",
+    "partner_email": "fred@stride.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/fdestin",
+    "portfolio": [
+      "Deliveroo",
+      "Zoopla",
+      "PillPack",
+      "Secret Escapes"
+    ],
+    "thesis": "Concentrated portfolio seed fund leading rounds with high conviction and maximum hands-on board partnership."
+  },
+  {
+    "id": "vc_18",
+    "fund_name": "Blossom Capital",
+    "website": "https://blossomcap.com",
+    "location": "London, UK",
+    "stages": [
+      "Series A",
+      "Seed"
+    ],
+    "check_size_min_gbp": 1500000,
+    "check_size_max_gbp": 6000000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise Software",
+      "Fintech",
+      "Cybersecurity"
+    ],
+    "lead_partner": "Ophelia Brown",
+    "partner_title": "Founder & Managing Partner",
+    "partner_email": "ophelia@blossomcap.com",
+    "partner_linkedin": "https://www.linkedin.com/in/opheliabrown",
+    "portfolio": [
+      "Checkout.com",
+      "MoonPay",
+      "Pigment",
+      "Tines"
+    ],
+    "thesis": "High-conviction European venture fund leading Series A and late Seed rounds with Silicon Valley velocity."
+  },
+  {
+    "id": "vc_19",
+    "fund_name": "AlbionVC",
+    "website": "https://albion.vc",
+    "location": "London, UK",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 5000000,
+    "sectors": [
+      "B2B SaaS",
+      "HealthTech",
+      "Fintech",
+      "Cybersecurity"
+    ],
+    "lead_partner": "Ed Lascelles",
+    "partner_title": "Partner",
+    "partner_email": "elascelles@albion.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/edlascelles",
+    "portfolio": [
+      "Quantexa",
+      "Egress",
+      "Healios",
+      "Elliptic"
+    ],
+    "thesis": "Long-term patient capital backing visionary B2B SaaS and digital healthcare founders in the UK."
+  },
+  {
+    "id": "vc_20",
+    "fund_name": "Dawn Capital",
+    "website": "https://dawncapital.com",
+    "location": "London, UK",
+    "stages": [
+      "Series A",
+      "Seed"
+    ],
+    "check_size_min_gbp": 2000000,
+    "check_size_max_gbp": 8000000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise Software",
+      "Fintech",
+      "Data Infrastructure"
+    ],
+    "lead_partner": "Norman Fiore",
+    "partner_title": "General Partner",
+    "partner_email": "norman@dawncapital.com",
+    "partner_linkedin": "https://www.linkedin.com/in/normanfiore",
+    "portfolio": [
+      "Mimecast",
+      "iZettle",
+      "Collibra",
+      "Dataiku"
+    ],
+    "thesis": "Europe's leading B2B software specialist investor backing scale-ups dominating enterprise workflows."
+  },
+  {
+    "id": "vc_21",
+    "fund_name": "Balderton Capital",
+    "website": "https://balderton.com",
+    "location": "London / Paris",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 10000000,
+    "sectors": [
+      "B2B SaaS",
+      "Fintech",
+      "Health",
+      "AI & DeepTech"
+    ],
+    "lead_partner": "Bernard Liautaud",
+    "partner_title": "Managing Partner",
+    "partner_email": "bernard@balderton.com",
+    "partner_linkedin": "https://www.linkedin.com/in/bernardliautaud",
+    "portfolio": [
+      "Revolut",
+      "Aircall",
+      "Depop",
+      "Contentful"
+    ],
+    "thesis": "Backing ambitious European founders building breakthrough technology companies with global potential."
+  },
+  {
+    "id": "vc_22",
+    "fund_name": "Creandum",
+    "website": "https://creandum.com",
+    "location": "Stockholm / London / Berlin",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 5000000,
+    "sectors": [
+      "B2B SaaS",
+      "Fintech",
+      "Consumer",
+      "AI"
+    ],
+    "lead_partner": "Johan Brenner",
+    "partner_title": "General Partner",
+    "partner_email": "johan@creandum.com",
+    "partner_linkedin": "https://www.linkedin.com/in/johanbrenner",
+    "portfolio": [
+      "Spotify",
+      "Klarna",
+      "Trade Republic",
+      "Kahoot"
+    ],
+    "thesis": "Leading early-stage European VC backing innovators across tech and consumer-facing enterprise tools."
+  },
+  {
+    "id": "vc_23",
+    "fund_name": "Northzone",
+    "website": "https://northzone.com",
+    "location": "London / Stockholm / New York",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 8000000,
+    "sectors": [
+      "B2B SaaS",
+      "Fintech",
+      "AI",
+      "Gaming"
+    ],
+    "lead_partner": "Jeppe Zink",
+    "partner_title": "Partner",
+    "partner_email": "jeppe@northzone.com",
+    "partner_linkedin": "https://www.linkedin.com/in/jeppezink",
+    "portfolio": [
+      "Personio",
+      "Hopin",
+      "Trustpilot",
+      "Kahoot"
+    ],
+    "thesis": "Decades of venture building behind European founders from Seed to IPO across SaaS and digital infra."
+  },
+  {
+    "id": "vc_24",
+    "fund_name": "Giant Ventures",
+    "website": "https://giant.vc",
+    "location": "London / San Francisco",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 750000,
+    "check_size_max_gbp": 4000000,
+    "sectors": [
+      "Climate",
+      "HealthTech",
+      "Inclusive Capitalism",
+      "B2B SaaS"
+    ],
+    "lead_partner": "Cameron McLain",
+    "partner_title": "Managing Partner",
+    "partner_email": "cameron@giant.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/cameronmclain",
+    "portfolio": [
+      "Agreena",
+      "BeZero Carbon",
+      "Heygo",
+      "Loop Health"
+    ],
+    "thesis": "Backing purpose-driven founders building world-changing technology across climate, healthcare, and software."
+  },
+  {
+    "id": "vc_25",
+    "fund_name": "Entrepreneur First (EF Global)",
+    "website": "https://joinef.com",
+    "location": "London / Paris / Bangalore",
+    "stages": [
+      "Pre-Seed"
+    ],
+    "check_size_min_gbp": 100000,
+    "check_size_max_gbp": 500000,
+    "sectors": [
+      "Deep Tech",
+      "AI Systems",
+      "B2B SaaS",
+      "BioTech"
+    ],
+    "lead_partner": "Matt Clifford",
+    "partner_title": "Co-Founder & CEO",
+    "partner_email": "matt@joinef.com",
+    "partner_linkedin": "https://www.linkedin.com/in/matthewclifford",
+    "portfolio": [
+      "Tractable",
+      "Cleo",
+      "AccuRx",
+      "Omnipresent"
+    ],
+    "thesis": "World's leading talent investor backing exceptional individuals before they even have a company or co-founder."
+  },
+  {
+    "id": "vc_26",
+    "fund_name": "Accel Europe",
+    "website": "https://accel.com",
+    "location": "London, UK",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 6000000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise Software",
+      "Fintech",
+      "Cybersecurity",
+      "AI"
+    ],
+    "lead_partner": "Harry Nelis",
+    "partner_title": "Partner",
+    "partner_email": "hnelis@accel.com",
+    "partner_linkedin": "https://www.linkedin.com/in/harrynelis",
+    "portfolio": [
+      "Celonis",
+      "Shift Technology",
+      "Monzo",
+      "Miro",
+      "Deliveroo"
+    ],
+    "thesis": "Early-stage venture leader backing category-defining software and fintech founders across Europe."
+  },
+  {
+    "id": "vc_27",
+    "fund_name": "Index Ventures",
+    "website": "https://indexventures.com",
+    "location": "London / San Francisco",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 8000000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise Software",
+      "Fintech",
+      "AI Systems",
+      "Consumer"
+    ],
+    "lead_partner": "Jan Hammer",
+    "partner_title": "Partner",
+    "partner_email": "jan@indexventures.com",
+    "partner_linkedin": "https://www.linkedin.com/in/janhammer",
+    "portfolio": [
+      "Adyen",
+      "Deliveroo",
+      "Datadog",
+      "Figma",
+      "Notion",
+      "Robinhood"
+    ],
+    "thesis": "Backing world-changing entrepreneurs from early seed and venture rounds through to global scale and IPO."
+  },
+  {
+    "id": "vc_28",
+    "fund_name": "Lightspeed Venture Partners Europe",
+    "website": "https://lsvp.com",
+    "location": "London, UK",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 7000000,
+    "sectors": [
+      "B2B SaaS",
+      "AI Infrastructure",
+      "Fintech",
+      "Developer Platforms"
+    ],
+    "lead_partner": "Paul Murphy",
+    "partner_title": "Partner",
+    "partner_email": "paul@lsvp.com",
+    "partner_linkedin": "https://www.linkedin.com/in/paulmurphy",
+    "portfolio": [
+      "Epic Games",
+      "Grafana",
+      "Mistral AI",
+      "Snap",
+      "Affirm"
+    ],
+    "thesis": "Multi-stage global venture firm partnering with exceptional founders from early seed to IPO."
+  },
+  {
+    "id": "vc_29",
+    "fund_name": "Coatue Management (Early Stage)",
+    "website": "https://coatue.com",
+    "location": "London / New York",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1500000,
+    "check_size_max_gbp": 8000000,
+    "sectors": [
+      "B2B SaaS",
+      "AI Applications",
+      "Fintech",
+      "Deep Tech"
+    ],
+    "lead_partner": "Dan Rose",
+    "partner_title": "Partner",
+    "partner_email": "dan@coatue.com",
+    "partner_linkedin": "https://www.linkedin.com/in/danrose",
+    "portfolio": [
+      "Airtable",
+      "Ramp",
+      "DoorDash",
+      "Scale AI",
+      "Instacart"
+    ],
+    "thesis": "Investing in high-growth technology companies across software, AI, and consumer ecosystems."
+  },
+  {
+    "id": "vc_30",
+    "fund_name": "Matrix Partners UK & Europe",
+    "website": "https://matrixpartners.com",
+    "location": "London, UK",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 3000000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise Infrastructure",
+      "Developer Tools"
+    ],
+    "lead_partner": "Nick Morrill",
+    "partner_title": "Managing Partner",
+    "partner_email": "nick@matrixpartners.com",
+    "partner_linkedin": "https://www.linkedin.com/in/nickmorrill",
+    "portfolio": [
+      "HubSpot",
+      "Canva",
+      "Oculus",
+      "Zendesk"
+    ],
+    "thesis": "Artisan venture firm backing technical founders from the garage phase to category leadership."
+  },
+  {
+    "id": "vc_31",
+    "fund_name": "Felix Capital",
+    "website": "https://felixcap.com",
+    "location": "London, UK",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 5000000,
+    "sectors": [
+      "Digital Lifestyle",
+      "B2B SaaS",
+      "Creator Economy",
+      "Fintech"
+    ],
+    "lead_partner": "Frederic Court",
+    "partner_title": "Founder & Managing Partner",
+    "partner_email": "frederic@felixcap.com",
+    "partner_linkedin": "https://www.linkedin.com/in/fredericcourt",
+    "portfolio": [
+      "Farfetch",
+      "Deliveroo",
+      "Mirakl",
+      "Moonbug",
+      "Peloton"
+    ],
+    "thesis": "Venture firm operating at the intersection of technology and culture, backing mission-driven founders."
+  },
+  {
+    "id": "vc_32",
+    "fund_name": "EQT Ventures",
+    "website": "https://eqtventures.com",
+    "location": "London / Stockholm",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 7500000,
+    "sectors": [
+      "B2B SaaS",
+      "AI Infrastructure",
+      "Climate Tech",
+      "Deep Tech"
+    ],
+    "lead_partner": "Lyle Fong",
+    "partner_title": "Partner",
+    "partner_email": "lyle@eqtventures.com",
+    "partner_linkedin": "https://www.linkedin.com/in/lylefong",
+    "portfolio": [
+      "Wolt",
+      "Small Giant Games",
+      "Einride",
+      "Handshake",
+      "Peakon"
+    ],
+    "thesis": "Data-driven European venture capital firm built by founders and operators to scale category leaders."
+  },
+  {
+    "id": "vc_33",
+    "fund_name": "Cavalry Ventures",
+    "website": "https://cavalry.vc",
+    "location": "Berlin, Germany",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 400000,
+    "check_size_max_gbp": 2000000,
+    "sectors": [
+      "B2B SaaS",
+      "Logistics",
+      "Vertical Software",
+      "Fintech"
+    ],
+    "lead_partner": "Rouven Dresselhaus",
+    "partner_title": "Managing Partner",
+    "partner_email": "rouven@cavalry.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/rouvendresselhaus",
+    "portfolio": [
+      "Forto",
+      "PlanRadar",
+      "Bryter",
+      "FreightHub",
+      "Clarisights"
+    ],
+    "thesis": "Operator-led early-stage software investor providing operational firepower to European founders from day one."
+  },
+  {
+    "id": "vc_34",
+    "fund_name": "Cherry Ventures",
+    "website": "https://cherry.vc",
+    "location": "Berlin / London",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 300000,
+    "check_size_max_gbp": 2500000,
+    "sectors": [
+      "B2B SaaS",
+      "ClimateTech",
+      "Fintech",
+      "Marketplaces",
+      "AI"
+    ],
+    "lead_partner": "Christian Meermann",
+    "partner_title": "Partner",
+    "partner_email": "christian@cherry.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/christianmeermann",
+    "portfolio": [
+      "FlixBus",
+      "Auto1 Group",
+      "Forto",
+      "Rekki",
+      "Carbo Culture"
+    ],
+    "thesis": "Early-stage venture firm founded by entrepreneurs who know what it takes to build enduring global enterprises."
+  },
+  {
+    "id": "vc_35",
+    "fund_name": "HV Capital",
+    "website": "https://hvcapital.com",
+    "location": "Munich / Berlin",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 5000000,
+    "sectors": [
+      "B2B SaaS",
+      "Mobility",
+      "Fintech",
+      "Climate"
+    ],
+    "lead_partner": "Rainer Maerkle",
+    "partner_title": "General Partner",
+    "partner_email": "rainer@hvcapital.com",
+    "partner_linkedin": "https://www.linkedin.com/in/rainermaerkle",
+    "portfolio": [
+      "Zalando",
+      "Delivery Hero",
+      "FlixMobility",
+      "SumUp",
+      "Depop"
+    ],
+    "thesis": "One of Europe’s leading venture capital funds backing digital champions across multiple cycles."
+  },
+  {
+    "id": "vc_36",
+    "fund_name": "Target Global (Early Stage)",
+    "website": "https://targetglobal.vc",
+    "location": "London / Berlin",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 4000000,
+    "sectors": [
+      "Fintech",
+      "B2B SaaS",
+      "Supply Chain",
+      "EdTech"
+    ],
+    "lead_partner": "Shmuel Chafets",
+    "partner_title": "General Partner",
+    "partner_email": "shmuel@targetglobal.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/shmuelchafets",
+    "portfolio": [
+      "Delivery Hero",
+      "Auto1",
+      "Revolut",
+      "TravelPerk",
+      "Rapyd"
+    ],
+    "thesis": "Pan-European technology investment firm backing bold founders transforming massive target markets."
+  },
+  {
+    "id": "vc_37",
+    "fund_name": "20VC (TwentyVC)",
+    "website": "https://20vc.com",
+    "location": "London / Global",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 3500000,
+    "sectors": [
+      "B2B SaaS",
+      "AI",
+      "Fintech",
+      "Developer Tools",
+      "Consumer"
+    ],
+    "lead_partner": "Harry Stebbings",
+    "partner_title": "Founder & General Partner",
+    "partner_email": "harry@20vc.com",
+    "partner_linkedin": "https://www.linkedin.com/in/harrystebbings",
+    "portfolio": [
+      "Linktree",
+      "Sorare",
+      "NexHealth",
+      "Beacons",
+      "Causal"
+    ],
+    "thesis": "Venture capital powered by the world’s largest tech media and founder ecosystem, driving unparalleled distribution."
+  },
+  {
+    "id": "vc_38",
+    "fund_name": "First Round Capital",
+    "website": "https://firstround.com",
+    "location": "San Francisco / New York",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 3000000,
+    "sectors": [
+      "B2B SaaS",
+      "Developer Tools",
+      "Fintech",
+      "AI Systems",
+      "Healthcare"
+    ],
+    "lead_partner": "Josh Kopelman",
+    "partner_title": "Partner",
+    "partner_email": "josh@firstround.com",
+    "partner_linkedin": "https://www.linkedin.com/in/joshkopelman",
+    "portfolio": [
+      "Uber",
+      "Square",
+      "Notion",
+      "Roblox",
+      "Looker",
+      "Upstart"
+    ],
+    "thesis": "The premier early-stage venture firm dedicated to helping startup founders build extraordinary companies from day zero."
+  },
+  {
+    "id": "vc_39",
+    "fund_name": "Founder Collective",
+    "website": "https://foundercollective.com",
+    "location": "Cambridge / New York",
+    "stages": [
+      "Seed",
+      "Pre-Seed"
+    ],
+    "check_size_min_gbp": 400000,
+    "check_size_max_gbp": 2000000,
+    "sectors": [
+      "B2B SaaS",
+      "Enterprise Software",
+      "E-commerce Infrastructure",
+      "AI"
+    ],
+    "lead_partner": "David Frankel",
+    "partner_title": "Managing Partner",
+    "partner_email": "david@foundercollective.com",
+    "partner_linkedin": "https://www.linkedin.com/in/davidfrankel",
+    "portfolio": [
+      "Uber",
+      "PillPack",
+      "The Trade Desk",
+      "Airtable",
+      "SeatGeek"
+    ],
+    "thesis": "Peer-to-peer venture capital firm backing audacious founders with founder-friendly terms and zero bureaucracy."
+  },
+  {
+    "id": "vc_40",
+    "fund_name": "Bessemer Venture Partners (BVP Seed)",
+    "website": "https://bvp.com",
+    "location": "London / San Francisco",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 5000000,
+    "sectors": [
+      "B2B SaaS",
+      "Cloud Infrastructure",
+      "Cybersecurity",
+      "AI Systems"
+    ],
+    "lead_partner": "Alex Ferrara",
+    "partner_title": "Partner",
+    "partner_email": "aferrara@bvp.com",
+    "partner_linkedin": "https://www.linkedin.com/in/alexferrara",
+    "portfolio": [
+      "Shopify",
+      "Twilio",
+      "Pinterest",
+      "LinkedIn",
+      "Procore",
+      "Toast"
+    ],
+    "thesis": "Over a century of backing pioneering founders building foundational cloud software and global enterprise platforms."
+  },
+  {
+    "id": "vc_41",
+    "fund_name": "Sequoia Capital (Arc Seed)",
+    "website": "https://sequoiacap.com",
+    "location": "London / Menlo Park",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 2500000,
+    "sectors": [
+      "AI",
+      "B2B SaaS",
+      "Developer Tools",
+      "Fintech",
+      "Deep Tech"
+    ],
+    "lead_partner": "Luciana Lixandru",
+    "partner_title": "Partner",
+    "partner_email": "luciana@sequoiacap.com",
+    "partner_linkedin": "https://www.linkedin.com/in/lucianalixandru",
+    "portfolio": [
+      "Stripe",
+      "UiPath",
+      "Deliveroo",
+      "Miro",
+      "Zoom"
+    ],
+    "thesis": "Helping daring founders build legendary companies from idea conception through early seed acceleration and IPO."
+  },
+  {
+    "id": "vc_42",
+    "fund_name": "Andreessen Horowitz (a16z Seed)",
+    "website": "https://a16z.com",
+    "location": "London / Menlo Park",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 5000000,
+    "sectors": [
+      "AI Systems",
+      "B2B SaaS",
+      "Crypto / Web3",
+      "Bio / Health",
+      "Enterprise"
+    ],
+    "lead_partner": "Sriram Krishnan",
+    "partner_title": "General Partner",
+    "partner_email": "sriram@a16z.com",
+    "partner_linkedin": "https://www.linkedin.com/in/sriramk",
+    "portfolio": [
+      "GitHub",
+      "Figma",
+      "Stripe",
+      "Databricks",
+      "OpenAI",
+      "Instacart"
+    ],
+    "thesis": "Backing bold entrepreneurs building the future through technology, enterprise software, and artificial intelligence."
+  },
+  {
+    "id": "vc_43",
+    "fund_name": "Y Combinator Continuity & Seed",
+    "website": "https://ycombinator.com",
+    "location": "San Francisco, CA",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 100000,
+    "check_size_max_gbp": 500000,
+    "sectors": [
+      "B2B SaaS",
+      "AI",
+      "Fintech",
+      "Developer Tools",
+      "Healthcare"
+    ],
+    "lead_partner": "Garry Tan",
+    "partner_title": "President & CEO",
+    "partner_email": "garry@ycombinator.com",
+    "partner_linkedin": "https://www.linkedin.com/in/garrytan",
+    "portfolio": [
+      "Stripe",
+      "Airbnb",
+      "DoorDash",
+      "Coinbase",
+      "Dropbox",
+      "Reddit"
+    ],
+    "thesis": "The premier startup accelerator on earth, investing standard capital and network power into exceptional early teams."
+  },
+  {
+    "id": "vc_44",
+    "fund_name": "Techstars Ventures",
+    "website": "https://techstars.com",
+    "location": "London / Boulder",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 100000,
+    "check_size_max_gbp": 400000,
+    "sectors": [
+      "B2B SaaS",
+      "Fintech",
+      "HealthTech",
+      "Supply Chain",
+      "Mobility"
+    ],
+    "lead_partner": "David Cohen",
+    "partner_title": "Co-Founder & Chairman",
+    "partner_email": "david@techstars.com",
+    "partner_linkedin": "https://www.linkedin.com/in/davidgcohen",
+    "portfolio": [
+      "SendGrid",
+      "DigitalOcean",
+      "ClassPass",
+      "DataRobot",
+      "PillPack"
+    ],
+    "thesis": "Worldwide network that helps entrepreneurs succeed through seed funding, intensive mentorship, and global access."
+  },
+  {
+    "id": "vc_45",
+    "fund_name": "Entree Capital",
+    "website": "https://entreecapital.vc",
+    "location": "London / Tel Aviv",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 500000,
+    "check_size_max_gbp": 4000000,
+    "sectors": [
+      "B2B SaaS",
+      "Deep Tech",
+      "Fintech",
+      "AI Systems"
+    ],
+    "lead_partner": "Avi Eyal",
+    "partner_title": "Managing Partner",
+    "partner_email": "avi@entreecapital.vc",
+    "partner_linkedin": "https://www.linkedin.com/in/avieyal",
+    "portfolio": [
+      "Deliveroo",
+      "Rapyd",
+      "Riskified",
+      "Gusto",
+      "Cazoo"
+    ],
+    "thesis": "Founders backing founders with strong convictions and global reach from inception through hypergrowth."
+  },
+  {
+    "id": "vc_46",
+    "fund_name": "Lakestar",
+    "website": "https://lakestar.com",
+    "location": "London / Zurich / Berlin",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 6000000,
+    "sectors": [
+      "B2B SaaS",
+      "Fintech",
+      "Deep Tech",
+      "Digital Health"
+    ],
+    "lead_partner": "Klaus Hommels",
+    "partner_title": "Founder & Chairman",
+    "partner_email": "klaus@lakestar.com",
+    "partner_linkedin": "https://www.linkedin.com/in/klaushommels",
+    "portfolio": [
+      "Spotify",
+      "Revolut",
+      "Sennder",
+      "GetYourGuide",
+      "Aleph Alpha"
+    ],
+    "thesis": "Championing Europe’s tech sovereignty by leading early-stage rounds for future global technology leaders."
+  },
+  {
+    "id": "vc_47",
+    "fund_name": "Northzone London",
+    "website": "https://northzone.com",
+    "location": "London / Stockholm",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_gbp": 1000000,
+    "check_size_max_gbp": 8000000,
+    "sectors": [
+      "B2B SaaS",
+      "Fintech",
+      "AI",
+      "Gaming"
+    ],
+    "lead_partner": "Jeppe Zink",
+    "partner_title": "Partner",
+    "partner_email": "jeppez@northzone.com",
+    "partner_linkedin": "https://www.linkedin.com/in/jeppezink",
+    "portfolio": [
+      "Personio",
+      "Hopin",
+      "Trustpilot",
+      "Kahoot"
+    ],
+    "thesis": "Decades of venture building behind European founders from Seed to IPO across SaaS and digital infra."
+  },
+  {
+    "id": "vc_48",
+    "fund_name": "Connectd Capital",
+    "website": "https://connectd.com",
+    "location": "London, UK",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 100000,
+    "check_size_max_gbp": 800000,
+    "sectors": [
+      "B2B SaaS",
+      "Marketplaces",
+      "Fintech",
+      "Consumer Tech"
+    ],
+    "lead_partner": "Roei Samuel",
+    "partner_title": "Founder & CEO",
+    "partner_email": "roei@connectd.com",
+    "partner_linkedin": "https://www.linkedin.com/in/roeisamuel",
+    "portfolio": [
+      "Sprout",
+      "Kody",
+      "Vesta",
+      "Pollen"
+    ],
+    "thesis": "Connecting early-stage tech startups with curated smart capital, syndicates, and seed investors across the UK."
+  },
+  {
+    "id": "vc_49",
+    "fund_name": "Kima Ventures",
+    "website": "https://kimaventures.com",
+    "location": "Paris, France",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 150000,
+    "check_size_max_gbp": 500000,
+    "sectors": [
+      "B2B SaaS",
+      "Fintech",
+      "Healthcare",
+      "Marketplaces",
+      "AI"
+    ],
+    "lead_partner": "Jean de La Rochebrochard",
+    "partner_title": "Managing Partner",
+    "partner_email": "jean@kimaventures.com",
+    "partner_linkedin": "https://www.linkedin.com/in/jeandelarochebrochard",
+    "portfolio": [
+      "Wise",
+      "Carta",
+      "Zenly",
+      "Payfit",
+      "Front"
+    ],
+    "thesis": "The world’s most active early-stage investor backing 2 to 3 seed-stage startups every week across Europe."
+  },
+  {
+    "id": "vc_50",
+    "fund_name": "Partech Partners (Partech Seed)",
+    "website": "https://partechpartners.com",
+    "location": "Paris / Berlin / San Francisco",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 300000,
+    "check_size_max_gbp": 2500000,
+    "sectors": [
+      "B2B SaaS",
+      "Fintech",
+      "Enterprise Software",
+      "AI"
+    ],
+    "lead_partner": "Romain Lavault",
+    "partner_title": "Partner",
+    "partner_email": "romain@partechpartners.com",
+    "partner_linkedin": "https://www.linkedin.com/in/romainlavault",
+    "portfolio": [
+      "Alan",
+      "Sorare",
+      "Jellysmack",
+      "Toss",
+      "ManoMano"
+    ],
+    "thesis": "Global early-stage investment platform delivering deep operator experience to visionary software founders."
+  }
+]
