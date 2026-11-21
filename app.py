@@ -163,6 +163,65 @@ async def match_angels(payload: AngelMatchRequest):
         "matches": enriched
     }
 
+@app.post("/api/mine-angels")
+async def mine_angels(payload: AngelMatchRequest):
+    """
+    Autonomous Live Mining Pipeline:
+    Squad B (UK Recon Swarm) & Squad C (Zero-Bounce Verifier) dynamically mine, verify,
+    and ingest newly verified UK Angels, Family Offices & Syndicates matching the startup's sector.
+    """
+    start = time.time()
+    mine_result = fleet.mine_new_uk_investors(payload.model_dump())
+    
+    # Reload database into matcher
+    angel_matcher.reload_data()
+
+    # Re-run matching with the updated database
+    matches = angel_matcher.match(
+        category=payload.category,
+        sector=payload.sector,
+        stage=payload.stage,
+        target_raise_gbp=payload.target_raise_gbp,
+        min_suitability_score=payload.min_suitability_score or 0,
+        company_summary=payload.company_summary or ""
+    )
+
+    enriched = []
+    qualified_count = 0
+    borderline_count = 0
+
+    for m in matches:
+        if m.get("suitability_score", 0) >= 70:
+            qualified_count += 1
+        elif m.get("suitability_score", 0) >= 50:
+            borderline_count += 1
+
+        pitch = outreach.generate_angel_pitch_package(
+            company_name=payload.company_name,
+            sector=payload.sector,
+            stage=payload.stage,
+            target_raise=f"{payload.target_raise_gbp:,}",
+            traction_highlights=payload.traction or "Active customer pilots and verified growth",
+            founder_name=payload.founder_name or "Alex Morgan",
+            founder_title=payload.founder_title or "Founder & CEO",
+            investor_data=m
+        )
+        enriched.append({**m, "outreach": pitch})
+
+    elapsed = round(time.time() - start, 3)
+
+    return {
+        "status": "success",
+        "mined_count": mine_result.get("mined_count", 0),
+        "newly_mined": mine_result.get("newly_mined", []),
+        "real_time_elapsed": f"{elapsed}s",
+        "total_matches": len(enriched),
+        "qualified_count": qualified_count,
+        "borderline_count": borderline_count,
+        "fleet_logs": mine_result.get("logs", []),
+        "matches": enriched
+    }
+
 @app.post("/api/export-angels-csv")
 async def export_angels_csv(payload: AngelMatchRequest):
     """Exports early stage matches with full suitability scoring breakdown to CSV."""

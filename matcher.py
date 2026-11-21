@@ -146,7 +146,12 @@ class EupneaAngelMatcher:
     def __init__(self, db_path: str = None):
         if db_path is None:
             db_path = Path(__file__).parent / "uk_angels_and_networks.json"
-        with open(db_path, "r", encoding="utf-8") as f:
+        self.db_path = db_path
+        self.reload_data()
+
+    def reload_data(self):
+        """Reloads the verified database from disk."""
+        with open(self.db_path, "r", encoding="utf-8") as f:
             self.data = json.load(f)
 
     def get_categories(self) -> Dict[str, int]:
@@ -221,84 +226,90 @@ class EupneaAngelMatcher:
                 score -= 25
                 reasons.append("DEDUCTION (-25): Closed channel with no application or direct pitch route")
 
-            # --- 1. CATEGORY FIT (+30 Points) ---
+            # --- 1. CATEGORY FIT (+20 Points) ---
             if entry_cat in self.VALID_CATEGORIES:
-                breakdown["category_points"] = 30
-                score += 30
-                reasons.append(f"+30 pts: Verified {entry_cat} category fit")
-            else:
-                breakdown["category_points"] = 10
-                score += 10
-                reasons.append(f"+10 pts: Secondary category ({entry_cat})")
-
-            # --- 2. CHEQUE RANGE FIT (+20 Points) ---
-            # Pre-seed and Seed normal scope: £50K - £500K. Cheque sizes: £5K - £1M
-            if min_chk <= target_raise <= max_chk:
-                breakdown["cheque_points"] = 20
+                breakdown["category_points"] = 20
                 score += 20
-                reasons.append(f"+20 pts: Cheque range (£{min_chk:,} - £{max_chk:,}) fits target raise of £{target_raise:,}")
-            elif (target_raise > max_chk and target_raise <= max_chk * 2.5) or (target_raise < min_chk and target_raise >= min_chk * 0.5):
-                breakdown["cheque_points"] = 14
-                score += 14
-                reasons.append(f"+14 pts: Partial / Syndicate ticket fit for £{target_raise:,} raise")
+                reasons.append(f"+20 pts: Verified {entry_cat} category fit")
             else:
+                breakdown["category_points"] = 5
+                score += 5
+                reasons.append(f"+5 pts: Secondary category ({entry_cat})")
+
+            # --- 2. SECTOR & THESIS ALIGNMENT (Max 35 Points, Meaningful Penalty for Mismatch) ---
+            sector_lower = sector.lower().strip()
+            entry_sectors = [s.lower().strip() for s in entry.get("sectors", [])]
+            is_generalist = any(g in entry_sectors for g in ["all sectors", "all tech sectors", "general tech"])
+            is_direct_sector = any(sector_lower in s or s in sector_lower for s in entry_sectors)
+            is_related_sector = any(any(w in s for w in sector_lower.split()) for s in entry_sectors)
+
+            if is_direct_sector:
+                breakdown["sector_points"] = 35
+                score += 35
+                reasons.append(f"+35 pts: Direct Sector Match ({sector})")
+            elif is_related_sector:
+                breakdown["sector_points"] = 24
+                score += 24
+                reasons.append(f"+24 pts: Related Sector Overlap")
+            elif is_generalist:
+                breakdown["sector_points"] = 18
+                score += 18
+                reasons.append("+18 pts: Broad Generalist Technology Thesis")
+            else:
+                breakdown["sector_points"] = -15
+                score -= 15
+                reasons.append(f"-15 pts: Sector Mismatch (Target: {sector}, Focus: {', '.join(entry.get('sectors', [])[:2])})")
+
+            # --- 3. STAGE FIT (Max 15 Points) ---
+            stage_lower = stage.lower().strip()
+            entry_stages = [s.lower().strip() for s in entry.get("stages", [])]
+            if stage_lower in entry_stages:
+                score += 15
+                reasons.append(f"+15 pts: Target Stage Match ({stage})")
+            elif any(s in stage_lower for s in ["pre-seed", "seed"]) and any(s in "".join(entry_stages) for s in ["pre-seed", "seed"]):
+                score += 10
+                reasons.append("+10 pts: Adjacent Seed/Pre-Seed Bridge Fit")
+            else:
+                score += 4
+                reasons.append("+4 pts: Multi-stage syndicate participation")
+
+            # --- 4. CHEQUE RANGE FIT (Max 15 Points) ---
+            if min_chk <= target_raise <= max_chk:
+                breakdown["cheque_points"] = 15
+                score += 15
+                reasons.append(f"+15 pts: Cheque Range (£{min_chk:,} - £{max_chk:,}) fits £{target_raise:,}")
+            elif (target_raise > max_chk and target_raise <= max_chk * 2.0) or (target_raise < min_chk and target_raise >= min_chk * 0.5):
                 breakdown["cheque_points"] = 8
                 score += 8
-                reasons.append(f"+8 pts: Co-syndication candidate across broader syndicate round")
+                reasons.append(f"+8 pts: Partial syndicate ticket fit for £{target_raise:,}")
+            else:
+                breakdown["cheque_points"] = -10
+                score -= 10
+                reasons.append(f"-10 pts: Cheque size mismatch for £{target_raise:,}")
 
-            # --- 3. DIRECT PITCH / ACCESS ROUTE (+20 Points) ---
+            # --- 5. UK / REGIONAL ACTIVITY (+10 Points) ---
+            is_uk = factors.get("uk_market_active", True)
+            loc = entry.get("location", "").lower()
+            if is_uk and any(uk_term in loc for uk_term in ["uk", "london", "cambridge", "oxford", "manchester", "edinburgh", "bristol", "bournemouth"]):
+                breakdown["market_points"] = 10
+                score += 10
+                reasons.append(f"+10 pts: Verified UK Early-Stage Nexus ({entry.get('location')})")
+            else:
+                breakdown["market_points"] = 5
+                score += 5
+                reasons.append("+5 pts: European cross-border presence")
+
+            # --- 6. DIRECT PITCH / ACCESS ROUTE (+5 Points) ---
             has_direct = factors.get("has_direct_route", True)
             contact_email = entry.get("contact_email", "")
             if has_direct and contact_email:
-                breakdown["access_points"] = 20
-                score += 20
-                reasons.append(f"+20 pts: Direct accessible outreach route ({entry.get('access_route')})")
-            elif has_direct:
-                breakdown["access_points"] = 15
-                score += 15
-                reasons.append(f"+15 pts: Structured submission portal / platform route")
-            else:
                 breakdown["access_points"] = 5
                 score += 5
-                reasons.append("+5 pts: Indirect or referral-dependent pathway")
-
-            # --- 4. UK / REGIONAL ACTIVITY (+15 Points) ---
-            is_uk = factors.get("uk_market_active", True)
-            if is_uk:
-                breakdown["market_points"] = 15
-                score += 15
-                reasons.append(f"+15 pts: Active in UK early-stage ecosystem ({entry.get('location')})")
+                reasons.append(f"+5 pts: Verified Direct Outreach Route ({entry.get('access_route')})")
             else:
-                breakdown["market_points"] = 8
-                score += 8
-                reasons.append("+8 pts: European cross-border presence")
-
-            # --- 5. SECTOR & STAGE THESIS FIT (+15 Points) ---
-            sector_lower = sector.lower()
-            entry_sectors = [s.lower() for s in entry.get("sectors", [])]
-            entry_stages = [s.lower() for s in entry.get("stages", [])]
-
-            stage_match = stage.lower() in entry_stages or any(s in stage.lower() for s in ["pre-seed", "seed"])
-
-            direct_sector = any(s in sector_lower or sector_lower in s for s in entry_sectors) or "all sectors" in entry_sectors or "all tech sectors" in entry_sectors
-            broad_sector = any(w in " ".join(entry_sectors) for w in sector_lower.split())
-
-            if direct_sector and stage_match:
-                breakdown["sector_points"] = 15
-                score += 15
-                reasons.append(f"+15 pts: Direct sector ({sector}) & stage ({stage}) alignment")
-            elif direct_sector or stage_match:
-                breakdown["sector_points"] = 11
-                score += 11
-                reasons.append(f"+11 pts: Primary sector overlap in target asset class")
-            elif broad_sector:
-                breakdown["sector_points"] = 7
-                score += 7
-                reasons.append(f"+7 pts: Generalist technology investment thesis")
-            else:
-                breakdown["sector_points"] = 4
-                score += 4
-                reasons.append("+4 pts: Cross-domain exploratory profile")
+                breakdown["access_points"] = 2
+                score += 2
+                reasons.append("+2 pts: Syndicate / network submission pathway")
 
             # Bonus for Summary Keyword Synergies (up to 5 bonus points, capped inside 100)
             if company_summary:

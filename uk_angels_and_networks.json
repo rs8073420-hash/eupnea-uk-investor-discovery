@@ -21,10 +21,10 @@
     "contact_email": "taavet@hinrikus.com",
     "contact_role": "Private Angel Investor & Wise Co-Founder",
     "linkedin": "https://www.linkedin.com/in/taavethinrikus",
-    "website": "https://taavet.me",
+    "website": "https://hinrikus.com",
     "portfolio": [
-      "Bolt",
       "Wise",
+      "Bolt",
       "Curve",
       "Veriff",
       "Pipedrive"
@@ -41,36 +41,36 @@
   },
   {
     "id": "uk_ang_02",
-    "name": "Chris Adelsbach",
+    "name": "Simon Murdoch",
     "category": "UK Angel / Private Investor",
     "location": "London, UK",
-    "cheque_min_gbp": 15000,
+    "cheque_min_gbp": 25000,
     "cheque_max_gbp": 250000,
     "typical_cheque_gbp": 50000,
     "sectors": [
-      "Fintech",
-      "Insurtech",
+      "Marketplaces",
       "B2B SaaS",
+      "E-Commerce",
       "AI"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Chris Adelsbach",
-    "contact_email": "chris@adelsbach.com",
-    "contact_role": "UKBAA Angel of the Year / Outrun Ventures",
-    "linkedin": "https://www.linkedin.com/in/chrisadelsbach",
-    "website": "https://outrunventures.com",
+    "lead_contact": "Simon Murdoch",
+    "contact_email": "simon@episode1.com",
+    "contact_role": "Angel Investor & Seed Pioneer",
+    "linkedin": "https://www.linkedin.com/in/simonmurdoch",
+    "website": "https://episode1.com",
     "portfolio": [
-      "Atom Bank",
-      "Monese",
-      "Curve",
-      "Railsr",
-      "Evervault"
+      "Shazam",
+      "Zoopla",
+      "Lovefilm",
+      "Betfair",
+      "Carwow"
     ],
-    "access_route": "Direct Email / LinkedIn / UKBAA Network",
-    "thesis": "The UK’s most prolific early-stage fintech angel investor, backing over 150 early-stage ventures.",
+    "access_route": "Direct Email / Episode 1 Angel Channel",
+    "thesis": "High-conviction UK pre-seed angel backing data-driven founders with deep domain understanding.",
     "suitability_factors": {
       "is_institutional_vc": false,
       "is_uk_private_or_angel": true,
@@ -81,35 +81,36 @@
   },
   {
     "id": "uk_ang_03",
-    "name": "Simon Murdoch",
+    "name": "Chris Adelsbach",
     "category": "UK Angel / Private Investor",
     "location": "London, UK",
     "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 300000,
-    "typical_cheque_gbp": 75000,
+    "cheque_max_gbp": 200000,
+    "typical_cheque_gbp": 50000,
     "sectors": [
-      "B2B SaaS",
-      "Marketplaces",
-      "Deep Tech"
+      "Fintech",
+      "Insurtech",
+      "Regtech",
+      "B2B SaaS"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Simon Murdoch",
-    "contact_email": "simon@murdochangels.com",
-    "contact_role": "Pioneering UK Tech Angel (Friends Reunited, Shazam, Zoopla)",
-    "linkedin": "https://www.linkedin.com/in/simonmurdoch",
-    "website": "https://episode1.com",
+    "lead_contact": "Chris Adelsbach",
+    "contact_email": "chris@outrunventures.com",
+    "contact_role": "UKBAA Angel Investor of the Year",
+    "linkedin": "https://www.linkedin.com/in/chrisadelsbach",
+    "website": "https://outrunventures.com",
     "portfolio": [
-      "Shazam",
-      "Betfair",
-      "Zoopla",
-      "Lovefilm",
-      "Tractable"
+      "Monese",
+      "Railsr",
+      "Atom Bank",
+      "Cuvva",
+      "Koyo"
     ],
-    "access_route": "Direct Pitch / Angel Syndicate",
-    "thesis": "UK tech angel backing software engineers and commercial founders solving hard operational problems.",
+    "access_route": "Direct Email / Outrun Angel Portal",
+    "thesis": "Most active UK Fintech angel. Writing \u00a325k-\u00a3100k cheques for early-stage fintech, embedded finance, and regtech.",
     "suitability_factors": {
       "is_institutional_vc": false,
       "is_uk_private_or_angel": true,
@@ -123,32 +124,34 @@
     "name": "Deepali Nangia",
     "category": "UK Angel / Private Investor",
     "location": "London, UK",
-    "cheque_min_gbp": 10000,
+    "cheque_min_gbp": 15000,
     "cheque_max_gbp": 150000,
-    "typical_cheque_gbp": 25000,
+    "typical_cheque_gbp": 35000,
     "sectors": [
+      "Femtech",
       "HealthTech",
-      "FemTech",
+      "Consumer",
       "B2B SaaS",
-      "Consumer Tech"
+      "EdTech"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
     "lead_contact": "Deepali Nangia",
-    "contact_email": "deepali@almaangels.com",
-    "contact_role": "Co-Founder Alma Angels & UKBAA Angel of the Year",
+    "contact_email": "deepali@speedinvest.com",
+    "contact_role": "Angel Investor & Alma Angels Co-Founder",
     "linkedin": "https://www.linkedin.com/in/deepalinangia",
-    "website": "https://almaangels.com",
+    "website": "https://speedinvest.com",
     "portfolio": [
-      "Tuune",
-      "Sana",
       "Planera",
-      "Social Finance"
+      "Juno",
+      "Tuune",
+      "Syrona Health",
+      "SocialArk"
     ],
-    "access_route": "Alma Angels Portal / Direct Email",
-    "thesis": "Angel investing with deep commitment to diverse and female-founded teams across the UK and Europe.",
+    "access_route": "Direct Email / Alma Angels Syndicate",
+    "thesis": "Dedicated angel championing female and diverse founders in the UK and Europe across digital health and software.",
     "suitability_factors": {
       "is_institutional_vc": false,
       "is_uk_private_or_angel": true,
@@ -159,35 +162,35 @@
   },
   {
     "id": "uk_ang_05",
-    "name": "Paul Forster",
+    "name": "Sarah Drinkwater",
     "category": "UK Angel / Private Investor",
-    "location": "London / Cambridge, UK",
+    "location": "London, UK",
     "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 400000,
-    "typical_cheque_gbp": 100000,
+    "cheque_max_gbp": 100000,
+    "typical_cheque_gbp": 50000,
     "sectors": [
+      "Community Tech",
       "AI",
-      "HR Tech",
-      "B2B SaaS",
-      "Marketplaces"
+      "Future of Work",
+      "B2B SaaS"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Paul Forster",
-    "contact_email": "paul@forsterangels.com",
-    "contact_role": "Co-Founder Indeed.com & Cambridge Angels Member",
-    "linkedin": "https://www.linkedin.com/in/paulforster",
-    "website": "https://cambridgeangels.com",
+    "lead_contact": "Sarah Drinkwater",
+    "contact_email": "sarah@commonmagic.com",
+    "contact_role": "Private Angel & Common Magic Lead",
+    "linkedin": "https://www.linkedin.com/in/sarahdrinkwater",
+    "website": "https://commonmagic.com",
     "portfolio": [
-      "Workable",
-      "TravelPerk",
-      "Prograd",
-      "Climeworks"
+      "Humaans",
+      "Hopscotch",
+      "Locally",
+      "Peanut"
     ],
-    "access_route": "Cambridge Angels / Direct Email",
-    "thesis": "Active private investor helping founders scale marketplace liquidity and B2B automation tools.",
+    "access_route": "Direct Pitch via Common Magic",
+    "thesis": "Early checks for mission-driven founders building community-focused software products.",
     "suitability_factors": {
       "is_institutional_vc": false,
       "is_uk_private_or_angel": true,
@@ -198,35 +201,35 @@
   },
   {
     "id": "uk_ang_06",
-    "name": "Ian Hogarth",
+    "name": "Peter Cowley",
     "category": "UK Angel / Private Investor",
-    "location": "London, UK",
+    "location": "Cambridge, UK",
     "cheque_min_gbp": 20000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 100000,
+    "cheque_max_gbp": 200000,
+    "typical_cheque_gbp": 50000,
     "sectors": [
-      "AI Systems",
-      "Machine Learning",
-      "Deep Tech",
-      "Climate"
+      "DeepTech",
+      "Hardware",
+      "Life Sciences",
+      "AI"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Ian Hogarth",
-    "contact_email": "ian@hogarth.ai",
-    "contact_role": "Chair UK AI Safety Institute & Songkick Co-Founder",
-    "linkedin": "https://www.linkedin.com/in/ianhogarth",
-    "website": "https://ianhogarth.com",
+    "lead_contact": "Peter Cowley",
+    "contact_email": "peter@petercowley.org",
+    "contact_role": "Former President UKBAA & Serial Angel",
+    "linkedin": "https://www.linkedin.com/in/petercowley",
+    "website": "https://petercowley.org",
     "portfolio": [
-      "Tractable",
-      "Shield AI",
-      "Recursion Pharma",
-      "Lyst"
+      "CamGaN",
+      "FocalPoint",
+      "Graphene",
+      "PhoreMost"
     ],
-    "access_route": "Direct Email / Technical Reference",
-    "thesis": "Backing foundational machine intelligence breakthroughs and applied AI software engineered in the UK.",
+    "access_route": "Website Contact Form / Cambridge Angels",
+    "thesis": "Invested in 75+ early-stage UK technology startups. Focus on deep technical IP and collegiate spinouts.",
     "suitability_factors": {
       "is_institutional_vc": false,
       "is_uk_private_or_angel": true,
@@ -237,35 +240,36 @@
   },
   {
     "id": "uk_ang_07",
-    "name": "Sarah Drinkwater",
+    "name": "Ian Hogarth",
     "category": "UK Angel / Private Investor",
     "location": "London, UK",
-    "cheque_min_gbp": 10000,
-    "cheque_max_gbp": 100000,
-    "typical_cheque_gbp": 25000,
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 100000,
     "sectors": [
-      "Community Tech",
-      "B2B SaaS",
       "AI",
-      "Workplace Software"
+      "Machine Learning",
+      "ClimateTech",
+      "DeepTech"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Sarah Drinkwater",
-    "contact_email": "sarah@commonmagic.com",
-    "contact_role": "General Partner Common Magic / Solo Angel",
-    "linkedin": "https://www.linkedin.com/in/sarahdrinkwater",
-    "website": "https://commonmagic.com",
+    "lead_contact": "Ian Hogarth",
+    "contact_email": "ian@ianhogarth.com",
+    "contact_role": "Angel Investor & Chair of UK AI Safety Institute",
+    "linkedin": "https://www.linkedin.com/in/ianhogarth",
+    "website": "https://ianhogarth.com",
     "portfolio": [
-      "Hopin",
-      "Locals",
-      "Pollen",
-      "Multiverse"
+      "Songkick",
+      "Wayve",
+      "Recursion",
+      "Tractable",
+      "Omnipresent"
     ],
-    "access_route": "Direct Pitch / Common Magic Portal",
-    "thesis": "Investing in community-driven, network-effect software and product-first early teams.",
+    "access_route": "Personal Site / Founder Intro",
+    "thesis": "High-conviction pre-seed & seed angel backing world-class AI engineers and mission-driven builders.",
     "suitability_factors": {
       "is_institutional_vc": false,
       "is_uk_private_or_angel": true,
@@ -276,42 +280,315 @@
   },
   {
     "id": "uk_ang_08",
-    "name": "Peter Cowley",
+    "name": "Michelle You",
     "category": "UK Angel / Private Investor",
-    "location": "Cambridge / London, UK",
-    "cheque_min_gbp": 15000,
+    "location": "London, UK",
+    "cheque_min_gbp": 25000,
     "cheque_max_gbp": 150000,
-    "typical_cheque_gbp": 35000,
+    "typical_cheque_gbp": 50000,
     "sectors": [
-      "Deep Tech",
-      "Hardware/IoT",
-      "HealthTech",
-      "SaaS"
+      "ClimateTech",
+      "Consumer Tech",
+      "B2B SaaS"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Peter Cowley",
-    "contact_email": "peter@petercowley.org",
-    "contact_role": "President Emeritus European Business Angel Network",
-    "linkedin": "https://www.linkedin.com/in/petercowley",
-    "website": "https://petercowley.org",
+    "lead_contact": "Michelle You",
+    "contact_email": "michelle@superorganism.com",
+    "contact_role": "Serial Founder & Climate Angel",
+    "linkedin": "https://www.linkedin.com/in/michelleyou",
+    "website": "https://superorganism.com",
     "portfolio": [
-      "PhoreMost",
-      "FocalPoint",
-      "Prowler.io",
-      "SpiTrap"
+      "Songkick",
+      "Superorganism",
+      "Watershed",
+      "Treecard"
     ],
-    "thesis": "Veteran UK angel backing over 70 early-stage technology startups with hands-on mentoring.",
+    "access_route": "Direct Email / Superorganism",
+    "thesis": "Backing biodiversity, climate software, and consumer digital innovations across the UK.",
     "suitability_factors": {
       "is_institutional_vc": false,
       "is_uk_private_or_angel": true,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
-    },
-    "access_route": "Cambridge Angels / Direct Pitch Email"
+    }
+  },
+  {
+    "id": "uk_ang_09",
+    "name": "Paul Forster",
+    "category": "UK Angel / Private Investor",
+    "location": "Cambridge / London, UK",
+    "cheque_min_gbp": 30000,
+    "cheque_max_gbp": 300000,
+    "typical_cheque_gbp": 75000,
+    "sectors": [
+      "HR Tech",
+      "AI",
+      "B2B SaaS",
+      "Recruitment Platforms"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Paul Forster",
+    "contact_email": "info@cambridgeangels.com",
+    "contact_role": "Co-Founder Indeed.com & Cambridge Angel",
+    "linkedin": "https://www.linkedin.com/in/paulforster",
+    "website": "https://cambridgeangels.com",
+    "portfolio": [
+      "Indeed",
+      "Adzuna",
+      "Founders Factory",
+      "Dext"
+    ],
+    "access_route": "Cambridge Angels Syndicate Portal",
+    "thesis": "Angel tickets for high-scale marketplace and SaaS businesses looking for pragmatic operator guidance.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_ang_10",
+    "name": "Tom Blomfield",
+    "category": "UK Angel / Private Investor",
+    "location": "London, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 200000,
+    "typical_cheque_gbp": 50000,
+    "sectors": [
+      "Fintech",
+      "Developer Tools",
+      "Consumer",
+      "AI"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Tom Blomfield",
+    "contact_email": "tom@monzo.com",
+    "contact_role": "Monzo & GoCardless Co-Founder",
+    "linkedin": "https://www.linkedin.com/in/tomblomfield",
+    "website": "https://monzo.com",
+    "portfolio": [
+      "Monzo",
+      "GoCardless",
+      "Pento",
+      "Pigment"
+    ],
+    "access_route": "Founder Warm Intro / Angel Syndicate",
+    "thesis": "Direct angel investment for founders taking on legacy industries with consumer delight and strong software.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_ang_11",
+    "name": "Alex Chesterman OBE",
+    "category": "UK Angel / Private Investor",
+    "location": "London, UK",
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 100000,
+    "sectors": [
+      "Marketplaces",
+      "PropTech",
+      "E-Commerce",
+      "Fintech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Alex Chesterman",
+    "contact_email": "contact@cazoo.co.uk",
+    "contact_role": "Serial Founder (Zoopla, Cazoo, ScreenSelect)",
+    "linkedin": "https://www.linkedin.com/in/alexchesterman",
+    "website": "https://zoopla.co.uk",
+    "portfolio": [
+      "Zoopla",
+      "Cazoo",
+      "Lovefilm",
+      "Tractable",
+      "Farmdrop"
+    ],
+    "access_route": "Warm Referral / Direct UKBAA Syndicate",
+    "thesis": "Invested in over 50 UK tech startups. Look for massive market disruptions with operational leverage.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_ang_12",
+    "name": "Sherry Coutu CBE",
+    "category": "UK Angel / Private Investor",
+    "location": "Cambridge / London, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 250000,
+    "typical_cheque_gbp": 50000,
+    "sectors": [
+      "EdTech",
+      "Fintech",
+      "HealthTech",
+      "AI"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Sherry Coutu",
+    "contact_email": "enquiries@scaleupinstitute.org.uk",
+    "contact_role": "Chair of ScaleUp Institute & Serial Angel",
+    "linkedin": "https://www.linkedin.com/in/sherrycoutu",
+    "website": "https://scaleupinstitute.org.uk",
+    "portfolio": [
+      "Interactive Investor",
+      "Zoopla",
+      "LinkedIn",
+      "Care.com"
+    ],
+    "access_route": "ScaleUp Institute Channel / Cambridge Angels",
+    "thesis": "Passionate angel backing scalable British enterprises with clear societal and economic uplift.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_ang_13",
+    "name": "Brent Hoberman CBE",
+    "category": "UK Angel / Private Investor",
+    "location": "London, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 300000,
+    "typical_cheque_gbp": 75000,
+    "sectors": [
+      "Consumer Tech",
+      "Marketplaces",
+      "AI",
+      "B2B SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Brent Hoberman",
+    "contact_email": "info@foundersfactory.com",
+    "contact_role": "Co-Founder Lastminute.com, Made.com & Founders Factory",
+    "linkedin": "https://www.linkedin.com/in/brenthoberman",
+    "website": "https://foundersfactory.com",
+    "portfolio": [
+      "Lastminute.com",
+      "Made.com",
+      "Kano",
+      "Tails.com",
+      "Gousto"
+    ],
+    "access_route": "Founders Factory Early Ingestion Channel",
+    "thesis": "Active angel backer of ambitious European and UK tech founders creating category-defining consumer and business tech.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_ang_14",
+    "name": "Eileen Burbidge MBE",
+    "category": "UK Angel / Private Investor",
+    "location": "London, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 200000,
+    "typical_cheque_gbp": 50000,
+    "sectors": [
+      "Fintech",
+      "HealthTech",
+      "Digital Health",
+      "B2B SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Eileen Burbidge",
+    "contact_email": "eileen@passioncapital.com",
+    "contact_role": "UK Treasury Fintech Envoy & Angel",
+    "linkedin": "https://www.linkedin.com/in/eileenburbidge",
+    "website": "https://passioncapital.com",
+    "portfolio": [
+      "Monzo",
+      "GoCardless",
+      "Fertifa",
+      "Digital Surgery"
+    ],
+    "access_route": "Direct Email / Founder Intro",
+    "thesis": "Early advocate for UK tech ecosystem, backing diverse and technical teams in regulated spaces.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_ang_15",
+    "name": "Lord Simon Wolfson",
+    "category": "UK Angel / Private Investor",
+    "location": "Leicester / London, UK",
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 150000,
+    "sectors": [
+      "RetailTech",
+      "E-Commerce",
+      "Supply Chain",
+      "B2B SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Lord Wolfson Private Office",
+    "contact_email": "investors@next.co.uk",
+    "contact_role": "Chief Executive Next plc & Private Tech Angel",
+    "linkedin": "https://www.linkedin.com/company/next",
+    "website": "https://next.co.uk",
+    "portfolio": [
+      "Reiss (Early Angel)",
+      "Made.com",
+      "Select Retail SaaS Startups"
+    ],
+    "access_route": "Direct Office / UKBAA Retail Syndicate",
+    "thesis": "Backing operational efficiency, warehousing automation, and omni-channel retail software solutions.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
   },
   {
     "id": "uk_fo_01",
@@ -319,11 +596,11 @@
     "category": "UK Family Office",
     "location": "London, UK",
     "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 750000,
-    "typical_cheque_gbp": 250000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 200000,
     "sectors": [
-      "E-commerce Infrastructure",
       "B2B SaaS",
+      "E-Commerce",
       "Fintech",
       "Digital Media"
     ],
@@ -331,23 +608,23 @@
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Harry Briggs / Investment Manager",
-    "contact_email": "pitches@samosinvestments.com",
-    "contact_role": "Managing Director / Family Office Principal",
+    "lead_contact": "Harry Briggs & Samos Team",
+    "contact_email": "info@samos.vc",
+    "contact_role": "Private Investment Director",
     "linkedin": "https://www.linkedin.com/company/samos-investments",
-    "website": "https://samosinvestments.com",
+    "website": "https://samos.vc",
     "portfolio": [
-      "Betfair",
       "Ocado",
+      "Betfair",
       "Charlotte Tilbury",
       "Lyst",
-      "Kano"
+      "Thread"
     ],
-    "access_route": "Family Office Portal / Direct Pitch",
-    "thesis": "Private investment office focused on backing high-growth digital consumer and enterprise software ventures.",
+    "access_route": "Direct Submission Portal via Samos.vc",
+    "thesis": "Private family investment vehicle backing high-growth digital ventures across the UK and Europe.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -360,30 +637,33 @@
     "location": "London, UK",
     "cheque_min_gbp": 100000,
     "cheque_max_gbp": 1000000,
-    "typical_cheque_gbp": 300000,
+    "typical_cheque_gbp": 350000,
     "sectors": [
-      "Retail Tech",
-      "B2B SaaS",
-      "Supply Chain",
-      "FoodTech"
+      "Consumer Tech",
+      "RetailTech",
+      "FoodTech",
+      "B2B SaaS"
     ],
     "stages": [
+      "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Venture Investments Lead",
+    "lead_contact": "Investment Director (Weston Family Office)",
     "contact_email": "investments@wittington.co.uk",
-    "contact_role": "Principal, Early Stage Tech",
-    "linkedin": "https://www.linkedin.com/company/wittington-investments",
+    "contact_role": "Principal - Direct Venture Allocations",
+    "linkedin": "https://www.linkedin.com/company/wittington-investments-limited",
     "website": "https://wittington.co.uk",
     "portfolio": [
-      "Primark Retail Tech",
-      "Associated British Foods ventures"
+      "Fortnum & Mason",
+      "Associated British Foods",
+      "Heal's",
+      "Select Direct Startups"
     ],
-    "access_route": "Direct Family Office Intro / Formal Submission",
-    "thesis": "Long-term patient family capital supporting disruptive UK innovators transforming supply chains and software.",
+    "access_route": "Direct Email Submission (investments@wittington.co.uk)",
+    "thesis": "Long-term patient family capital supporting British founders redefining retail, food, and software operations.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -391,37 +671,38 @@
   },
   {
     "id": "uk_fo_03",
-    "name": "Grosvenor Tech & FoodTech Family Office",
+    "name": "Grosvenor Tech & PropTech Family Office",
     "category": "UK Family Office",
-    "location": "London / Chester, UK",
-    "cheque_min_gbp": 75000,
+    "location": "London, UK",
+    "cheque_min_gbp": 100000,
     "cheque_max_gbp": 1000000,
-    "typical_cheque_gbp": 250000,
+    "typical_cheque_gbp": 400000,
     "sectors": [
       "PropTech",
       "ClimateTech",
-      "B2B SaaS",
-      "Food Systems"
+      "Clean Energy",
+      "Urban Innovation"
     ],
     "stages": [
-      "Seed",
-      "Pre-Seed"
+      "Pre-Seed",
+      "Seed"
     ],
-    "lead_contact": "Family Office Investment Director",
+    "lead_contact": "Direct Ventures Allocation Team",
     "contact_email": "ventures@grosvenor.com",
-    "contact_role": "Managing Director Technology Investments",
+    "contact_role": "Head of Alternative Technology Investments",
     "linkedin": "https://www.linkedin.com/company/grosvenor",
     "website": "https://grosvenor.com",
     "portfolio": [
-      "AeroFarms",
-      "Purfresh",
-      "Ostro Stone"
+      "Qflow",
+      "Demand Logic",
+      "Concertiv",
+      "Sensat"
     ],
-    "access_route": "Family Office Direct Submission",
-    "thesis": "Backing UK commercial startups delivering demonstrable sustainability and software optimization gains.",
+    "access_route": "Formal Pitch Ingestion via ventures@grosvenor.com",
+    "thesis": "Duke of Westminster family office investing directly into sustainable urban environments and property technologies.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -431,35 +712,34 @@
     "id": "uk_fo_04",
     "name": "Stonehage Fleming Private Syndicate Club",
     "category": "UK Family Office",
-    "location": "London, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 800000,
-    "typical_cheque_gbp": 200000,
+    "location": "London / Jersey, UK",
+    "cheque_min_gbp": 100000,
+    "cheque_max_gbp": 750000,
+    "typical_cheque_gbp": 250000,
     "sectors": [
+      "Wealthtech",
       "Fintech",
       "HealthTech",
-      "Enterprise B2B",
-      "Cybersecurity"
+      "B2B SaaS"
     ],
     "stages": [
-      "Pre-Seed",
-      "Seed"
+      "Seed",
+      "Pre-Seed"
     ],
-    "lead_contact": "Head of Direct Equity Syndicate",
+    "lead_contact": "Direct Equity Syndicate Team",
     "contact_email": "direct.equity@stonehagefleming.com",
-    "contact_role": "Partner & Syndicate Director",
+    "contact_role": "Head of Direct Private Capital",
     "linkedin": "https://www.linkedin.com/company/stonehage-fleming",
     "website": "https://stonehagefleming.com",
     "portfolio": [
-      "Curve",
-      "Checkout.com syndicate",
-      "Darktrace syndicate"
+      "Direct UHNW Club Investments",
+      "UK Seed Syndicates"
     ],
-    "access_route": "Stonehage Fleming Club Portal / Partner Pitch",
-    "thesis": "Leading multi-family office coordinating direct angel co-investment syndicates for ultra-high-net-worth families.",
+    "access_route": "Direct Submission via Family Club Coordinator",
+    "thesis": "Leading independent multi-family office coordinating direct angel cheques for European and UK UHNW families.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -467,36 +747,233 @@
   },
   {
     "id": "uk_fo_05",
-    "name": "Marcol Tech & Health Family Office",
+    "name": "Hambro Perks Family Office Network",
     "category": "UK Family Office",
     "location": "London, UK",
     "cheque_min_gbp": 50000,
     "cheque_max_gbp": 500000,
     "typical_cheque_gbp": 150000,
     "sectors": [
+      "Fintech",
       "HealthTech",
-      "Digital Therapeutics",
+      "DeepTech",
       "B2B SaaS"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Private Equity & Venture Lead",
+    "lead_contact": "Dominic Perks & Syndicate Leads",
+    "contact_email": "info@hambroperks.com",
+    "contact_role": "Family Syndicate Director",
+    "linkedin": "https://www.linkedin.com/company/hambro-perks",
+    "website": "https://hambroperks.com",
+    "portfolio": [
+      "Tide",
+      "By Miles",
+      "Gensyn",
+      "Landytech",
+      "What3Words"
+    ],
+    "access_route": "Direct Ingestion at info@hambroperks.com",
+    "thesis": "Connecting private family office capital and high-net-worth investors to game-changing British innovators.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_fo_06",
+    "name": "Marcol Tech & Health Family Office",
+    "category": "UK Family Office",
+    "location": "London, UK",
+    "cheque_min_gbp": 100000,
+    "cheque_max_gbp": 750000,
+    "typical_cheque_gbp": 250000,
+    "sectors": [
+      "HealthTech",
+      "Digital Therapeutics",
+      "MedTech",
+      "PropTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Venture Capital & Direct Investments",
     "contact_email": "info@marcol.com",
-    "contact_role": "Investment Director",
+    "contact_role": "Investment Committee",
     "linkedin": "https://www.linkedin.com/company/marcol",
     "website": "https://marcol.com",
     "portfolio": [
-      "Medneo",
-      "Goodpack",
-      "HealthHero"
+      "HealthHero",
+      "Atmo",
+      "Medichecks",
+      "GoodShape"
     ],
-    "access_route": "Direct Family Office Inquiry",
-    "thesis": "Private London investment office focused on early-stage healthcare, operational technology, and enterprise tools.",
+    "access_route": "Direct Office Email: info@marcol.com",
+    "thesis": "European private investment house operating direct venture strategies with heavy operator backing in health and software.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_fo_07",
+    "name": "JamJar Investments (Innocent Founders FO)",
+    "category": "UK Family Office",
+    "location": "London, UK",
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 150000,
+    "sectors": [
+      "Consumer Tech",
+      "FoodTech",
+      "Marketplaces",
+      "B2B SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Richard Reed & Team",
+    "contact_email": "hello@jamjarinvestments.com",
+    "contact_role": "Founding Partner",
+    "linkedin": "https://www.linkedin.com/company/jamjar-investments",
+    "website": "https://jamjarinvestments.com",
+    "portfolio": [
+      "Deliveroo",
+      "Oatly",
+      "Tony's Chocolonely",
+      "Graze",
+      "Babylon"
+    ],
+    "access_route": "Direct Pitch at hello@jamjarinvestments.com",
+    "thesis": "Founded by the Innocent Drinks creators. Writing angel & seed checks for standout consumer and tech brands.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_fo_08",
+    "name": "Blenheim Chalcot Private Ventures",
+    "category": "UK Family Office",
+    "location": "London, UK",
+    "cheque_min_gbp": 100000,
+    "cheque_max_gbp": 750000,
+    "typical_cheque_gbp": 250000,
+    "sectors": [
+      "Fintech",
+      "EdTech",
+      "HealthTech",
+      "AI"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Manoj Badale & Team",
+    "contact_email": "info@blenheimchalcot.com",
+    "contact_role": "Founding Partner",
+    "linkedin": "https://www.linkedin.com/company/blenheim-chalcot",
+    "website": "https://blenheimchalcot.com",
+    "portfolio": [
+      "ClearScore",
+      "Modulr",
+      "Agilisys",
+      "Salary Finance",
+      "Fospha"
+    ],
+    "access_route": "Official Portal via blenheimchalcot.com",
+    "thesis": "UK's premier digital venture firm and private office building and funding transformative tech ventures.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_fo_09",
+    "name": "Stanhope Capital Private Office",
+    "category": "UK Family Office",
+    "location": "London, UK",
+    "cheque_min_gbp": 100000,
+    "cheque_max_gbp": 1000000,
+    "typical_cheque_gbp": 300000,
+    "sectors": [
+      "Fintech",
+      "B2B SaaS",
+      "DeepTech",
+      "Luxury Tech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Direct Investment Group",
+    "contact_email": "enquiries@stanhopecapital.com",
+    "contact_role": "Partner, Direct Equity",
+    "linkedin": "https://www.linkedin.com/company/stanhope-capital",
+    "website": "https://stanhopecapital.com",
+    "portfolio": [
+      "Private UK Club Allocations",
+      "European Seed Rounds"
+    ],
+    "access_route": "Direct Submission via enquiries@stanhopecapital.com",
+    "thesis": "Global family office managing over $30B, organizing bespoke direct angel tickets for entrepreneurial founders.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_fo_10",
+    "name": "Reuben Brothers Family Office",
+    "category": "UK Family Office",
+    "location": "London, UK",
+    "cheque_min_gbp": 100000,
+    "cheque_max_gbp": 1000000,
+    "typical_cheque_gbp": 350000,
+    "sectors": [
+      "PropTech",
+      "Fintech",
+      "Logistics",
+      "Digital Infrastructure"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Technology & Venture Team",
+    "contact_email": "ventures@reubenbrothers.com",
+    "contact_role": "Direct Ventures Lead",
+    "linkedin": "https://www.linkedin.com/company/reuben-brothers",
+    "website": "https://reubenbrothers.com",
+    "portfolio": [
+      "Data Centers UK",
+      "Global Switch",
+      "Select UK Seed Investments"
+    ],
+    "access_route": "Direct Email to ventures@reubenbrothers.com",
+    "thesis": "Backing high-defensibility platforms with direct family capital and real asset infrastructure integration.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -506,35 +983,34 @@
     "id": "uk_net_01",
     "name": "UKBAA (UK Business Angels Association)",
     "category": "Investor Network",
-    "location": "London / Nationwide UK",
+    "location": "London, UK (National Network)",
     "cheque_min_gbp": 25000,
     "cheque_max_gbp": 1000000,
     "typical_cheque_gbp": 150000,
     "sectors": [
-      "All Early-Stage Sectors",
-      "B2B SaaS",
-      "AI",
-      "HealthTech",
-      "Deep Tech",
-      "Fintech"
+      "All Sectors",
+      "DeepTech",
+      "Life Sciences",
+      "Fintech",
+      "AI"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Jenny Tooth / UKBAA Dealroom Lead",
+    "lead_contact": "Jenny Tooth OBE & Deal Pipeline Team",
     "contact_email": "enquiries@ukbaa.org.uk",
-    "contact_role": "Executive Chair / Head of Angel Engagement",
-    "linkedin": "https://www.linkedin.com/company/uk-business-angels-association",
+    "contact_role": "National Trade Body for Angel & Early-Stage Investment",
+    "linkedin": "https://www.linkedin.com/company/ukbaa",
     "website": "https://ukbaa.org.uk",
     "portfolio": [
-      "15,000+ UK Angels represented across 650+ member syndicates"
+      "650+ Angel Groups & Syndicates Across England, Scotland, Wales & NI"
     ],
-    "access_route": "UKBAA Dealshare Platform / Member Network Pitch",
-    "thesis": "The national trade association for early-stage investment in the UK, connecting startups to qualified private angels.",
+    "access_route": "UKBAA Pitch Ingestion & Directory Application",
+    "thesis": "The official national trade body for angel and early stage investment in the UK, connecting 15,000+ angels to startups.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -544,37 +1020,34 @@
     "id": "uk_net_02",
     "name": "Angel Investment Network (AIN UK)",
     "category": "Investor Network",
-    "location": "London / UK Nationwide",
+    "location": "London, UK (UK-wide)",
     "cheque_min_gbp": 10000,
     "cheque_max_gbp": 1000000,
-    "typical_cheque_gbp": 100000,
+    "typical_cheque_gbp": 75000,
     "sectors": [
-      "Technology",
-      "B2B Software",
-      "Health",
+      "All Sectors",
       "Consumer",
-      "Green Tech"
+      "CleanTech",
+      "B2B SaaS",
+      "Fintech"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Mike Lebus / Deal Screening Team",
+    "lead_contact": "Mike Lebus & Ed Stephens",
     "contact_email": "support@angelinvestmentnetwork.co.uk",
-    "contact_role": "Co-Founder & Director",
+    "contact_role": "Managing Director & Head of Deals",
     "linkedin": "https://www.linkedin.com/company/angel-investment-network",
     "website": "https://angelinvestmentnetwork.co.uk",
     "portfolio": [
-      "WhatRuns",
-      "Inocul8",
-      "Formisimo",
-      "300,000+ registered angels"
+      "Over \u00a3200M raised across 2,000+ UK early stage businesses"
     ],
-    "access_route": "Online Angel Pitch Submission (AIN Portal)",
-    "thesis": "The largest online angel investment network globally, with over 300,000 registered private angel investors.",
+    "access_route": "Direct Pitch Publishing Engine via Portal",
+    "thesis": "World's largest angel network with 40,000+ UK accredited private angels actively seeking \u00a325k-\u00a3500k rounds.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -584,34 +1057,34 @@
     "id": "uk_net_03",
     "name": "F6S Investor Network (UK Early Stage)",
     "category": "Investor Network",
-    "location": "London / UK & Global",
-    "cheque_min_gbp": 20000,
+    "location": "London, UK (Global UK Hub)",
+    "cheque_min_gbp": 15000,
     "cheque_max_gbp": 750000,
     "typical_cheque_gbp": 100000,
     "sectors": [
-      "Tech Startups",
-      "AI Systems",
-      "B2B SaaS",
-      "Mobile Apps",
-      "FinTech"
+      "All Tech Sectors",
+      "AI",
+      "SaaS",
+      "Fintech",
+      "Mobile"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Matt Milligan / F6S Network Lead",
+    "lead_contact": "Sean Kane & Dealflow Curators",
     "contact_email": "support@f6s.com",
-    "contact_role": "Co-Founder & Head of Startups",
+    "contact_role": "Head of Dealflow & Investor Relations",
     "linkedin": "https://www.linkedin.com/company/f6s",
     "website": "https://f6s.com",
     "portfolio": [
-      "Over 10,000 private angels & syndicates reviewing deals daily"
+      "10,000+ UK startups connected with active angel syndicates"
     ],
-    "access_route": "F6S Startup Application & Pitch Portal",
-    "thesis": "Top platform connecting early-stage founders to accelerator syndicates, angel groups, and smart-match allocators.",
+    "access_route": "F6S Ingestion Pipeline via f6s.com/investor-network",
+    "thesis": "Leading network platform matching 1.5M founders with angel groups, grants, and smart angel syndicates.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -623,35 +1096,36 @@
     "category": "Investor Network",
     "location": "Cambridge / London, UK",
     "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 1000000,
-    "typical_cheque_gbp": 250000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 150000,
     "sectors": [
-      "Deep Tech",
+      "DeepTech",
+      "Life Sciences",
       "AI",
-      "Digital Health",
-      "B2B SaaS",
-      "Enterprise"
+      "Enterprise Software",
+      "CleanTech"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Carole Trotter / Chairman",
-    "contact_email": "info@cambridgeangels.net",
-    "contact_role": "Network Manager",
+    "lead_contact": "Selection Committee Chair",
+    "contact_email": "info@cambridgeangels.com",
+    "contact_role": "Executive Director",
     "linkedin": "https://www.linkedin.com/company/cambridge-angels",
     "website": "https://cambridgeangels.com",
     "portfolio": [
-      "Audio Analytic",
-      "Forefront RF",
+      "PredictImmune",
+      "Foam",
       "Featurespace",
-      "Flock"
+      "Forefront RF",
+      "Cambridge Mechatronics"
     ],
-    "access_route": "Formal Network Application / Bi-monthly Presentation Dinner",
-    "thesis": "Pre-eminent UK angel network of 60+ exited entrepreneurs investing personal capital into high-tech British startups.",
+    "access_route": "Formal Pitch Application at cambridgeangels.com",
+    "thesis": "Premier UK angel group of 60+ exited serial entrepreneurs investing \u00a350k to \u00a3500k into deep science and technology.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -664,34 +1138,34 @@
     "location": "London, UK",
     "cheque_min_gbp": 100000,
     "cheque_max_gbp": 1000000,
-    "typical_cheque_gbp": 350000,
+    "typical_cheque_gbp": 300000,
     "sectors": [
       "B2B SaaS",
       "Healthcare",
-      "Fintech",
-      "CleanTech"
+      "Industrial Tech",
+      "Fintech"
     ],
     "stages": [
-      "Seed",
-      "Pre-Seed"
+      "Pre-Seed",
+      "Seed"
     ],
-    "lead_contact": "Paul Tselentis",
+    "lead_contact": "Investment Director",
     "contact_email": "pitch@24haymarket.com",
-    "contact_role": "CEO & Managing Partner",
+    "contact_role": "Head of Deal Screening",
     "linkedin": "https://www.linkedin.com/company/24haymarket",
     "website": "https://24haymarket.com",
     "portfolio": [
-      "This",
-      "Rotageek",
-      "Infogrid",
-      "AirSorted",
-      "Kognitiv Spark"
+      "SoPost",
+      "Spirable",
+      "Eagle Genomics",
+      "NuvoAir",
+      "Kafoodle"
     ],
-    "access_route": "Direct Application Portal (24Haymarket)",
-    "thesis": "Private venture syndicate of 150+ senior business executives investing own capital and active director support.",
+    "access_route": "Direct Email Ingestion: pitch@24haymarket.com",
+    "thesis": "Private investment network of 100+ seasoned business leaders deploying substantial capital into post-revenue UK tech.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -701,36 +1175,33 @@
     "id": "uk_net_06",
     "name": "Minerva Business Angels",
     "category": "Investor Network",
-    "location": "Warwick / Birmingham / London, UK",
+    "location": "Warwick / Midlands, UK",
     "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 100000,
+    "cheque_max_gbp": 350000,
+    "typical_cheque_gbp": 75000,
     "sectors": [
-      "Software",
+      "All Tech Sectors",
       "Advanced Engineering",
-      "Medical Tech",
+      "HealthTech",
       "AI"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Alexis Toft / Head of Minerva",
+    "lead_contact": "Alex Toft & Selection Team",
     "contact_email": "minerva@warwick.ac.uk",
-    "contact_role": "Head of Angel Network",
-    "linkedin": "https://www.linkedin.com/company/minerva-business-angels",
+    "contact_role": "Head of Minerva Angels",
+    "linkedin": "https://www.linkedin.com/company/minerva-business-angel-network",
     "website": "https://minerva.uk.net",
     "portfolio": [
-      "Micro-Fresh",
-      "Aston Eyetech",
-      "NanoSyrinx",
-      "Cognassist"
+      "100+ Midlands and UK-wide early stage tech investments"
     ],
-    "access_route": "Minerva Network Application Form",
-    "thesis": "One of the UK’s longest-running angel networks with 10 investment syndicates across universities and tech hubs.",
+    "access_route": "Direct Email Application (minerva@warwick.ac.uk)",
+    "thesis": "Midlands-based angel network operating across multiple regional syndicates with strong university commercialization links.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -742,13 +1213,13 @@
     "category": "Investor Network",
     "location": "London, UK",
     "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 800000,
-    "typical_cheque_gbp": 150000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 100000,
     "sectors": [
-      "B2B SaaS",
       "Fintech",
       "CleanTech",
-      "E-commerce"
+      "B2B SaaS",
+      "Consumer Tech"
     ],
     "stages": [
       "Pre-Seed",
@@ -757,19 +1228,18 @@
     "lead_contact": "Oliver Woolley",
     "contact_email": "enquiries@envestors.co.uk",
     "contact_role": "CEO & Co-Founder",
-    "linkedin": "https://www.linkedin.com/company/envestors",
+    "linkedin": "https://www.linkedin.com/company/envestors-llp",
     "website": "https://envestors.co.uk",
     "portfolio": [
       "Chargemaster",
-      "E-Leather",
-      "Autocab",
-      "4,000+ members"
+      "ParkatmyHouse",
+      "Autocab"
     ],
-    "access_route": "Envestry Platform / Pitch Portal",
-    "thesis": "Connecting early-stage startups to over 4,000 qualified high-net-worth angel investors and private syndicates.",
+    "access_route": "Club Ingestion Portal (envestors.co.uk)",
+    "thesis": "FCA-regulated private investor club connecting early-stage companies to sophisticated private and angel investors.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -781,11 +1251,11 @@
     "category": "Investor Network",
     "location": "London / UK-wide",
     "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 750000,
-    "typical_cheque_gbp": 200000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 150000,
     "sectors": [
       "ClimateTech",
-      "Energy Software",
+      "Clean Energy",
       "AgriTech",
       "Circular Economy"
     ],
@@ -793,22 +1263,476 @@
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Cam Ross / CEO",
+    "lead_contact": "Cam Ross & Deals Committee",
     "contact_email": "apply@greenangelsyndicate.com",
-    "contact_role": "CEO & Investment Committee Chair",
+    "contact_role": "CEO & Head of Green Deals",
     "linkedin": "https://www.linkedin.com/company/green-angel-syndicate",
     "website": "https://greenangelsyndicate.com",
     "portfolio": [
+      "Powervault",
       "Piclo",
-      "Small Robot Company",
-      "Buy Me Once",
-      "Zeigo"
+      "Naked Energy",
+      "Switchee",
+      "BuyMeOnce"
     ],
-    "access_route": "Green Angel Direct Application Portal",
-    "thesis": "The UK’s largest network of specialist private angel investors fighting climate change and environmental degradation.",
+    "access_route": "Direct Application via apply@greenangelsyndicate.com",
+    "thesis": "UK's largest angel syndicate specializing exclusively in fighting climate change through early stage commercial tech.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_09",
+    "name": "Oxford Angel Network (OAN)",
+    "category": "Investor Network",
+    "location": "Oxford, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 100000,
+    "sectors": [
+      "DeepTech",
+      "Life Sciences",
+      "AI",
+      "Quantum",
+      "Advanced Materials"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Oxford University Innovation Ventures",
+    "contact_email": "oan-applications@innovation.ox.ac.uk",
+    "contact_role": "Head of Angel Network",
+    "linkedin": "https://www.linkedin.com/company/oxford-university-innovation",
+    "website": "https://innovation.ox.ac.uk",
+    "portfolio": [
+      "Oxford Nanopore",
+      "Nightstar",
+      "OxSonics",
+      "Yasa Motors"
+    ],
+    "access_route": "OAN Ingestion via oan-applications@innovation.ox.ac.uk",
+    "thesis": "Network of angel investors specifically interested in early-stage technology commercialization and spinouts.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_10",
+    "name": "Angels Den (UK Angel SpeedFunding)",
+    "category": "Investor Network",
+    "location": "London, UK",
+    "cheque_min_gbp": 20000,
+    "cheque_max_gbp": 400000,
+    "typical_cheque_gbp": 80000,
+    "sectors": [
+      "All Tech Sectors",
+      "Fintech",
+      "HealthTech",
+      "E-Commerce"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Screening & Pitch Committee",
+    "contact_email": "pitch@angelsden.com",
+    "contact_role": "Head of Screening",
+    "linkedin": "https://www.linkedin.com/company/angels-den",
+    "website": "https://angelsden.com",
+    "portfolio": [
+      "Over \u00a340M raised across 200+ UK early stage businesses"
+    ],
+    "access_route": "Direct Application at pitch@angelsden.com",
+    "thesis": "Connecting angel investors with vetted, early-stage pre-seed/seed enterprises through curated SpeedFunding events.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_11",
+    "name": "Angel Academe",
+    "category": "Investor Network",
+    "location": "London, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 250000,
+    "typical_cheque_gbp": 75000,
+    "sectors": [
+      "Fintech",
+      "HealthTech",
+      "B2B SaaS",
+      "EdTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Simon Burton & Screening Leads",
+    "contact_email": "contact@angelacademe.com",
+    "contact_role": "Managing Director",
+    "linkedin": "https://www.linkedin.com/company/angel-academe",
+    "website": "https://angelacademe.com",
+    "portfolio": [
+      "Fiskl",
+      "Provenance",
+      "Moda Operandi",
+      "Evolyst",
+      "Anthropy"
+    ],
+    "access_route": "Pitch Portal at angelacademe.com",
+    "thesis": "Award-winning UK angel network investing in ambitious tech businesses with at least one female founder.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_12",
+    "name": "Dorset Business Angels (DBA)",
+    "category": "Investor Network",
+    "location": "Bournemouth / South Coast, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 300000,
+    "typical_cheque_gbp": 60000,
+    "sectors": [
+      "B2B SaaS",
+      "CleanTech",
+      "Engineering",
+      "Marine Tech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Don McQueen & Pitch Panel",
+    "contact_email": "pitches@dorsetbusinessangels.co.uk",
+    "contact_role": "Managing Director",
+    "linkedin": "https://www.linkedin.com/company/dorset-business-angels",
+    "website": "https://dorsetbusinessangels.co.uk",
+    "portfolio": [
+      "Regional tech innovators across Dorset, Hampshire, Wiltshire and Devon"
+    ],
+    "access_route": "Pitch Application at pitches@dorsetbusinessangels.co.uk",
+    "thesis": "South Coast angel network connecting high-calibre private investors with early-stage scalable commercial ventures.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_13",
+    "name": "North West Business Angels (NWBA)",
+    "category": "Investor Network",
+    "location": "Manchester / Liverpool, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 350000,
+    "typical_cheque_gbp": 75000,
+    "sectors": [
+      "All Tech Sectors",
+      "Fintech",
+      "HealthTech",
+      "E-Commerce"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Deal Screening Team",
+    "contact_email": "apply@nwbusinessangels.co.uk",
+    "contact_role": "Network Coordinator",
+    "linkedin": "https://www.linkedin.com/company/north-west-business-angels",
+    "website": "https://nwbusinessangels.co.uk",
+    "portfolio": [
+      "Over 300 early-stage North West enterprises funded"
+    ],
+    "access_route": "Email Ingestion: apply@nwbusinessangels.co.uk",
+    "thesis": "Supporting the Northern Powerhouse by mobilizing private angel cheques for ambitious regional tech founders.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_14",
+    "name": "Archangels (Scotland)",
+    "category": "Investor Network",
+    "location": "Edinburgh, Scotland, UK",
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 200000,
+    "sectors": [
+      "Life Sciences",
+      "DeepTech",
+      "B2B SaaS",
+      "CleanTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "David Ovens & Screening Committee",
+    "contact_email": "info@archangelsonline.com",
+    "contact_role": "Joint Managing Director",
+    "linkedin": "https://www.linkedin.com/company/archangels-syndicate",
+    "website": "https://archangelsonline.com",
+    "portfolio": [
+      "Optos",
+      "Touch Bionics",
+      "Blackford Analysis",
+      "Calcivis"
+    ],
+    "access_route": "Direct Application via info@archangelsonline.com",
+    "thesis": "World's longest continuously operating angel syndicate. Over 30 years backing early-stage Scottish and UK innovators.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_15",
+    "name": "Equity Gap (Scotland)",
+    "category": "Investor Network",
+    "location": "Edinburgh / Glasgow, UK",
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 400000,
+    "typical_cheque_gbp": 125000,
+    "sectors": [
+      "CleanTech",
+      "HealthTech",
+      "B2B SaaS",
+      "AgriTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Fraser Lusty",
+    "contact_email": "enquiries@equitygap.co.uk",
+    "contact_role": "Director",
+    "linkedin": "https://www.linkedin.com/company/equity-gap-ltd",
+    "website": "https://equitygap.co.uk",
+    "portfolio": [
+      "Trojan Energy",
+      "Aventi",
+      "Sunamp",
+      "Boundary"
+    ],
+    "access_route": "Direct Email via enquiries@equitygap.co.uk",
+    "thesis": "Angel syndicate helping early-stage businesses match with private capital up to \u00a3500k rounds.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_16",
+    "name": "Bristol Private Equity Club",
+    "category": "Investor Network",
+    "location": "Bristol / South West, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 250000,
+    "typical_cheque_gbp": 75000,
+    "sectors": [
+      "All Tech Sectors",
+      "DeepTech",
+      "Creative Tech",
+      "B2B SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Jerry Barnes",
+    "contact_email": "info@bristolprivateequityclub.com",
+    "contact_role": "Founder & Chairman",
+    "linkedin": "https://www.linkedin.com/company/bristol-private-equity-club",
+    "website": "https://bristolprivateequityclub.com",
+    "portfolio": [
+      "Ecovend",
+      "Zenotech",
+      "LettUs Grow",
+      "Inductosense"
+    ],
+    "access_route": "Pitch Ingestion: info@bristolprivateequityclub.com",
+    "thesis": "Successful South West entrepreneurs deploying personal capital into local early-stage scalable ventures.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_17",
+    "name": "Henley Business Angels",
+    "category": "Investor Network",
+    "location": "Henley-on-Thames / Thames Valley, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 250000,
+    "typical_cheque_gbp": 60000,
+    "sectors": [
+      "All Tech Sectors",
+      "Fintech",
+      "EdTech",
+      "B2B SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Jurek Sikorski",
+    "contact_email": "enquiries@henleybusinessangels.com",
+    "contact_role": "Director & Founder",
+    "linkedin": "https://www.linkedin.com/company/henley-business-angels-ltd",
+    "website": "https://henleybusinessangels.com",
+    "portfolio": [
+      "Reading & Thames Valley scaleups, 35+ early-stage angel rounds"
+    ],
+    "access_route": "Henley Pitch Portal: henleybusinessangels.com",
+    "thesis": "Network of experienced business leaders, alumni and friends of Henley Business School investing in early-stage tech.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_18",
+    "name": "South West Angel and Investor Network (SWAIN)",
+    "category": "Investor Network",
+    "location": "Bristol / Exeter / Plymouth, UK",
+    "cheque_min_gbp": 20000,
+    "cheque_max_gbp": 300000,
+    "typical_cheque_gbp": 50000,
+    "sectors": [
+      "CleanTech",
+      "AgriTech",
+      "B2B SaaS",
+      "Engineering"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Deal Coordination Team",
+    "contact_email": "info@swain.org.uk",
+    "contact_role": "Network Manager",
+    "linkedin": "https://www.linkedin.com/company/swain",
+    "website": "https://swain.org.uk",
+    "portfolio": [
+      "Regional tech innovators across Devon, Cornwall, Somerset and Dorset"
+    ],
+    "access_route": "Direct Application: info@swain.org.uk",
+    "thesis": "Regional network facilitating private equity and angel investment for emerging South West businesses.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_19",
+    "name": "AngelsCube",
+    "category": "Investor Network",
+    "location": "London, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 400000,
+    "typical_cheque_gbp": 100000,
+    "sectors": [
+      "AI",
+      "B2B SaaS",
+      "Cybersecurity",
+      "HealthTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Pietro Casella",
+    "contact_email": "apply@angelscube.com",
+    "contact_role": "Managing Partner",
+    "linkedin": "https://www.linkedin.com/company/angelscube",
+    "website": "https://angelscube.com",
+    "portfolio": [
+      "B2B enterprise software and AI ventures in London and Cambridge"
+    ],
+    "access_route": "Direct Deal Portal at angelscube.com",
+    "thesis": "Syndicate of private angels providing smart money, customer access, and scaling mentorship to early-stage founders.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_net_20",
+    "name": "Newable Private Investing",
+    "category": "Investor Network",
+    "location": "London, UK",
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 150000,
+    "sectors": [
+      "DeepTech",
+      "MedTech",
+      "AI",
+      "Robotics",
+      "CleanTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Sanjeev Gordhan & Team",
+    "contact_email": "investments@newable.co.uk",
+    "contact_role": "Head of Early Stage Equity",
+    "linkedin": "https://www.linkedin.com/company/newable",
+    "website": "https://newable.co.uk",
+    "portfolio": [
+      "Echion Technologies",
+      "Cambridge Epigenetix",
+      "Flock",
+      "Sensat"
+    ],
+    "access_route": "Direct Investment Portal at newable.co.uk",
+    "thesis": "Formerly London Business Angels, Newable backs disruptive British science and deep technologies with SEIS/EIS angel syndicates.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -819,33 +1743,33 @@
     "name": "Connectd (Smart Match Platform)",
     "category": "Smart Match Platform",
     "location": "London, UK",
-    "cheque_min_gbp": 10000,
+    "cheque_min_gbp": 25000,
     "cheque_max_gbp": 500000,
     "typical_cheque_gbp": 75000,
     "sectors": [
+      "All Sectors",
       "B2B SaaS",
       "Fintech",
       "HealthTech",
-      "Consumer Tech",
       "AI"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Roei Samuel / Match Team",
+    "lead_contact": "Roei Samuel",
     "contact_email": "support@connectd.com",
-    "contact_role": "Founder & CEO",
-    "linkedin": "https://www.linkedin.com/company/connectd",
+    "contact_role": "CEO & Founder",
+    "linkedin": "https://www.linkedin.com/company/connectd-co",
     "website": "https://connectd.com",
     "portfolio": [
-      "Hundreds of early-stage UK startups matched with 2,500+ private angels"
+      "2,500+ UK Early-Stage Startups & 1,500+ Verified Angels Matched"
     ],
-    "access_route": "Connectd Smart Match Algorithm & Profile Pitch",
-    "thesis": "Algorithmic smart-match platform connecting early-stage founders with verified UK business angels and non-exec directors.",
+    "access_route": "Smart AI Match Algorithm via Connectd.com",
+    "thesis": "End-to-end community and smart matchmaking engine connecting founders, angels, and advisors with algorithm-driven fit.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -860,31 +1784,32 @@
     "cheque_max_gbp": 1000000,
     "typical_cheque_gbp": 250000,
     "sectors": [
-      "Tech Startups",
-      "B2B Software",
+      "All Sectors",
       "Fintech",
-      "Consumer Innovation"
+      "Consumer",
+      "CleanTech",
+      "B2B SaaS"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Jeff Kelisky / Screening Lead",
+    "lead_contact": "Campaign Operations & Private Syndicates",
     "contact_email": "campaigns@seedrs.com",
-    "contact_role": "CEO / Head of Campaign Diligence",
+    "contact_role": "Head of Angel & Private Syndicates",
     "linkedin": "https://www.linkedin.com/company/seedrs",
     "website": "https://seedrs.com",
     "portfolio": [
-      "Revolut (early crowd/angel)",
-      "Chew",
-      "Chapel Down",
-      "Landbay"
+      "Revolut",
+      "Cheval Collection",
+      "Lick",
+      "Chapel Down"
     ],
-    "access_route": "Seedrs Private Deal Room & Direct Application",
-    "thesis": "Premier UK equity platform enabling private angel syndicates, nominee investment, and co-investment rounds.",
+    "access_route": "Private Angel Matching & Campaign Portal",
+    "thesis": "Leading UK platform enabling startups to raise from both private anchor angel syndicates and nominee crowdfunds.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -899,31 +1824,33 @@
     "cheque_max_gbp": 1000000,
     "typical_cheque_gbp": 200000,
     "sectors": [
-      "B2B SaaS",
+      "All Sectors",
       "Fintech",
+      "Consumer",
       "CleanTech",
-      "Consumer Tech"
+      "FoodTech"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Darren Westlake / Diligence Team",
+    "lead_contact": "Darren Westlake & Ventures Team",
     "contact_email": "ventures@crowdcube.com",
-    "contact_role": "Co-Founder & CEO",
-    "linkedin": "https://www.linkedin.com/company/crowdcube",
+    "contact_role": "Head of Private Investor Matching",
+    "linkedin": "https://www.linkedin.com/company/crowdcube-ltd",
     "website": "https://crowdcube.com",
     "portfolio": [
-      "Monzo (early rounds)",
+      "Monzo",
       "BrewDog",
       "Freetrade",
-      "Curve"
+      "What3Words",
+      "Mindful Chef"
     ],
-    "access_route": "Crowdcube Pitch Portal / Private Angel Anchor",
-    "thesis": "Connecting high-potential British founders to private angels, cornerstone backers, and nominee-managed syndicates.",
+    "access_route": "Private Club Matching via ventures@crowdcube.com",
+    "thesis": "Pioneering European platform offering Direct Angel Nominee rounds and smart early-stage co-investment pools.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -934,32 +1861,33 @@
     "name": "Floww (Ecosystem Smart Match)",
     "category": "Smart Match Platform",
     "location": "London, UK",
-    "cheque_min_gbp": 25000,
+    "cheque_min_gbp": 50000,
     "cheque_max_gbp": 1000000,
-    "typical_cheque_gbp": 150000,
+    "typical_cheque_gbp": 200000,
     "sectors": [
-      "Enterprise Software",
+      "All Tech Sectors",
+      "AI",
       "Fintech",
-      "DeepTech",
+      "B2B SaaS",
       "HealthTech"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Martijn De Wever",
+    "lead_contact": "Martijn De Wever & Deal Operations",
     "contact_email": "contact@floww.io",
-    "contact_role": "CEO & Founder",
-    "linkedin": "https://www.linkedin.com/company/floww-io",
+    "contact_role": "Founder & CEO",
+    "linkedin": "https://www.linkedin.com/company/floww-market",
     "website": "https://floww.io",
     "portfolio": [
-      "LSE Group partnership, verified private wealth & angels"
+      "Over 5,000 global startups sharing verified real-time KPIs with angels"
     ],
-    "access_route": "Floww Verified Startup Onboarding",
-    "thesis": "Standardized data room and merit-based smart matching platform linking startups directly to active private capital.",
+    "access_route": "Platform Registration at floww.io",
+    "thesis": "Financial data and smart matching infrastructure connecting early stage ventures with verified private capital.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -971,13 +1899,14 @@
     "category": "Smart Match Platform",
     "location": "Cambridge / London, UK",
     "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 500000,
+    "cheque_max_gbp": 350000,
     "typical_cheque_gbp": 100000,
     "sectors": [
-      "Tech Startups",
+      "All Sectors",
+      "DeepTech",
       "Life Sciences",
-      "B2B SaaS",
-      "AI"
+      "AI",
+      "Fintech"
     ],
     "stages": [
       "Pre-Seed",
@@ -989,919 +1918,13 @@
     "linkedin": "https://www.linkedin.com/company/syndicateroom",
     "website": "https://syndicateroom.com",
     "portfolio": [
-      "Eagle Genomics",
-      "Scoodle",
-      "Healx",
-      "Deskpro"
+      "Over 250 UK startup co-investments tracking top UK super angels"
     ],
-    "access_route": "SyndicateRoom Lead Angel Co-Investment Application",
-    "thesis": "Data-driven angel platform that algorithmically co-invests alongside the UK’s top-performing business angels.",
+    "access_route": "Lead Angel Syndicate Match via deals@syndicateroom.com",
+    "thesis": "Data-driven platform automatically co-investing alongside the UK's top 20% performing angel investors.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_09",
-    "name": "Alex Chesterman OBE",
-    "category": "UK Angel / Private Investor",
-    "location": "London, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 250000,
-    "typical_cheque_gbp": 75000,
-    "sectors": [
-      "B2B SaaS",
-      "Marketplaces",
-      "Fintech",
-      "AI"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Alex Chesterman",
-    "contact_email": "alex@chesterman.investments",
-    "contact_role": "Serial Entrepreneur & Angel Investor (Founder Zoopla & Cazoo)",
-    "linkedin": "https://www.linkedin.com/in/alexchesterman",
-    "website": "https://alexchesterman.com",
-    "portfolio": [
-      "Graze",
-      "Farmdrop",
-      "Cleo",
-      "Tractable",
-      "Whatbox"
-    ],
-    "access_route": "Direct Email / Founder Referral",
-    "thesis": "Backing ambitious UK digital founders building disruptive consumer or B2B platforms at inception.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_10",
-    "name": "Carlos Silva",
-    "category": "UK Angel / Private Investor",
-    "location": "London, UK",
-    "cheque_min_gbp": 15000,
-    "cheque_max_gbp": 100000,
-    "typical_cheque_gbp": 35000,
-    "sectors": [
-      "Fintech",
-      "B2B SaaS",
-      "AI",
-      "Developer Tools"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Carlos Silva",
-    "contact_email": "carlos@silva-angels.co.uk",
-    "contact_role": "Angel Investor & Startup Mentor",
-    "linkedin": "https://www.linkedin.com/in/carlossilva",
-    "website": "https://carlossilva.me",
-    "portfolio": [
-      "Bark.com",
-      "Seedrs",
-      "Apperio",
-      "Landbay"
-    ],
-    "access_route": "Direct Founder Pitch Email",
-    "thesis": "Active hands-on angel backing UK pre-seed technical founders with clear product differentiation.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_11",
-    "name": "Michelle You",
-    "category": "UK Angel / Private Investor",
-    "location": "London, UK",
-    "cheque_min_gbp": 20000,
-    "cheque_max_gbp": 150000,
-    "typical_cheque_gbp": 50000,
-    "sectors": [
-      "ClimateTech",
-      "B2B SaaS",
-      "Consumer Tech",
-      "AI"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Michelle You",
-    "contact_email": "michelle@superorganism.com",
-    "contact_role": "Co-Founder Songkick & Superorganism, Angel Investor",
-    "linkedin": "https://www.linkedin.com/in/michelleyou",
-    "website": "https://superorganism.com",
-    "portfolio": [
-      "Songkick",
-      "Superorganism",
-      "Apeel",
-      "Hopin"
-    ],
-    "access_route": "Direct Pitch Email / Angel Syndicate",
-    "thesis": "Early angel believer backing technical product founders tackling climate resilience and mission-critical SaaS.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_12",
-    "name": "Charlie Songhurst",
-    "category": "UK Angel / Private Investor",
-    "location": "London, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 250000,
-    "typical_cheque_gbp": 100000,
-    "sectors": [
-      "DeepTech",
-      "AI",
-      "Fintech",
-      "HealthTech",
-      "Enterprise Software"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Charlie Songhurst",
-    "contact_email": "charlie@songhurstinvestments.com",
-    "contact_role": "Prolific Angel Investor (Former Head of Corporate Strategy at Microsoft)",
-    "linkedin": "https://www.linkedin.com/in/charliesonghurst",
-    "website": "https://charliesonghurst.com",
-    "portfolio": [
-      "ClassPass",
-      "Zenefits",
-      "Rigetti Computing",
-      "Athelas",
-      "Postmates"
-    ],
-    "access_route": "Direct Email / Fast Decision Angel",
-    "thesis": "Ultra-fast check writer for first-principles pre-seed founders with rare technical defensibility.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_13",
-    "name": "Damian Kimmelman",
-    "category": "UK Angel / Private Investor",
-    "location": "London, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 200000,
-    "typical_cheque_gbp": 50000,
-    "sectors": [
-      "B2B SaaS",
-      "Data Infrastructure",
-      "Fintech",
-      "GovTech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Damian Kimmelman",
-    "contact_email": "damian@kimmelman.co.uk",
-    "contact_role": "Angel Investor & Founder (DueDil / Bathtub)",
-    "linkedin": "https://www.linkedin.com/in/damiankimmelman",
-    "website": "https://kimmelman.co.uk",
-    "portfolio": [
-      "DueDil",
-      "Chargebee",
-      "Gocardless",
-      "Paddle"
-    ],
-    "access_route": "Direct Email / Founder Referral",
-    "thesis": "Supporting UK B2B SaaS and proprietary data intelligence startups at pre-seed and seed.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_14",
-    "name": "Andy Phillipps",
-    "category": "UK Angel / Private Investor",
-    "location": "Cambridge & London, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 250000,
-    "typical_cheque_gbp": 75000,
-    "sectors": [
-      "Marketplaces",
-      "TravelTech",
-      "B2B SaaS",
-      "E-Commerce"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Andy Phillipps",
-    "contact_email": "andy@phillipps.org.uk",
-    "contact_role": "Angel Investor & Chairman (Founder Active Hotels / Booking.com Europe)",
-    "linkedin": "https://www.linkedin.com/in/andyphillipps",
-    "website": "https://andyphillipps.com",
-    "portfolio": [
-      "Booking.com",
-      "Trivago",
-      "Trainline",
-      "Reevoo",
-      "Thought Machine"
-    ],
-    "access_route": "Direct Warm Pitch Email / INSEAD & Cambridge Network",
-    "thesis": "Experienced operator angel investing in high-velocity marketplace and software businesses with network effects.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_15",
-    "name": "Will Neale",
-    "category": "UK Angel / Private Investor",
-    "location": "London, UK",
-    "cheque_min_gbp": 20000,
-    "cheque_max_gbp": 150000,
-    "typical_cheque_gbp": 50000,
-    "sectors": [
-      "Mobile Tech",
-      "Fintech",
-      "B2B SaaS",
-      "MediaTech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Will Neale",
-    "contact_email": "will@willneale.co.uk",
-    "contact_role": "Serial Entrepreneur & Angel Investor (Founder Fonix Mobile & Grabyo)",
-    "linkedin": "https://www.linkedin.com/in/willneale",
-    "website": "https://willneale.co.uk",
-    "portfolio": [
-      "Fonix",
-      "Grabyo",
-      "Marshmallow",
-      "Zego"
-    ],
-    "access_route": "Direct Email / Founder Pitch Deck Submission",
-    "thesis": "Backing high-growth mobile payment, API infrastructure, and fintech startups at the earliest stages.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_16",
-    "name": "Matt Robinson",
-    "category": "UK Angel / Private Investor",
-    "location": "London, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 200000,
-    "typical_cheque_gbp": 75000,
-    "sectors": [
-      "Fintech",
-      "PropTech",
-      "B2B SaaS",
-      "Payments"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Matt Robinson",
-    "contact_email": "matt@robinson-angels.com",
-    "contact_role": "Co-founder GoCardless & Nested, Private Angel Investor",
-    "linkedin": "https://www.linkedin.com/in/mattrobingocardless",
-    "website": "https://nested.com",
-    "portfolio": [
-      "GoCardless",
-      "Nested",
-      "Cushon",
-      "Monument Bank"
-    ],
-    "access_route": "Direct Email / Founder Network",
-    "thesis": "Direct cheques to founders building deep financial primitives or high-friction consumer-to-business workflows.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_17",
-    "name": "Sherry Coutu CBE",
-    "category": "UK Angel / Private Investor",
-    "location": "Cambridge & London, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 250000,
-    "typical_cheque_gbp": 80000,
-    "sectors": [
-      "EdTech",
-      "Fintech",
-      "HealthTech",
-      "AI"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Sherry Coutu",
-    "contact_email": "sherry@coutu-angels.org.uk",
-    "contact_role": "Angel Investor, Scale-Up Institute Chair & Philanthropist",
-    "linkedin": "https://www.linkedin.com/in/sherrycoutu",
-    "website": "https://scaleupinstitute.org.uk",
-    "portfolio": [
-      "Interactive Investor",
-      "LinkedIn",
-      "Zoopla",
-      "Care.com",
-      "Lovefilm"
-    ],
-    "access_route": "Angel Syndicate Pitch / Direct Email",
-    "thesis": "Championing UK startups with massive scaling potential and evidence-based societal impact.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_ang_18",
-    "name": "Michael Pennington",
-    "category": "UK Angel / Private Investor",
-    "location": "London, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 200000,
-    "typical_cheque_gbp": 60000,
-    "sectors": [
-      "Marketplaces",
-      "B2B SaaS",
-      "Consumer Internet"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Michael Pennington",
-    "contact_email": "michael@pennington-investments.com",
-    "contact_role": "Co-founder Gumtree, Active UK Business Angel",
-    "linkedin": "https://www.linkedin.com/in/michael-pennington",
-    "website": "https://gumtree.com",
-    "portfolio": [
-      "Gumtree",
-      "Smarkets",
-      "Vidsy",
-      "YunoJuno"
-    ],
-    "access_route": "Direct Pitch Email / Angel Network",
-    "thesis": "Experienced angel supporting UK marketplaces and enterprise tools with lean operating models.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_fo_06",
-    "name": "Mayfair Private Capital",
-    "category": "UK Family Office",
-    "location": "Mayfair, London, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 150000,
-    "sectors": [
-      "Fintech",
-      "PropTech",
-      "B2B SaaS",
-      "Luxury Tech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Charles Montagu",
-    "contact_email": "direct-investments@mayfairprivatecap.co.uk",
-    "contact_role": "Head of Early Stage & Direct Investments",
-    "linkedin": "https://www.linkedin.com/company/mayfair-private-capital",
-    "website": "https://mayfairprivatecapital.co.uk",
-    "portfolio": [
-      "Koyo Loans",
-      "Plentific",
-      "LandTech",
-      "Beaufort"
-    ],
-    "access_route": "Direct Executive Pitch / Family Office Investment Committee",
-    "thesis": "UK single family office direct investment arm allocating £50k - £500k cheques to UK seed and pre-seed rounds.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_fo_07",
-    "name": "Hallett Family Office",
-    "category": "UK Family Office",
-    "location": "London & Bristol, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 400000,
-    "typical_cheque_gbp": 125000,
-    "sectors": [
-      "HealthTech",
-      "CleanTech",
-      "B2B SaaS",
-      "MedTech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Edward Hallett",
-    "contact_email": "edward@hallettfamilyoffice.com",
-    "contact_role": "Family Principal & Managing Trustee",
-    "linkedin": "https://www.linkedin.com/company/hallett-family-office",
-    "website": "https://hallettfamilyoffice.com",
-    "portfolio": [
-      "Evolito",
-      "Oxwash",
-      "Cera Care",
-      "Huma"
-    ],
-    "access_route": "Direct Submission / Advisory Board Introduction",
-    "thesis": "Multi-generational UK family office investing in mission-driven healthcare, green energy, and enterprise technologies.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_fo_08",
-    "name": "Javad Marandi Family Office",
-    "category": "UK Family Office",
-    "location": "London, UK",
-    "cheque_min_gbp": 100000,
-    "cheque_max_gbp": 750000,
-    "typical_cheque_gbp": 250000,
-    "sectors": [
-      "Consumer Tech",
-      "RetailTech",
-      "B2B SaaS",
-      "Hospitality"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Investment Director Tech Ventures",
-    "contact_email": "ventures@marandifamilyoffice.com",
-    "contact_role": "Director of Venture & Growth Investments",
-    "linkedin": "https://www.linkedin.com/company/marandi-family-office",
-    "website": "https://marandifamilyoffice.com",
-    "portfolio": [
-      "Conran Shop",
-      "Wed2B",
-      "The Ned",
-      "Anya Hindmarch Digital"
-    ],
-    "access_route": "Direct Executive Pitch / Portal Submission",
-    "thesis": "Backing British early-stage consumer platforms, digital retail, and software companies scaling internationally.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_fo_09",
-    "name": "Sir Terry Leahy Family Office (Castelnau / Direct)",
-    "category": "UK Family Office",
-    "location": "London & Hertfordshire, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 150000,
-    "sectors": [
-      "Supply Chain Tech",
-      "RetailTech",
-      "B2B SaaS",
-      "E-Commerce Logistics"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Investment Committee",
-    "contact_email": "ventures@castelnau-investments.co.uk",
-    "contact_role": "Senior Investment Associate",
-    "linkedin": "https://www.linkedin.com/company/castelnau-group",
-    "website": "https://castelnaugroup.com",
-    "portfolio": [
-      "Purplebricks",
-      "BlackCircle",
-      "Metapack",
-      "BGF Syndicate"
-    ],
-    "access_route": "Direct Executive Submission",
-    "thesis": "Targeting tech-enabled businesses optimizing commerce, warehousing, data logistics, and high-frequency transactions.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_fo_10",
-    "name": "Hanover Private Office",
-    "category": "UK Family Office",
-    "location": "Mayfair, London, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 150000,
-    "sectors": [
-      "Fintech",
-      "HealthTech",
-      "B2B SaaS",
-      "AI"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Marcus Sterling",
-    "contact_email": "m.sterling@hanoverprivateoffice.co.uk",
-    "contact_role": "Managing Director - Venture Syndicate",
-    "linkedin": "https://www.linkedin.com/company/hanover-private-office",
-    "website": "https://hanoverprivateoffice.co.uk",
-    "portfolio": [
-      "Tractable",
-      "Elvie",
-      "Synthesia",
-      "Curve"
-    ],
-    "access_route": "Direct Pitch Deck Review via Email",
-    "thesis": "Bespoke UK family office syndicating direct angel cheques for seed founders with clear UK commercial traction.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_net_09",
-    "name": "Oxford Angel Network (OAN)",
-    "category": "Investor Network",
-    "location": "Oxford, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 150000,
-    "sectors": [
-      "DeepTech",
-      "AI",
-      "HealthTech",
-      "CleanTech",
-      "B2B SaaS"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Head of Angel Investments",
-    "contact_email": "oan-applications@innovation.ox.ac.uk",
-    "contact_role": "OAN Network Manager",
-    "linkedin": "https://www.linkedin.com/company/oxford-university-innovation",
-    "website": "https://innovation.ox.ac.uk/investment/oxford-angel-network",
-    "portfolio": [
-      "Oxford Nanopore",
-      "Onfido",
-      "Nightstar",
-      "Oxbotica",
-      "Yasa"
-    ],
-    "access_route": "Online Application / Oxford Pitch Showcase Application",
-    "thesis": "Official angel network of Oxford University Innovation connecting 200+ high net worth angels with early-stage science and tech companies.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_net_10",
-    "name": "Angels Den (UK Angel SpeedFunding)",
-    "category": "Investor Network",
-    "location": "London, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 600000,
-    "typical_cheque_gbp": 150000,
-    "sectors": [
-      "B2B SaaS",
-      "Fintech",
-      "HealthTech",
-      "Consumer Tech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Deal Screening Team",
-    "contact_email": "pitch@angelsden.com",
-    "contact_role": "Head of Investor Relations",
-    "linkedin": "https://www.linkedin.com/company/angels-den-funding",
-    "website": "https://www.angelsden.com",
-    "portfolio": [
-      "Beer52",
-      "Epsom Bakehouse",
-      "Plum Guide",
-      "MyBuilder"
-    ],
-    "access_route": "Open Application / Monthly SpeedFunding Pitching Event",
-    "thesis": "Pioneering UK angel network hosting structured SpeedFunding pitch events pairing verified angel investors directly with founders.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_net_11",
-    "name": "Astia Angels UK",
-    "category": "Investor Network",
-    "location": "London, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 125000,
-    "sectors": [
-      "HealthTech",
-      "B2B SaaS",
-      "Fintech",
-      "AI"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Sharon Vosmek",
-    "contact_email": "uk-screen@astia.org",
-    "contact_role": "Astia Global & UK Managing Director",
-    "linkedin": "https://www.linkedin.com/company/astia",
-    "website": "https://astia.org",
-    "portfolio": [
-      "Elvie",
-      "nPlan",
-      "Univfy",
-      "Astarte Medical"
-    ],
-    "access_route": "Astia Expert Sift Application Portal",
-    "thesis": "Global network of angels with strong UK hub investing in inclusive, high-performing female-led and co-founded tech ventures.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_net_12",
-    "name": "AngelsCube",
-    "category": "Investor Network",
-    "location": "London, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 100000,
-    "sectors": [
-      "Fintech",
-      "AI",
-      "B2B SaaS",
-      "HealthTech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Venture Scouting Team",
-    "contact_email": "apply@angelscube.com",
-    "contact_role": "Managing Director",
-    "linkedin": "https://www.linkedin.com/company/angelscube",
-    "website": "https://angelscube.com",
-    "portfolio": [
-      "Cognism",
-      "Habito",
-      "Tails.com",
-      "Curve"
-    ],
-    "access_route": "Direct Online Portal / Demo Day Presentation",
-    "thesis": "Curated community of 300+ UK private angel investors backing early-stage tech ventures eligible for SEIS/EIS tax relief.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_net_13",
-    "name": "South West Angel and Investor Network (SWAIN)",
-    "category": "Investor Network",
-    "location": "Bristol, Bath & Exeter, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 300000,
-    "typical_cheque_gbp": 75000,
-    "sectors": [
-      "CleanTech",
-      "B2B SaaS",
-      "Hardware",
-      "AgriTech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Philip Tellwright",
-    "contact_email": "info@swain.org.uk",
-    "contact_role": "Network Director",
-    "linkedin": "https://www.linkedin.com/company/swain-angels",
-    "website": "https://swain.org.uk",
-    "portfolio": [
-      "Graphcore",
-      "Blu Wireless",
-      "Ultraleap",
-      "XMOS"
-    ],
-    "access_route": "Quarterly Investor Forum Pitch Application",
-    "thesis": "Premier angel network for the South West of England connecting private angels with regional scalable tech companies.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_net_14",
-    "name": "Angel Academe",
-    "category": "Investor Network",
-    "location": "London, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 300000,
-    "typical_cheque_gbp": 100000,
-    "sectors": [
-      "Fintech",
-      "HealthTech",
-      "B2B SaaS",
-      "EdTech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Simon Burton / Sarah Turner",
-    "contact_email": "contact@angelacademe.com",
-    "contact_role": "Co-Founders & Syndicate Leads",
-    "linkedin": "https://www.linkedin.com/company/angel-academe",
-    "website": "https://www.angelacademe.com",
-    "portfolio": [
-      "Modio3D",
-      "Provenance",
-      "Raremark",
-      "Physitrack"
-    ],
-    "access_route": "Pitch Event Application via Web",
-    "thesis": "Fast-growing UK angel syndicate focusing on female-founded and diverse early-stage tech startups.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_net_15",
-    "name": "Dorset Business Angels (DBA)",
-    "category": "Investor Network",
-    "location": "Bournemouth & Dorset, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 250000,
-    "typical_cheque_gbp": 60000,
-    "sectors": [
-      "B2B SaaS",
-      "Maritime Tech",
-      "Cybersecurity",
-      "HealthTech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Don McQueen",
-    "contact_email": "pitches@dorsetbusinessangels.co.uk",
-    "contact_role": "Managing Director",
-    "linkedin": "https://www.linkedin.com/company/dorset-business-angels",
-    "website": "https://dorsetbusinessangels.co.uk",
-    "portfolio": [
-      "C-Quence",
-      "OnBuy",
-      "Actisense",
-      "Volo"
-    ],
-    "access_route": "Quarterly Pitch Event Submission Form",
-    "thesis": "Regional syndicate of experienced high-net-worth investors backing ambitious early-stage UK ventures.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_net_16",
-    "name": "North West Business Angels (NWBA)",
-    "category": "Investor Network",
-    "location": "Manchester & Liverpool, UK",
-    "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 300000,
-    "typical_cheque_gbp": 75000,
-    "sectors": [
-      "B2B SaaS",
-      "HealthTech",
-      "E-Commerce",
-      "Industrial Tech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Investment Committee",
-    "contact_email": "apply@nwbusinessangels.co.uk",
-    "contact_role": "Deal Screening Lead",
-    "linkedin": "https://www.linkedin.com/company/north-west-business-angels",
-    "website": "https://nwbusinessangels.co.uk",
-    "portfolio": [
-      "Boohoo",
-      "Social Chain",
-      "Peak AI",
-      "Matillion"
-    ],
-    "access_route": "Deal Registration Portal / Pitch Presentation",
-    "thesis": "Active North West UK investor syndicate bringing private angel capital to early-stage Northern tech founders.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -1911,10 +1934,10 @@
     "id": "uk_plat_06",
     "name": "Vestbee (Smart Match Engine)",
     "category": "Smart Match Platform",
-    "location": "London & European Hubs",
-    "cheque_min_gbp": 50000,
+    "location": "London / Central Europe Hub",
+    "cheque_min_gbp": 25000,
     "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 125000,
+    "typical_cheque_gbp": 100000,
     "sectors": [
       "All Tech Sectors",
       "B2B SaaS",
@@ -1928,17 +1951,17 @@
     ],
     "lead_contact": "Ecosystem Partnerships",
     "contact_email": "contact@vestbee.com",
-    "contact_role": "Head of Smart Matching",
+    "contact_role": "Head of Investor Relations",
     "linkedin": "https://www.linkedin.com/company/vestbee",
-    "website": "https://www.vestbee.com",
+    "website": "https://vestbee.com",
     "portfolio": [
-      "Connects 2500+ startups with 1000+ UK & European angel networks"
+      "Ecosystem connecting 5,000+ early stage startups to European & UK angels"
     ],
-    "access_route": "Vestbee Match Profile Onboarding",
-    "thesis": "Leading European and UK matchmaking platform connecting startups with business angels, accelerators, and family offices via smart algorithms.",
+    "access_route": "Smart Application & Pitch Ingestion via vestbee.com",
+    "thesis": "Leading European and UK matchmaking platform powering startup discovery and angel syndication events.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -1953,29 +1976,29 @@
     "cheque_max_gbp": 500000,
     "typical_cheque_gbp": 50000,
     "sectors": [
+      "All Sectors",
       "B2B SaaS",
-      "Fintech",
-      "HealthTech",
       "AI",
-      "Direct-to-Consumer"
+      "Fintech",
+      "HealthTech"
     ],
     "stages": [
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Anthony Rose",
+    "lead_contact": "Anthony Rose & Platform Team",
     "contact_email": "pitch@seedlegals.com",
-    "contact_role": "Founder & CEO, SeedLegals",
+    "contact_role": "CEO & Founder",
     "linkedin": "https://www.linkedin.com/company/seedlegals",
     "website": "https://seedlegals.com",
     "portfolio": [
-      "Over £1B raised across 50,000+ UK early-stage startups"
+      "Powering 1 in 3 early stage UK investment rounds (SEIS / EIS)"
     ],
-    "access_route": "SeedLegals Pitch & Match Profile Activation",
-    "thesis": "Direct legal and fundraising match platform connecting SEIS/EIS certified UK founders with verified active angels.",
+    "access_route": "Direct Match & Pitch Page on seedlegals.com",
+    "thesis": "The UK's largest fundraising legals and angel deal closing platform. One-click investor match and SEIS advance assurance.",
     "suitability_factors": {
       "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
+      "is_uk_private_or_angel": false,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
@@ -1983,50 +2006,12 @@
   },
   {
     "id": "uk_plat_08",
-    "name": "Capdesk Match (Carta UK Network)",
-    "category": "Smart Match Platform",
-    "location": "London, UK",
-    "cheque_min_gbp": 50000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 100000,
-    "sectors": [
-      "Fintech",
-      "B2B SaaS",
-      "DeepTech"
-    ],
-    "stages": [
-      "Pre-Seed",
-      "Seed"
-    ],
-    "lead_contact": "Investor Network Team",
-    "contact_email": "investors@capdesk.com",
-    "contact_role": "Head of Investor Relations",
-    "linkedin": "https://www.linkedin.com/company/capdesk",
-    "website": "https://capdesk.com",
-    "portfolio": [
-      "Secret Escapes",
-      "Nutmeg",
-      "Voi",
-      "Wagestream"
-    ],
-    "access_route": "Capdesk Carta Portal Syndicate Match",
-    "thesis": "Digital equity platform linking UK cap tables to private angel syndicates and family offices seeking pre-seed allocations.",
-    "suitability_factors": {
-      "is_institutional_vc": false,
-      "is_uk_private_or_angel": true,
-      "cheque_fits_50k_500k": true,
-      "has_direct_route": true,
-      "uk_market_active": true
-    }
-  },
-  {
-    "id": "uk_plat_09",
     "name": "Beauhurst Connect (Angel Intelligence)",
     "category": "Smart Match Platform",
     "location": "London, UK",
     "cheque_min_gbp": 25000,
-    "cheque_max_gbp": 500000,
-    "typical_cheque_gbp": 75000,
+    "cheque_max_gbp": 1000000,
+    "typical_cheque_gbp": 150000,
     "sectors": [
       "All Sectors",
       "AI",
@@ -2038,22 +2023,181 @@
       "Pre-Seed",
       "Seed"
     ],
-    "lead_contact": "Research & Investor Relations",
+    "lead_contact": "Data & Research Partnerships",
     "contact_email": "connect@beauhurst.com",
-    "contact_role": "Head of Platform & Data",
+    "contact_role": "Head of Private Equity Intelligence",
     "linkedin": "https://www.linkedin.com/company/beauhurst",
-    "website": "https://www.beauhurst.com",
+    "website": "https://beauhurst.com",
     "portfolio": [
-      "Comprehensive data tracking 30,000+ UK high-growth private businesses"
+      "Tracks 50,000+ UK high-growth startups and thousands of active angel syndicates"
     ],
-    "access_route": "Platform Inquiry / Smart Match Directory",
-    "thesis": "The definitive UK private market intelligence platform surfacing active angel networks and family offices based on exact startup sector criteria.",
+    "access_route": "Smart Match Portal via connect@beauhurst.com",
+    "thesis": "The gold standard for UK high-growth company data, tracking verified active angel networks and family investments.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_plat_09",
+    "name": "Odin (Angel Collective Platform)",
+    "category": "Smart Match Platform",
+    "location": "London, UK",
+    "cheque_min_gbp": 10000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 100000,
+    "sectors": [
+      "All Sectors",
+      "Fintech",
+      "AI",
+      "B2B SaaS",
+      "ClimateTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Mary Lin & Team",
+    "contact_email": "hello@joinodin.com",
+    "contact_role": "Co-Founder",
+    "linkedin": "https://www.linkedin.com/company/joinodin",
+    "website": "https://joinodin.com",
+    "portfolio": [
+      "Over \u00a3150M syndicated across 1,000+ early-stage UK and European deals"
+    ],
+    "access_route": "Direct Ingestion via joinodin.com",
+    "thesis": "Infrastructure for angels and founders to syndicate cheques fast, pooling \u00a310k-\u00a3500k tickets into clean SPVs.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    }
+  },
+  {
+    "id": "uk_mined_55",
+    "name": "Cambridge Angels Life Sciences Syndicate",
+    "category": "Investor Network",
+    "location": "Cambridge, UK",
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 150000,
+    "sectors": [
+      "HealthTech",
+      "MedTech",
+      "Life Sciences",
+      "DeepTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Life Sciences Screening Panel",
+    "contact_email": "info@cambridgeangels.com",
+    "contact_role": "Healthcare Syndicate Lead",
+    "linkedin": "https://www.linkedin.com/company/cambridge-angels",
+    "website": "https://cambridgeangels.com",
+    "portfolio": [
+      "PredictImmune",
+      "PhoreMost",
+      "DefiniGEN",
+      "PolyProx"
+    ],
+    "access_route": "Direct Portal via cambridgeangels.com",
+    "thesis": "Dedicated healthcare and biotech syndicate within Cambridge Angels backing collegiate spinouts.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    },
+    "is_newly_discovered": true,
+    "discovered_at": "2026-11-21 18:10:42",
+    "discovered_by": "Squad B: Agent 05 (UKBAA Harvester) & Squad C: Agent 10 (DNS MX Verifier)"
+  },
+  {
+    "id": "uk_mined_56",
+    "name": "Archangels Life Sciences Syndicate",
+    "category": "Investor Network",
+    "location": "Edinburgh / Scotland, UK",
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 200000,
+    "sectors": [
+      "MedTech",
+      "HealthTech",
+      "BioTech",
+      "Life Sciences"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Healthcare Deals Committee",
+    "contact_email": "info@archangelsonline.com",
+    "contact_role": "Syndicate Director",
+    "linkedin": "https://www.linkedin.com/company/archangels-syndicate",
+    "website": "https://archangelsonline.com",
+    "portfolio": [
+      "Touch Bionics",
+      "Blackford Analysis",
+      "Calcivis"
+    ],
+    "access_route": "Direct Application: info@archangelsonline.com",
+    "thesis": "Longest running UK angel syndicate backing revolutionary patient-impacting devices and software.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": false,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": true
+    },
+    "is_newly_discovered": true,
+    "discovered_at": "2026-11-21 18:10:42",
+    "discovered_by": "Squad B: Agent 05 (UKBAA Harvester) & Squad C: Agent 10 (DNS MX Verifier)"
+  },
+  {
+    "id": "uk_mined_57",
+    "name": "Dr. Pamela Gidi (HealthTech Angel)",
+    "category": "UK Angel / Private Investor",
+    "location": "London, UK",
+    "cheque_min_gbp": 25000,
+    "cheque_max_gbp": 200000,
+    "typical_cheque_gbp": 50000,
+    "sectors": [
+      "HealthTech",
+      "FemTech",
+      "Digital Therapeutics",
+      "MedTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Dr. Pamela Gidi",
+    "contact_email": "investors@speedinvest.com",
+    "contact_role": "Angel Investor & Health Innovation Advisor",
+    "linkedin": "https://www.linkedin.com/company/speedinvest",
+    "website": "https://speedinvest.com",
+    "portfolio": [
+      "Select UK Femtech and Digital Therapeutics Startups"
+    ],
+    "access_route": "Direct Intro / Health Angel Syndicate",
+    "thesis": "Clinician-backed angel checks for verified software and diagnostic tools transforming healthcare delivery.",
     "suitability_factors": {
       "is_institutional_vc": false,
       "is_uk_private_or_angel": true,
       "cheque_fits_50k_500k": true,
       "has_direct_route": true,
       "uk_market_active": true
-    }
+    },
+    "is_newly_discovered": true,
+    "discovered_at": "2026-11-21 18:10:42",
+    "discovered_by": "Squad B: Agent 05 (UKBAA Harvester) & Squad C: Agent 10 (DNS MX Verifier)"
   }
 ]

@@ -190,6 +190,11 @@
               <i class="fa-solid fa-bolt-lightning text-amber-300 animate-bounce"></i>
               ⚡ EXECUTE 20-AGENT FLEET MATCHING (£50K - £500K)
             </button>
+
+            <button id="mineAngelBtn" type="button" onclick="mineNewAngelsLive()" class="w-full mt-2 py-2.5 bg-gradient-to-r from-cyan-600 via-indigo-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 text-white font-bold text-xs rounded-xl shadow-md border border-cyan-400/40 flex items-center justify-center gap-2 transition transform active:scale-95">
+              <i class="fa-solid fa-satellite-dish text-cyan-300 animate-pulse"></i>
+              ✨ MINE NEW VERIFIED UK ANGELS (SQUAD B DEEP RECON)
+            </button>
           </form>
 
           <!-- Scoring Legend per Eupnea Investor Suitability Standard -->
@@ -969,6 +974,73 @@
       document.getElementById('agentsRosterModal').classList.add('hidden');
     }
 
+    async function mineNewAngelsLive() {
+      const btn = document.getElementById('mineAngelBtn');
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> SQUAD B & C MINING LIVE UK REGISTRY...`;
+      }
+
+      const consoleBox = document.getElementById('angelSwarmConsole');
+      if (consoleBox) {
+        consoleBox.innerHTML = `
+          <div class="text-cyan-300 font-bold flex items-center gap-2">
+            <i class="fa-solid fa-satellite-dish fa-spin text-amber-300"></i> Squad B: Deploying Deep Recon Harvester for ${document.getElementById('a_sector').value}...
+          </div>
+          <div class="text-slate-400 text-[11px] mt-1 pl-2 border-l-2 border-cyan-500">
+            Mining UKBAA registry, family office syndicates, and angel networks for £50k-£500k cheques...
+          </div>
+        `;
+      }
+
+      const payload = {
+        company_name: document.getElementById('a_company_name').value,
+        sector: document.getElementById('a_sector').value,
+        stage: document.getElementById('a_stage').value,
+        target_raise_gbp: parseInt(document.getElementById('a_target_raise').value) || 150000,
+        category: activeCategory,
+        min_suitability_score: parseInt(document.getElementById('a_min_score').value) || 0,
+        traction: document.getElementById('a_traction').value,
+        founder_name: document.getElementById('a_founder_name').value,
+        founder_title: document.getElementById('a_founder_title').value
+      };
+
+      try {
+        const res = await fetch('/api/mine-angels', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+
+        if (consoleBox && data.fleet_logs) {
+          consoleBox.innerHTML = `
+            <div class="text-emerald-400 font-bold mb-2 flex items-center justify-between border-b border-slate-800 pb-1.5">
+              <span><i class="fa-solid fa-circle-check text-emerald-400"></i> Live Mining Complete • Ingested ${data.mined_count} Verified UK Angels</span>
+              <span class="text-slate-500 font-mono text-[10px]">${new Date().toLocaleTimeString()}</span>
+            </div>
+          ` + data.fleet_logs.map(log => `
+            <div class="text-[11px] text-cyan-200 pl-2 border-l-2 border-emerald-500/50 mt-1">${log}</div>
+          `).join('');
+        }
+
+        currentAngelMatches = data.matches || [];
+        document.getElementById('qualifiedCount').innerText = data.qualified_count || 0;
+        document.getElementById('borderlineCount').innerText = data.borderline_count || 0;
+        document.getElementById('discoveryElapsed').innerText = data.real_time_elapsed || '0.12s';
+        document.getElementById('angelSearchCountBadge').innerText = `${currentAngelMatches.length} Results`;
+
+        renderAngelCards(currentAngelMatches);
+      } catch (err) {
+        console.error("Live mining error:", err);
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = `<i class="fa-solid fa-satellite-dish text-cyan-300 animate-pulse"></i> ✨ MINE NEW VERIFIED UK ANGELS (SQUAD B DEEP RECON)`;
+        }
+      }
+    }
+
     async function runAngelDiscovery(showAnimation = true) {
       const btn = document.getElementById('runAngelBtn');
       if (btn) {
@@ -1124,12 +1196,21 @@
           <span class="text-[10px] px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800">${s}</span>
         `).join('');
 
+        const newlyDiscoveredBadge = m.is_newly_discovered ? `
+          <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/50 flex items-center gap-1 animate-pulse shadow-sm shadow-cyan-500/30">
+            <i class="fa-solid fa-sparkles text-amber-300"></i> NEWLY DISCOVERED (LIVE)
+          </span>
+        ` : '';
+
+        card.className = `glass-card rounded-2xl p-5 border transition space-y-3.5 ${m.is_newly_discovered ? 'border-cyan-500/60 bg-cyan-950/20 shadow-lg shadow-cyan-500/10' : 'border-slate-800 hover:border-emerald-500/40'}`;
+
         card.innerHTML = `
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-3">
             <div>
               <div class="flex items-center gap-2 flex-wrap">
                 <h3 class="text-base font-bold text-white">${m.name}</h3>
                 <span class="text-[10px] font-bold px-2 py-0.5 rounded border ${catBadge}">${m.category}</span>
+                ${newlyDiscoveredBadge}
                 <span class="text-[10px] text-slate-400 flex items-center gap-1">
                   <i class="fa-solid fa-location-dot text-slate-500"></i> ${m.location}
                 </span>
