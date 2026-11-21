@@ -972,7 +972,7 @@
     let displayedAngels = [];
     const delay = ms => new Promise(res => setTimeout(res, ms));
 
-    async async function openAgentsRosterModal() {
+    async function openAgentsRosterModal() {
       const grid = document.getElementById('agentsRosterGrid');
       grid.innerHTML = '<div class="text-blue-600 py-10 text-center"><i class="fa-solid fa-spinner fa-spin text-2xl mb-2"></i><div>Loading 20 Autonomous AI Specialists...</div></div>';
       document.getElementById('agentsRosterModal').classList.remove('hidden');
