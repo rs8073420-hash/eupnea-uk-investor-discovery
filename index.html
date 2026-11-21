@@ -889,7 +889,11 @@
 
   <script>
     let currentAngelMatches = [];
+    let filteredAngelMatches = [];
+    let displayedAngels = [];
     let activeCategory = "All";
+    let angelsPerPage = 20;
+    let angelsCurrentPage = 1;
     let currentMatches = [];
 
     const EARLY_STAGE_PRESETS = {
@@ -991,7 +995,6 @@
       }
     }
 
-    let displayedAngels = [];
     const delay = ms => new Promise(res => setTimeout(res, ms));
 
     async function openAgentsRosterModal() {
