@@ -13,7 +13,7 @@ import csv
 import io
 import time
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse, StreamingResponse
+from fastapi.responses import HTMLResponse, StreamingResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
@@ -450,6 +450,13 @@ async def api_refined_search(request: Request):
     """
     if not search_refinement_engine:
         return {"status": "error", "message": "Search refinement engine not initialized."}
+
+    accept = request.headers.get("accept", "")
+    # If viewed directly in browser by human, redirect to the visual interactive cockpit
+    if request.method == "GET" and "text/html" in accept and request.query_params.get("format") != "json":
+        q = str(request.url.query)
+        target_url = f"/?tab=tabRefinedSearch&{q}" if q else "/?tab=tabRefinedSearch"
+        return RedirectResponse(url=target_url)
     
     if request.method == "POST":
         try:
