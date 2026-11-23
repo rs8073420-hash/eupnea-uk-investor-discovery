@@ -25,6 +25,12 @@ from notion_sync import notion_bridge
 from pitch_loop_engine import pitch_loop
 from data_room_builder import vdr_builder
 
+try:
+    from investor_search_refinement_engine import search_refinement_engine, RefinedPlatformFilter
+except ImportError:
+    search_refinement_engine = None
+    RefinedPlatformFilter = None
+
 app = FastAPI(title="Eupnea Early-Stage UK Investor Discovery Engine (£50K - £500K)")
 
 app.add_middleware(
@@ -430,6 +436,76 @@ async def export_csv(payload: MatchRequest):
         media_type="text/csv",
         headers={"Content-Disposition": f"attachment; filename={payload.company_name}_20agent_investors.csv"}
     )
+
+# --- High-Precision Search Refinement & Platform Crawler Endpoints ---
+
+@app.get("/api/investors/refined-search")
+@app.post("/api/investors/refined-search")
+async def api_refined_search(request: Request):
+    """
+    Refines investor platforms according to multi-dimensional criteria:
+    Stage, Ticket Size, UK Tax Relief (SEIS/EIS), Sector, Dry Powder Recency.
+    Supports both GET query parameters and POST JSON payloads.
+    """
+    if not search_refinement_engine:
+        return {"status": "error", "message": "Search refinement engine not initialized."}
+    
+    if request.method == "POST":
+        try:
+            payload = await request.json()
+        except Exception:
+            payload = {}
+    else:
+        payload = dict(request.query_params)
+    
+    sectors_raw = payload.get("sectors")
+    if isinstance(sectors_raw, str):
+        sectors = [s.strip() for s in sectors_raw.split(",") if s.strip()]
+    elif isinstance(sectors_raw, list):
+        sectors = sectors_raw
+    else:
+        sectors = ["B2B SaaS", "Enterprise AI"]
+
+    stage = str(payload.get("stage", "Seed"))
+    try:
+        target_raise = int(payload.get("target_raise_gbp", 1000000))
+    except (ValueError, TypeError):
+        target_raise = 1000000
+    
+    uk_tax_only = str(payload.get("uk_tax_relief_only", "true")).lower() in ("true", "1", "yes")
+    competitors_raw = payload.get("exclude_competitor_backers", [])
+    if isinstance(competitors_raw, str):
+        competitors = [c.strip() for c in competitors_raw.split(",") if c.strip()]
+    else:
+        competitors = competitors_raw
+
+    filter_criteria = RefinedPlatformFilter(
+        sectors=sectors,
+        stage=stage,
+        target_raise_gbp=target_raise,
+        uk_tax_relief_only=uk_tax_only,
+        exclude_competitor_backers=competitors,
+    )
+    results = search_refinement_engine.execute_refined_search(filter_criteria)
+    limit = int(payload.get("limit", 50))
+    return {
+        "status": "success",
+        "total_matched": len(results),
+        "criteria": filter_criteria.dict(),
+        "investors": [r.dict() for r in results[:limit]]
+    }
+
+@app.post("/api/investors/live-crawl")
+async def api_live_crawl(payload: Dict[str, str]):
+    """
+    Crawls an investor platform using browser-use (Compulsory Protocol) to verify intake state.
+    """
+    url = payload.get("url", "https://openvc.app")
+    if not search_refinement_engine:
+        return {"status": "error", "message": "Crawler not initialized."}
+    
+    crawl_result = await search_refinement_engine.crawl_platform_live(url)
+    return {"status": "success", "result": crawl_result}
 
 if __name__ == "__main__":
     import uvicorn
