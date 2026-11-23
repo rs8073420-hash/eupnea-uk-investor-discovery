@@ -34,8 +34,29 @@ try:
     from instructor_schema_guard import SchemaGuard
     from mem0_memory_layer import AgentMemoryHub
     FRAMEWORKS_AVAILABLE = True
-except ImportError:
+except (ImportError, Exception):
     FRAMEWORKS_AVAILABLE = False
+    
+    class AgentMemoryHub:
+        def __init__(self, user_id: str = "default", agent_id: str = "default"):
+            self.user_id = user_id
+            self.agent_id = agent_id
+            self.memories = []
+
+        def add(self, memory_text: str, metadata: Optional[Dict[str, Any]] = None):
+            self.memories.append({"text": memory_text, "metadata": metadata or {}})
+            return {"status": "saved_locally"}
+
+        def search(self, query: str, limit: int = 5):
+            return [m for m in self.memories if query.lower() in m["text"].lower()][:limit]
+
+        def get_all(self):
+            return self.memories
+
+    class BrowserUseEngine:
+        def __init__(self, headless: bool = True, user_data_dir: Optional[str] = None):
+            self.headless = headless
+            self.user_data_dir = user_data_dir
 
 
 # ================================================================================

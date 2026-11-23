@@ -27,7 +27,8 @@ from data_room_builder import vdr_builder
 
 try:
     from investor_search_refinement_engine import search_refinement_engine, RefinedPlatformFilter
-except ImportError:
+except (ImportError, Exception) as _eng_err:
+    print(f"[REFINEMENT ENGINE NOTICE] {type(_eng_err).__name__}: {_eng_err}")
     search_refinement_engine = None
     RefinedPlatformFilter = None
 
