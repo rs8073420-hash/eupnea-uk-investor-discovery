@@ -569,7 +569,7 @@ async def api_refined_search(request: Request):
     results = search_refinement_engine.execute_refined_search(filter_criteria)
     exclude_crm = str(payload.get("exclude_active_crm", "false")).lower() in ("true", "1", "yes")
     crm_map = get_all_crm_map()
-    limit = int(payload.get("limit", 50))
+    limit = int(payload.get("limit", 250))
     enriched_investors = [attach_crm_to_item(r.dict(), crm_map) for r in results]
     excluded_crm_count = 0
     if exclude_crm:

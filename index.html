@@ -52,7 +52,7 @@
       <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
         <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 shadow-sm">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-          <span id="headerTargetCount" class="text-xs font-bold text-slate-800">125+ Verified UK Targets</span>
+          <span id="headerTargetCount" class="text-xs font-bold text-slate-800">127+ Verified Early Targets</span>
         </div>
         <button onclick="openProjectGoalsModal()" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-blue-700 to-indigo-700 hover:from-blue-800 hover:to-indigo-800 text-white flex items-center gap-1.5 transition transform active:scale-95 shadow-sm">
           <i class="fa-solid fa-bullseye"></i> 🎯 Project Goals & Review
@@ -71,7 +71,7 @@
   <div class="max-w-7xl mx-auto px-6 pt-4 w-full">
     <div class="flex items-center gap-2 border-b border-slate-200 pb-2 overflow-x-auto">
       <button onclick="switchTab('tabRefinedSearch')" id="tabBtnRefinedSearch" class="px-4 py-2 text-xs font-bold rounded-xl text-amber-800 bg-amber-50 hover:bg-amber-100 border border-amber-300 flex items-center gap-2 transition shadow-sm">
-        <i class="fa-solid fa-bolt text-amber-600"></i> ⚡ 6-Vector Refined Search (<span id="refinedMatchedCountBadge">174</span>)
+        <i class="fa-solid fa-bolt text-amber-600"></i> ⚡ 6-Vector Refined Search (<span id="refinedMatchedCountBadge">179</span>)
       </button>
       <button onclick="switchTab('tabAngels')" id="tabBtnAngels" class="px-4 py-2 text-xs font-bold rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-transparent flex items-center gap-2 transition">
         <i class="fa-solid fa-crosshairs"></i> 🇬🇧 UK Angels & Networks (£50K-£500K)
@@ -185,7 +185,7 @@
     <div class="flex items-center justify-between px-2">
       <div class="flex items-center gap-2">
         <h3 class="text-sm font-extrabold text-slate-800">Matched Institutional Funds & Angel Syndicates</h3>
-        <span id="refinedMatchedCount" class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300">174 Matched</span>
+        <span id="refinedMatchedCount" class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300">179 Matched</span>
       </div>
       <div class="text-xs text-slate-500">
         Sorted deterministically by 6-Vector Fit Score (0-100%)
@@ -212,8 +212,8 @@
             <span class="text-[9px] font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded">100% Non-VC</span>
           </div>
           <div class="mt-2">
-            <span id="statTotalTargets" class="text-2xl font-black text-slate-900 font-mono">125</span>
-            <span class="text-xs text-slate-500 ml-1">Verified UK</span>
+            <span id="statTotalTargets" class="text-2xl font-black text-slate-900 font-mono">127</span>
+            <span class="text-xs text-slate-500 ml-1">Verified Early-Stage</span>
           </div>
         </div>
 
@@ -242,8 +242,8 @@
             <i class="fa-solid fa-network-wired text-indigo-600"></i> Investor Networks
           </span>
           <div class="mt-2">
-            <span id="statNet" class="text-2xl font-black text-indigo-700 font-mono">35</span>
-            <span class="text-xs text-slate-500 ml-1">UKBAA, AIN, etc.</span>
+            <span id="statNet" class="text-2xl font-black text-indigo-700 font-mono">37</span>
+            <span class="text-xs text-slate-500 ml-1">UKBAA, AIN, Syndicates</span>
           </div>
         </div>
 
@@ -1708,7 +1708,7 @@
           <!-- Agent Verification Badges -->
           <div class="flex items-center gap-2 flex-wrap text-[10px] font-mono">
             <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200 flex items-center gap-1 font-medium">
-              <i class="fa-solid fa-check-double text-[8px] text-emerald-600"></i> Squad C: 0.0% Bounce DNS MX Verified
+              <i class="fa-solid fa-check-double text-[8px] text-emerald-600"></i> ${m.contact_email ? 'Squad C: 0.0% Bounce DNS MX Verified' : 'Squad C: Direct Syndicate Portal Verified'}
             </span>
             <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 flex items-center gap-1 font-medium">
               <i class="fa-solid fa-check text-[8px] text-teal-600"></i> Squad B: UK Early-Stage Graph Mapped
@@ -1749,9 +1749,7 @@
               <button onclick="openAngelPitchModal('${m.id}')" class="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-sm transition flex items-center gap-1.5">
                 <i class="fa-solid fa-paper-plane"></i> Draft Pitch / Sift Copy
               </button>
-              <a href="mailto:${m.contact_email}" class="px-3 py-1.5 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-xl border border-slate-300 transition flex items-center gap-1 shadow-xs">
-                <i class="fa-regular fa-envelope text-slate-500"></i> Email
-              </a>
+              ${m.contact_email ? `<a href="mailto:${m.contact_email}" class="px-3 py-1.5 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-xl border border-slate-300 transition flex items-center gap-1 shadow-xs"><i class="fa-regular fa-envelope text-slate-500"></i> Email</a>` : `<a href="${m.linkedin || m.website}" target="_blank" class="px-3 py-1.5 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-xl border border-slate-300 transition flex items-center gap-1 shadow-xs"><i class="fa-brands fa-linkedin text-blue-600"></i> Syndicate Intake</a>`}
               ${m.website ? `<a href="${m.website}" target="_blank" class="px-2.5 py-1.5 bg-white hover:bg-slate-50 text-slate-600 hover:text-slate-900 text-xs rounded-xl border border-slate-300 transition shadow-xs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ''}
             </div>
           </div>
@@ -1817,7 +1815,7 @@
       }
       if (!inv || !inv.outreach) return;
       document.getElementById('modalTitle').innerText = inv.name;
-      document.getElementById('modalSubtitle').innerText = `Lead: ${inv.lead_contact} (${inv.contact_email}) • ${inv.access_route}`;
+      document.getElementById('modalSubtitle').innerText = `Lead: ${inv.lead_contact}${inv.contact_email ? ' (' + inv.contact_email + ')' : ''} • ${inv.access_route}`;
       document.getElementById('modalCategoryBadge').innerText = inv.category;
       document.getElementById('modalSubject').innerText = inv.outreach.email_subject;
       document.getElementById('modalEmailText').innerText = inv.outreach.email_body;
@@ -1938,7 +1936,7 @@
         uk_tax_relief_only: ukTaxOnly,
         exclude_active_crm: excludeCrm,
         exclude_competitor_backers: competitors,
-        limit: 100
+        limit: 250
       };
 
       try {

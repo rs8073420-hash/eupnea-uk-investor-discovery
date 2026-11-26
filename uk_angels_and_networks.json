@@ -4704,5 +4704,87 @@
       "has_direct_route": true,
       "uk_market_active": true
     }
+  },
+  {
+    "id": "uk_ent_126",
+    "name": "NGL Ventures Syndicate",
+    "category": "Investor Network",
+    "location": "Vilnius, Lithuania / European Hubs",
+    "is_seis_eis": false,
+    "cheque_min_gbp": 50000,
+    "cheque_max_gbp": 500000,
+    "typical_cheque_gbp": 295000,
+    "sectors": [
+      "AI",
+      "B2B SaaS",
+      "HealthTech",
+      "DeepTech",
+      "SpaceTech",
+      "DefenseTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Justinas Pasys",
+    "contact_email": "info@ngl.vc",
+    "contact_role": "Co-Founder & CEO",
+    "linkedin": "https://www.linkedin.com/company/ngl.vc/",
+    "website": "https://www.ngl.vc",
+    "portfolio": [
+      "Monopulse",
+      "KineDB (Denmark)",
+      "BROSWARM",
+      "Blackswan Space",
+      "Holo AI"
+    ],
+    "access_route": "Dealum Syndicate Application via ngl.vc (app.dealum.com/#/company/application/new/130820/bw21g105k1lj4dox27wpxnkr3hxfnaow)",
+    "thesis": "[LinkedIn Pre-Revenue Audit — Confirmed Private-Investor Syndicate] Collaborative angel syndicate of 300+ unique private investors pooling low-minimum tickets (~EUR 350K / ~£295K avg round across ~35 business angels) into Baltic & European pre-seed startups.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": false
+    }
+  },
+  {
+    "id": "uk_ent_127",
+    "name": "Mana Ventures (The Collective Syndicate)",
+    "category": "Investor Network",
+    "location": "San Francisco, USA (Global AngelList Syndicate)",
+    "is_seis_eis": false,
+    "cheque_min_gbp": 80000,
+    "cheque_max_gbp": 800000,
+    "typical_cheque_gbp": 132000,
+    "sectors": [
+      "AI",
+      "DeepTech",
+      "Robotics",
+      "HealthTech",
+      "Enterprise Software"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "lead_contact": "Morgan Schwanke",
+    "contact_email": "",
+    "contact_role": "Founder & Syndicate Lead",
+    "linkedin": "https://www.linkedin.com/in/morganschwanke/",
+    "website": "https://www.manaventures.vc",
+    "portfolio": [
+      "Unity Technologies",
+      "Restream"
+    ],
+    "access_route": "AngelList Collective Syndicate (https://venture.angellist.com/v/mana-ventures/syndicate)",
+    "thesis": "[LinkedIn Pre-Revenue Audit — Active AngelList Syndicate] 5,962+ unique private LPs pooling SPVs ($167.9k / ~£132k typical deal, 207 deals in 12m) globally inc. selective UK; live AngelList mandate prefers early PMF / ~$1M ARR over pure pre-revenue.",
+    "suitability_factors": {
+      "is_institutional_vc": false,
+      "is_uk_private_or_angel": true,
+      "cheque_fits_50k_500k": true,
+      "has_direct_route": true,
+      "uk_market_active": false
+    }
   }
 ]

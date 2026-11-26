@@ -202,8 +202,8 @@ class EnhancedInvestorSearchEngine:
                 reasons.append(f"Ticket capacity (£{min_chk//1000}k-£{max_chk//1000}k) matches target")
 
             # UK Geo alignment (up to 20)
-            geo = vc.get("geo", "")
-            if "uk" in geo.lower() or "london" in geo.lower() or "europe" in geo.lower():
+            geo = vc.get("geo") or vc.get("location", "")
+            if any(k in geo.lower() for k in ["uk", "london", "europe", "berlin", "paris", "nordics", "copenhagen"]):
                 score += 20
                 reasons.append("UK / European deployment focus")
 
@@ -216,42 +216,67 @@ class EnhancedInvestorSearchEngine:
                         "linkedin": p.get("linkedin", ""),
                         "email": p.get("email", ""),
                     })
+                if not dms and vc.get("lead_partner"):
+                    dms.append({
+                        "name": vc.get("lead_partner", "Managing Partner"),
+                        "title": vc.get("partner_title", "Partner"),
+                        "linkedin": vc.get("partner_linkedin", ""),
+                        "email": vc.get("partner_email", ""),
+                    })
 
+                loc_str = vc.get("hq") or vc.get("location", "London, UK")
                 matched.append(QualifiedInvestorResult(
                     fund_or_network_name=vc.get("fund_name", "Venture Fund"),
                     category="Institutional VC",
-                    hq_location=vc.get("hq", "London, UK"),
+                    hq_location=loc_str,
                     target_stage=criteria.stage,
                     typical_check_range=f"£{min_chk//1000}k - £{max_chk//1000}k",
                     match_score=min(100, score),
-                    uk_tax_relief="EIS Eligible" if score > 70 else "Institutional Co-investment",
+                    uk_tax_relief="EIS Eligible" if ("uk" in loc_str.lower() or "london" in loc_str.lower()) else "Institutional Co-investment",
                     decision_makers=dms,
-                    thesis_synergy_reason="; ".join(reasons),
+                    thesis_synergy_reason="; ".join(reasons) if reasons else vc.get("thesis", ""),
                     verified_platforms=["OpenVC 16k", "Signal NFX", "Dealroom"],
                     outbound_readiness="Ready to Dispatch",
                 ))
 
         # 2. Early-Stage Angels & Networks
         for angel in self.angel_data:
-            suitability = angel.get("suitability_score", 70)
-            if criteria.uk_tax_relief_only and not angel.get("is_seis_eis", True):
+            loc_str = angel.get("location", "UK Wide")
+            loc_low = loc_str.lower()
+            is_uk_tax = angel.get("is_seis_eis")
+            if is_uk_tax is None:
+                is_uk_tax = any(t in loc_low for t in ["uk", "london", "cambridge", "oxford", "bristol", "manchester", "edinburgh", "scotland", "bournemouth", "brighton", "chester", "leicester", "henley", "jersey"])
+            if criteria.uk_tax_relief_only and not is_uk_tax:
                 continue
+
+            suitability = angel.get("suitability_score")
+            if suitability is None:
+                suitability = 82 if is_uk_tax else (74 if "european hubs" in loc_low else 58)
+            cmin = angel.get("cheque_min_gbp", 25000)
+            cmax = angel.get("cheque_max_gbp", 250000)
+            chk_range = angel.get("check_size") or f"£{cmin//1000}k - £{cmax//1000}k"
+            stages_list = angel.get("stages", [])
+            stage_label = angel.get("stage") or (" / ".join(stages_list) if stages_list else "Pre-Seed / Seed")
+            contact_person = angel.get("contact_person") or angel.get("lead_contact", "Intake Director")
+            contact_email = angel.get("email") if "email" in angel else angel.get("contact_email", "")
+            intake_ref = angel.get("domain") or angel.get("access_route") or angel.get("website", "")
+            thesis_txt = angel.get("thesis") or f"Early-stage network with direct intake via {intake_ref}."
 
             matched.append(QualifiedInvestorResult(
                 fund_or_network_name=angel.get("name", "UK Angel Network"),
                 category=angel.get("category", "Angel Network"),
-                hq_location=angel.get("location", "UK Wide"),
-                target_stage=angel.get("stage", "Pre-Seed / Seed"),
-                typical_check_range=angel.get("check_size", "£25k - £250k"),
+                hq_location=loc_str,
+                target_stage=stage_label,
+                typical_check_range=chk_range,
                 match_score=suitability,
-                uk_tax_relief="SEIS & EIS Accredited",
+                uk_tax_relief="SEIS & EIS Accredited" if is_uk_tax else "Non-UK Syndicate / Cross-Border",
                 decision_makers=[{
-                    "name": angel.get("contact_person", "Intake Director"),
-                    "title": "Network Lead",
+                    "name": contact_person,
+                    "title": angel.get("contact_role", "Network Lead"),
                     "linkedin": angel.get("linkedin", ""),
-                    "email": angel.get("email", ""),
+                    "email": contact_email,
                 }],
-                thesis_synergy_reason=f"UK Angel Network with focus on early-stage innovation. Intake via {angel.get('domain', '')}.",
+                thesis_synergy_reason=f"{thesis_txt} (Intake: {intake_ref})",
                 verified_platforms=["UKBAA Directory", "British Business Bank Angels", "Seedrs Syndicate"],
                 outbound_readiness="Ready to Dispatch",
             ))

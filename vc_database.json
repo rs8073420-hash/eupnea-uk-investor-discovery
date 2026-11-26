@@ -1486,5 +1486,65 @@
       "ManoMano"
     ],
     "thesis": "Global early-stage investment platform delivering deep operator experience to visionary software founders."
+  },
+  {
+    "id": "vc_51",
+    "fund_name": "Silence VC",
+    "website": "https://silencevc.com",
+    "location": "London, UK / Europe",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 80000,
+    "check_size_max_gbp": 550000,
+    "sectors": [
+      "Climate Tech",
+      "AI",
+      "Energy",
+      "DeepTech",
+      "B2B SaaS",
+      "Circular Economy"
+    ],
+    "lead_partner": "Sara Ramos Colmenarejo",
+    "partner_title": "Investor (Europe & Deeptech) • GP: Borja Moreno de los Rios",
+    "partner_email": "hi@silencevc.com",
+    "partner_linkedin": "https://www.linkedin.com/in/sara-ramos-colmenarejo/",
+    "portfolio": [
+      "Circeo",
+      "Talky",
+      "Mercora",
+      "Artesian Labs",
+      "Prenew"
+    ],
+    "thesis": "[LinkedIn Pre-Revenue Audit — UK/Europe Fit, Non-Syndicate] London-registered institutional operator VC (Silence VC Limited) writing $100k–$700k (£80k–£550k) angel-style pre-seed follower checks across Europe & UK with zero board seats."
+  },
+  {
+    "id": "vc_52",
+    "fund_name": "Unconventional Ventures",
+    "website": "https://www.unconventional.vc",
+    "location": "Copenhagen / Nordics & Europe (UK Active)",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_gbp": 100000,
+    "check_size_max_gbp": 2000000,
+    "sectors": [
+      "Climate Tech",
+      "HealthTech",
+      "Femtech",
+      "EdTech",
+      "FinTech",
+      "Impact Tech"
+    ],
+    "lead_partner": "Thea Messel",
+    "partner_title": "Founding General Partner",
+    "partner_email": "hello@unconventional.vc",
+    "partner_linkedin": "https://www.linkedin.com/company/unconventional-vc/",
+    "portfolio": [
+      "Climate X"
+    ],
+    "thesis": "[LinkedIn Pre-Revenue Audit — UK/Europe Impact VC, Non-Syndicate] Institutional Nordic/European early-stage VC backing diverse/underrepresented founders in impact tech across Nordics & Europe including London-based Climate X."
   }
 ]
