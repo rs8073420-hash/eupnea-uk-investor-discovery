@@ -24,6 +24,17 @@ from ai_fundraising_swarm import fleet
 from notion_sync import notion_bridge
 from pitch_loop_engine import pitch_loop
 from data_room_builder import vdr_builder
+from crm_store import (
+    init_investor_crm_db,
+    get_all_crm_map,
+    list_crm_records,
+    upsert_investor_crm,
+    attach_crm_to_item,
+    CRM_TEAM_MEMBERS,
+    INVESTOR_PROFILE_STAGES,
+)
+
+init_investor_crm_db()
 
 try:
     from investor_search_refinement_engine import search_refinement_engine, RefinedPlatformFilter
@@ -79,6 +90,61 @@ class VDRRequest(BaseModel):
     company_name: str = "Company X"
     raise_amount_gbp: int = 150000
 
+class InvestorCRMUpdateRequest(BaseModel):
+    investor_key: Optional[str] = None
+    investor_id: Optional[str] = None
+    investor_name: str
+    category: Optional[str] = ""
+    profile_stage: Optional[str] = None
+    managed_by: Optional[str] = None
+    profile_url: Optional[str] = None
+    new_activity: Optional[bool] = None
+    action_needed: Optional[bool] = None
+    next_action: Optional[str] = None
+    crm_notes: Optional[str] = None
+    mark_checked: Optional[bool] = True
+
+
+@app.get("/api/crm/team")
+async def get_crm_team():
+    return {
+        "status": "success",
+        "team_members": CRM_TEAM_MEMBERS,
+        "profile_stages": list(INVESTOR_PROFILE_STAGES),
+    }
+
+
+@app.get("/api/crm/investors")
+async def get_crm_investors(
+    stage: Optional[str] = None,
+    managed_by: Optional[str] = None,
+    action_needed_only: bool = False,
+):
+    data = list_crm_records(stage=stage, managed_by=managed_by, action_needed_only=action_needed_only)
+    return {"status": "success", **data}
+
+
+@app.post("/api/crm/investors/update")
+async def update_investor_crm(payload: InvestorCRMUpdateRequest):
+    try:
+        record = upsert_investor_crm(
+            investor_key_or_id=payload.investor_key or payload.investor_id or payload.investor_name,
+            investor_name=payload.investor_name,
+            category=payload.category or "",
+            profile_stage=payload.profile_stage,
+            managed_by=payload.managed_by,
+            profile_url=payload.profile_url,
+            new_activity=payload.new_activity,
+            action_needed=payload.action_needed,
+            next_action=payload.next_action,
+            crm_notes=payload.crm_notes,
+            mark_checked=True if payload.mark_checked is None else payload.mark_checked,
+        )
+        all_data = list_crm_records()
+        return {"status": "success", "record": record, "summary": all_data["summary"]}
+    except ValueError as e:
+        return {"status": "error", "message": str(e)}
+
 
 @app.get("/health")
 async def health():
@@ -100,9 +166,13 @@ async def get_categories():
     }
 
 @app.get("/api/angels")
-async def get_angels(category: Optional[str] = None):
-    """Lists verified UK early stage investors/networks/platforms."""
-    results = angel_matcher.match(category=category, min_suitability_score=0)
+async def get_angels(category: Optional[str] = None, exclude_active_crm: bool = False):
+    """Lists verified UK early stage investors/networks/platforms merged with persistent CRM status."""
+    crm_map = get_all_crm_map()
+    raw_results = angel_matcher.match(category=category, min_suitability_score=0)
+    results = [attach_crm_to_item(r, crm_map) for r in raw_results]
+    if exclude_active_crm:
+        results = [r for r in results if r.get("profile_stage") not in INVESTOR_PROFILE_STAGES]
     return {
         "status": "success",
         "total": len(results),
@@ -117,6 +187,7 @@ async def match_angels(payload: AngelMatchRequest):
     Applies Eupnea's Early-Stage Investor Suitability Scoring Standard (0 - 100%).
     """
     start = time.time()
+    crm_map = get_all_crm_map()
     
     matches = angel_matcher.match(
         category=payload.category,
@@ -147,7 +218,7 @@ async def match_angels(payload: AngelMatchRequest):
             founder_title=payload.founder_title or "Founder & CEO",
             investor_data=m
         )
-        enriched.append({**m, "outreach": pitch})
+        enriched.append(attach_crm_to_item({**m, "outreach": pitch}, crm_map))
 
     # Run the 20-agent early-stage UK swarm
     fleet_exec = fleet.execute_uk_early_stage_swarm(
@@ -178,6 +249,7 @@ async def mine_angels(payload: AngelMatchRequest):
     and ingest newly verified UK Angels, Family Offices & Syndicates matching the startup's sector.
     """
     start = time.time()
+    crm_map = get_all_crm_map()
     mine_result = fleet.mine_new_uk_investors(payload.model_dump())
     
     # Reload database into matcher
@@ -213,7 +285,7 @@ async def mine_angels(payload: AngelMatchRequest):
             founder_title=payload.founder_title or "Founder & CEO",
             investor_data=m
         )
-        enriched.append({**m, "outreach": pitch})
+        enriched.append(attach_crm_to_item({**m, "outreach": pitch}, crm_map))
 
     elapsed = round(time.time() - start, 3)
 
@@ -495,12 +567,23 @@ async def api_refined_search(request: Request):
         exclude_competitor_backers=competitors,
     )
     results = search_refinement_engine.execute_refined_search(filter_criteria)
+    exclude_crm = str(payload.get("exclude_active_crm", "false")).lower() in ("true", "1", "yes")
+    crm_map = get_all_crm_map()
     limit = int(payload.get("limit", 50))
+    enriched_investors = [attach_crm_to_item(r.dict(), crm_map) for r in results]
+    excluded_crm_count = 0
+    if exclude_crm:
+        filtered_out = [inv for inv in enriched_investors if inv.get("profile_stage") in INVESTOR_PROFILE_STAGES]
+        excluded_crm_count = len(filtered_out)
+        enriched_investors = [inv for inv in enriched_investors if inv.get("profile_stage") not in INVESTOR_PROFILE_STAGES]
     return {
         "status": "success",
-        "total_matched": len(results),
+        "total_matched": len(enriched_investors),
+        "excluded_crm_count": excluded_crm_count,
         "criteria": filter_criteria.dict(),
-        "investors": [r.dict() for r in results[:limit]]
+        "investors": enriched_investors[:limit],
+        "team_members": CRM_TEAM_MEMBERS,
+        "profile_stages": list(INVESTOR_PROFILE_STAGES),
     }
 
 @app.post("/api/investors/live-crawl")

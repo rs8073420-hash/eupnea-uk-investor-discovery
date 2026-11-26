@@ -88,6 +88,9 @@
       <button onclick="switchTab('tabNotion')" id="tabBtnNotion" class="px-4 py-2 text-xs font-bold rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 flex items-center gap-2 transition border border-transparent">
         <i class="fa-solid fa-cloud-arrow-up"></i> Notion CRM Sync
       </button>
+      <button onclick="switchTab('tabCRM')" id="tabBtnCRM" class="px-4 py-2 text-xs font-bold rounded-xl text-emerald-800 bg-emerald-50 hover:bg-emerald-100 flex items-center gap-2 transition border border-emerald-200">
+        <i class="fa-solid fa-address-book text-emerald-700"></i> Investor CRM (<span id="crmTabCountBadge">0</span>)
+      </button>
     </div>
   </div>
 
@@ -163,9 +166,15 @@
           <label class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
             <i class="fa-solid fa-shield-halved text-emerald-600"></i> Vector 5 & 6: Tax & Conflict Shield
           </label>
-          <div class="flex items-center gap-2 mb-1">
-            <input type="checkbox" id="refinedTaxOnlyCheckbox" checked onchange="executeRefinedSearchInUI()" class="rounded border-slate-300 text-amber-600 focus:ring-amber-500">
-            <span class="text-xs text-slate-700 font-medium">UK SEIS/EIS Only</span>
+          <div class="flex items-center gap-3 mb-1 flex-wrap">
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" id="refinedTaxOnlyCheckbox" checked onchange="executeRefinedSearchInUI()" class="rounded border-slate-300 text-amber-600 focus:ring-amber-500">
+              <span class="text-xs text-slate-700 font-medium">UK SEIS/EIS Only</span>
+            </label>
+            <label class="flex items-center gap-1.5 cursor-pointer" title="Hide investors already marked Viewed, Contacted, Partnered, or Invested">
+              <input type="checkbox" id="refinedExcludeCrmCheckbox" onchange="executeRefinedSearchInUI()" class="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+              <span class="text-xs text-emerald-800 font-semibold">Hide Active CRM</span>
+            </label>
           </div>
           <input type="text" id="refinedCompetitorsInput" onchange="executeRefinedSearchInUI()" placeholder="Exclude portfolio of (e.g. Acme)" class="w-full bg-white border border-slate-300 rounded-lg px-2.5 py-1 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-500">
         </div>
@@ -885,6 +894,92 @@
         <div id="notionSyncLogs" class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs font-mono text-slate-400 min-h-[120px] space-y-2">
           <div class="text-slate-500">Notion sync standing by. Ready to export CRM records.</div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 5: INVESTOR CRM PIPELINE (Viewed, Contacted, Partnered, Invested + Managed by Panagiotis Dimitrelis & Team) -->
+  <div id="tabCRM" class="max-w-7xl mx-auto px-6 py-6 w-full hidden space-y-6">
+    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+        <div>
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+            INVESTOR CRM PIPELINE
+          </span>
+          <h2 class="text-lg font-extrabold text-slate-900 mt-1">Investor Relationship &amp; Status Tracker</h2>
+          <p class="text-xs text-slate-600">Track when investor profiles have been <strong>Viewed</strong>, <strong>Contacted</strong>, <strong>Partnered</strong>, or <strong>Invested</strong>, assign an owner (<strong>Panagiotis Dimitrelis</strong> &amp; team), verify profile links, and flag actions due.</p>
+        </div>
+        <button onclick="loadInvestorCrmPipeline()" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs rounded-xl shadow-xs cursor-pointer shrink-0">
+          <i class="fa-solid fa-rotate mr-1"></i> Refresh CRM Pipeline
+        </button>
+      </div>
+
+      <!-- CRM Summary KPI Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-6 gap-3 text-xs">
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+          <span class="text-[10px] font-bold text-slate-500 uppercase block">Total Tracked</span>
+          <span id="inv-crm-kpi-total" class="text-xl font-black text-slate-900 font-mono">0</span>
+        </div>
+        <div class="p-3 rounded-xl bg-sky-50 border border-sky-200">
+          <span class="text-[10px] font-bold text-sky-800 uppercase block">Viewed</span>
+          <span id="inv-crm-kpi-viewed" class="text-xl font-black text-sky-800 font-mono">0</span>
+        </div>
+        <div class="p-3 rounded-xl bg-amber-50 border border-amber-200">
+          <span class="text-[10px] font-bold text-amber-800 uppercase block">Contacted</span>
+          <span id="inv-crm-kpi-contacted" class="text-xl font-black text-amber-800 font-mono">0</span>
+        </div>
+        <div class="p-3 rounded-xl bg-purple-50 border border-purple-200">
+          <span class="text-[10px] font-bold text-purple-800 uppercase block">Partnered</span>
+          <span id="inv-crm-kpi-partnered" class="text-xl font-black text-purple-800 font-mono">0</span>
+        </div>
+        <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200">
+          <span class="text-[10px] font-bold text-emerald-800 uppercase block">Invested</span>
+          <span id="inv-crm-kpi-invested" class="text-xl font-black text-emerald-800 font-mono">0</span>
+        </div>
+        <div class="p-3 rounded-xl bg-rose-50 border border-rose-200">
+          <span class="text-[10px] font-bold text-rose-800 uppercase block">Action Needed</span>
+          <span id="inv-crm-kpi-action" class="text-xl font-black text-rose-800 font-mono">0</span>
+        </div>
+      </div>
+
+      <!-- CRM Filter Bar -->
+      <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div class="flex items-center gap-2.5 flex-wrap">
+          <select id="crmStageFilter" onchange="loadInvestorCrmPipeline()" class="bg-white border border-slate-300 rounded-lg px-3 py-1.5 font-semibold text-slate-800">
+            <option value="all">All CRM Stages</option>
+            <option value="Viewed">Viewed</option>
+            <option value="Contacted">Contacted</option>
+            <option value="Partnered">Partnered</option>
+            <option value="Invested">Invested</option>
+          </select>
+          <select id="crmOwnerFilter" onchange="loadInvestorCrmPipeline()" class="bg-white border border-slate-300 rounded-lg px-3 py-1.5 font-semibold text-slate-800">
+            <option value="all">All Managers</option>
+          </select>
+          <label class="flex items-center gap-1.5 cursor-pointer bg-white px-3 py-1.5 rounded-lg border border-slate-300 font-semibold text-rose-800">
+            <input type="checkbox" id="crmActionOnlyCheckbox" onchange="loadInvestorCrmPipeline()" class="accent-rose-600 rounded">
+            <span>Action Needed Only</span>
+          </label>
+        </div>
+        <span class="text-[11px] font-mono text-slate-500" id="crmPipelineCountLabel">0 CRM records</span>
+      </div>
+
+      <!-- CRM Table -->
+      <div class="overflow-x-auto border border-slate-200 rounded-xl">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead class="bg-slate-50 border-b border-slate-200 font-mono uppercase text-[10px] text-slate-600">
+            <tr>
+              <th class="py-3 px-3">Investor / Firm &amp; Profile Link</th>
+              <th class="py-3 px-3">Profile Stage</th>
+              <th class="py-3 px-3">Investor Managed by</th>
+              <th class="py-3 px-3">Last Checked</th>
+              <th class="py-3 px-3">Activity &amp; Action Needed</th>
+              <th class="py-3 px-3">Notes / Next Step</th>
+            </tr>
+          </thead>
+          <tbody id="crmPipelineTableBody" class="divide-y divide-slate-200 bg-white">
+            <tr><td colspan="6" class="p-8 text-center text-slate-500 text-xs">Loading Investor CRM pipeline...</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -1660,6 +1755,8 @@
               ${m.website ? `<a href="${m.website}" target="_blank" class="px-2.5 py-1.5 bg-white hover:bg-slate-50 text-slate-600 hover:text-slate-900 text-xs rounded-xl border border-slate-300 transition shadow-xs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ''}
             </div>
           </div>
+
+          ${buildInvestorCrmBarHtml(m.id || m.name, m.name, m.category || '', m)}
         `;
         container.appendChild(card);
       });
@@ -1831,6 +1928,7 @@
       const stage = document.getElementById('refinedStageSelect') ? document.getElementById('refinedStageSelect').value : 'Seed';
       const targetRaise = parseInt(document.getElementById('refinedTargetRaise') ? document.getElementById('refinedTargetRaise').value : '1000000');
       const ukTaxOnly = document.getElementById('refinedTaxOnlyCheckbox') ? document.getElementById('refinedTaxOnlyCheckbox').checked : true;
+      const excludeCrm = document.getElementById('refinedExcludeCrmCheckbox') ? document.getElementById('refinedExcludeCrmCheckbox').checked : false;
       const competitors = (document.getElementById('refinedCompetitorsInput') ? document.getElementById('refinedCompetitorsInput').value : '').split(',').map(s => s.trim()).filter(Boolean);
 
       const payload = {
@@ -1838,6 +1936,7 @@
         stage: stage,
         target_raise_gbp: targetRaise,
         uk_tax_relief_only: ukTaxOnly,
+        exclude_active_crm: excludeCrm,
         exclude_competitor_backers: competitors,
         limit: 100
       };
@@ -1905,6 +2004,8 @@
                 </button>
               </div>
             </div>
+
+            ${buildInvestorCrmBarHtml(inv.investor_key || inv.fund_or_network_name, inv.fund_or_network_name, inv.category || '', inv)}
           </div>
         `).join('');
 
@@ -1923,14 +2024,15 @@
     }
 
     function switchTab(tabId) {
-      const tabs = ['tabRefinedSearch', 'tabAngels', 'tabFleet', 'tabPitchLoop', 'tabVDR', 'tabNotion'];
+      const tabs = ['tabRefinedSearch', 'tabAngels', 'tabFleet', 'tabPitchLoop', 'tabVDR', 'tabNotion', 'tabCRM'];
       const btnMap = {
         'tabRefinedSearch': 'tabBtnRefinedSearch',
         'tabAngels': 'tabBtnAngels',
         'tabFleet': 'tabBtnFleet',
         'tabPitchLoop': 'tabBtnPitchLoop',
         'tabVDR': 'tabBtnVDR',
-        'tabNotion': 'tabBtnNotion'
+        'tabNotion': 'tabBtnNotion',
+        'tabCRM': 'tabBtnCRM'
       };
 
       tabs.forEach(t => {
@@ -1959,6 +2061,7 @@
       if (tabId === 'tabAngels') runAngelDiscovery();
       if (tabId === 'tabVDR') loadVDR();
       if (tabId === 'tabFleet') runDiscovery();
+      if (tabId === 'tabCRM') loadInvestorCrmPipeline();
     }
 
     // Tab 2: Pitch Loop
@@ -2354,10 +2457,268 @@
     // Auto-load on page load
     window.addEventListener('DOMContentLoaded', () => {
       updateCategoryCounts();
+      loadInvestorCrmSummaryOnly();
       const urlParams = new URLSearchParams(window.location.search);
       const targetTab = urlParams.get('tab') || 'tabRefinedSearch';
       switchTab(targetTab);
     });
+
+    // ========================================================================
+    // PROJECT 2: INVESTOR DISCOVERY CRM ENGINE
+    // (Viewed, Contacted, Partnered, Invested + Investor Managed by Panagiotis Dimitrelis)
+    // ========================================================================
+    let investorCrmTeam = [
+      'Panagiotis Dimitrelis',
+      'Aadarsh Singh Raghav',
+      'Shruti Sharma',
+      'Sreelakshmi Ajith K',
+      'Sarah Chen',
+      'Marcus Vance',
+      'Client Services Lead'
+    ];
+
+    function getInvestorCrmStageStyle(st) {
+      switch (st) {
+        case 'Invested': return 'bg-emerald-50 text-emerald-800 border-emerald-300';
+        case 'Partnered': return 'bg-purple-50 text-purple-800 border-purple-300';
+        case 'Contacted': return 'bg-amber-50 text-amber-800 border-amber-300';
+        case 'Viewed': return 'bg-sky-50 text-sky-800 border-sky-300';
+        default: return 'bg-white text-slate-600 border-slate-300';
+      }
+    }
+
+    function buildInvestorCrmBarHtml(invIdOrKey, invName, category, obj) {
+      const st = obj.profile_stage || '';
+      const mgr = obj.managed_by || '';
+      const purl = obj.profile_url || '';
+      const checked = obj.last_checked ? obj.last_checked.slice(0, 16) : 'Not checked';
+      const act = Boolean(obj.action_needed);
+      const newAct = Boolean(obj.new_activity);
+      const safeKey = escapeHtml(invIdOrKey || invName);
+      const safeName = escapeHtml(invName);
+      const safeCat = escapeHtml(category || '');
+
+      const mgrOptions = [`<option value="">Managed by: Unassigned</option>`]
+        .concat(investorCrmTeam.map(m => `<option value="${escapeHtml(m)}" ${m === mgr ? 'selected' : ''}>${escapeHtml(m)}</option>`));
+      if (mgr && !investorCrmTeam.includes(mgr)) {
+        mgrOptions.push(`<option value="${escapeHtml(mgr)}" selected>${escapeHtml(mgr)}</option>`);
+      }
+
+      return `
+        <div class="pt-3 mt-1 border-t border-slate-200 bg-slate-50/70 rounded-xl p-2.5 space-y-2" data-inv-key="${safeKey}" data-inv-name="${safeName}" data-inv-cat="${safeCat}" data-inv-url="${escapeHtml(purl)}" data-inv-notes="${escapeHtml(obj.crm_notes || '')}">
+          <div class="flex items-center justify-between gap-2 text-[10px] font-mono text-slate-500 flex-wrap">
+            <span class="font-bold uppercase text-slate-700"><i class="fa-solid fa-address-book text-emerald-600 mr-1"></i>CRM Tracker</span>
+            <span>Last Checked: <strong class="text-slate-700">${escapeHtml(checked)}</strong></span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <select onchange="saveInvestorCrmFromEl(this, { profile_stage: this.value })" class="w-full rounded-lg border px-2 py-1 text-[11px] font-mono font-bold cursor-pointer ${getInvestorCrmStageStyle(st)}" title="Investor CRM Profile Stage">
+              <option value="" ${st === '' ? 'selected' : ''}>Profile: Not Reviewed</option>
+              <option value="Viewed" ${st === 'Viewed' ? 'selected' : ''}>Viewed</option>
+              <option value="Contacted" ${st === 'Contacted' ? 'selected' : ''}>Contacted</option>
+              <option value="Partnered" ${st === 'Partnered' ? 'selected' : ''}>Partnered</option>
+              <option value="Invested" ${st === 'Invested' ? 'selected' : ''}>Invested</option>
+            </select>
+            <select onchange="saveInvestorCrmFromEl(this, { managed_by: this.value })" class="w-full rounded-lg border border-slate-300 bg-white px-2 py-1 text-[11px] font-semibold text-slate-800 cursor-pointer" title="Investor Managed by">
+              ${mgrOptions.join('')}
+            </select>
+          </div>
+          <div class="flex items-center justify-between gap-1.5 flex-wrap text-[10px]">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              ${purl ? `<a href="${escapeHtml(purl)}" target="_blank" class="px-2 py-0.5 rounded bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Profile ↗</a>` : ''}
+              <button type="button" onclick="promptInvestorProfileUrlFromEl(this)" class="px-2 py-0.5 rounded bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 font-semibold cursor-pointer">${purl ? 'Edit Link' : '+ Profile Link'}</button>
+              <button type="button" onclick="saveInvestorCrmFromEl(this, { new_activity: ${!newAct} })" class="px-2 py-0.5 rounded border font-semibold cursor-pointer ${newAct ? 'bg-sky-100 text-sky-900 border-sky-300' : 'bg-white text-slate-600 border-slate-300'}">${newAct ? '● Activity Logged' : 'Log Activity'}</button>
+              <button type="button" onclick="saveInvestorCrmFromEl(this, { action_needed: ${!act} })" class="px-2 py-0.5 rounded border font-semibold cursor-pointer ${act ? 'bg-rose-100 text-rose-800 border-rose-300' : 'bg-white text-slate-600 border-slate-300'}">${act ? '⚠ Action Due' : 'OK'}</button>
+            </div>
+            <button type="button" onclick="promptInvestorNotesFromEl(this)" class="text-blue-700 hover:underline font-semibold cursor-pointer">${obj.crm_notes ? 'Edit Note' : '+ Note'}</button>
+          </div>
+          ${obj.crm_notes ? `<div class="text-[10px] text-slate-600 bg-white border border-slate-200 rounded px-2 py-1 truncate" title="${escapeHtml(obj.crm_notes)}">Note: ${escapeHtml(obj.crm_notes)}</div>` : ''}
+        </div>
+      `;
+    }
+
+    function _readCrmDataset(el) {
+      const host = el ? el.closest('[data-inv-key]') : null;
+      if (!host) return null;
+      return {
+        key: host.getAttribute('data-inv-key') || '',
+        name: host.getAttribute('data-inv-name') || '',
+        cat: host.getAttribute('data-inv-cat') || '',
+        url: host.getAttribute('data-inv-url') || '',
+        notes: host.getAttribute('data-inv-notes') || ''
+      };
+    }
+
+    function saveInvestorCrmFromEl(el, updates) {
+      const meta = _readCrmDataset(el);
+      if (!meta) return;
+      saveInvestorCrmField(meta.key, meta.name, meta.cat, updates);
+    }
+
+    function promptInvestorProfileUrlFromEl(el) {
+      const meta = _readCrmDataset(el);
+      if (!meta) return;
+      promptInvestorProfileUrl(meta.key, meta.name, meta.cat, meta.url);
+    }
+
+    function promptInvestorNotesFromEl(el) {
+      const meta = _readCrmDataset(el);
+      if (!meta) return;
+      promptInvestorNotes(meta.key, meta.name, meta.cat, meta.notes);
+    }
+
+    async function saveInvestorCrmField(investorKey, investorName, category, updates) {
+      try {
+        const res = await fetch('/api/crm/investors/update', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            investor_key: investorKey,
+            investor_name: investorName,
+            category: category || '',
+            ...updates
+          })
+        });
+        const data = await res.json();
+        if (data.status === 'success') {
+          if (data.summary) applyInvestorCrmSummaryUi(data.summary);
+          const curCrmTab = document.getElementById('tabCRM');
+          if (curCrmTab && !curCrmTab.classList.contains('hidden')) {
+            loadInvestorCrmPipeline();
+          } else {
+            const refTab = document.getElementById('tabRefinedSearch');
+            const angTab = document.getElementById('tabAngels');
+            if (refTab && !refTab.classList.contains('hidden')) executeRefinedSearchInUI();
+            if (angTab && !angTab.classList.contains('hidden')) runAngelDiscovery(false);
+          }
+        }
+      } catch (e) {
+        console.error('Investor CRM update error:', e);
+      }
+    }
+
+    function promptInvestorProfileUrl(key, name, cat, curr) {
+      const val = prompt(`Profile / Dealroom Link for ${name}:`, curr || 'https://');
+      if (val === null) return;
+      saveInvestorCrmField(key, name, cat, { profile_url: val.trim() });
+    }
+
+    function promptInvestorNotes(key, name, cat, curr) {
+      const val = prompt(`CRM Notes / Follow-up Action for ${name}:`, curr || '');
+      if (val === null) return;
+      saveInvestorCrmField(key, name, cat, { crm_notes: val.trim() });
+    }
+
+    function applyInvestorCrmSummaryUi(s) {
+      if (!s) return;
+      const set = (id, v) => { const el = document.getElementById(id); if (el) el.innerText = v; };
+      set('crmTabCountBadge', s.total_tracked ?? 0);
+      set('inv-crm-kpi-total', s.total_tracked ?? 0);
+      set('inv-crm-kpi-viewed', s.viewed_count ?? 0);
+      set('inv-crm-kpi-contacted', s.contacted_count ?? 0);
+      set('inv-crm-kpi-partnered', s.partnered_count ?? 0);
+      set('inv-crm-kpi-invested', s.invested_count ?? 0);
+      set('inv-crm-kpi-action', s.action_needed_count ?? 0);
+    }
+
+    async function loadInvestorCrmSummaryOnly() {
+      try {
+        const res = await fetch('/api/crm/investors');
+        const d = await res.json();
+        if (Array.isArray(d.team_members) && d.team_members.length) {
+          investorCrmTeam = d.team_members;
+          const sel = document.getElementById('crmOwnerFilter');
+          if (sel) {
+            const curr = sel.value || 'all';
+            sel.innerHTML = `<option value="all">All Managers</option>` + investorCrmTeam.map(m => `<option value="${escapeHtml(m)}">${escapeHtml(m)}</option>`).join('');
+            sel.value = curr;
+          }
+        }
+        if (d.summary) applyInvestorCrmSummaryUi(d.summary);
+      } catch (e) {}
+    }
+
+    async function loadInvestorCrmPipeline() {
+      const tbody = document.getElementById('crmPipelineTableBody');
+      if (!tbody) return;
+      try {
+        const stage = document.getElementById('crmStageFilter')?.value || 'all';
+        const owner = document.getElementById('crmOwnerFilter')?.value || 'all';
+        const actOnly = document.getElementById('crmActionOnlyCheckbox')?.checked ? 'true' : 'false';
+        const qs = new URLSearchParams({ stage, managed_by: owner, action_needed_only: actOnly });
+        const res = await fetch(`/api/crm/investors?${qs.toString()}`);
+        const data = await res.json();
+        if (Array.isArray(data.team_members) && data.team_members.length) investorCrmTeam = data.team_members;
+        if (data.summary) applyInvestorCrmSummaryUi(data.summary);
+
+        const ownerSel = document.getElementById('crmOwnerFilter');
+        if (ownerSel && ownerSel.options.length <= 1) {
+          ownerSel.innerHTML = `<option value="all">All Managers</option>` + investorCrmTeam.map(m => `<option value="${escapeHtml(m)}">${escapeHtml(m)}</option>`).join('');
+          ownerSel.value = owner;
+        }
+
+        const records = data.records || [];
+        const cntEl = document.getElementById('crmPipelineCountLabel');
+        if (cntEl) cntEl.innerText = `${records.length} investor CRM record${records.length === 1 ? '' : 's'}`;
+
+        if (!records.length) {
+          tbody.innerHTML = `<tr><td colspan="6" class="p-8 text-center text-slate-500 text-xs">No tracked investor profiles match this filter yet. Update any investor's Profile dropdown (Viewed, Contacted, Partnered, Invested) on the search tabs to track it here.</td></tr>`;
+          return;
+        }
+
+        tbody.innerHTML = records.map(r => {
+          const st = r.profile_stage || '';
+          const mgr = r.managed_by || '';
+          const safeKey = escapeHtml(r.investor_key);
+          const safeName = escapeHtml(r.investor_name);
+          const safeCat = escapeHtml(r.category || '');
+          const mgrOptions = [`<option value="">Unassigned</option>`].concat(
+            investorCrmTeam.map(m => `<option value="${escapeHtml(m)}" ${m === mgr ? 'selected' : ''}>${escapeHtml(m)}</option>`)
+          );
+          return `
+            <tr class="hover:bg-slate-50 align-top" data-inv-key="${safeKey}" data-inv-name="${safeName}" data-inv-cat="${safeCat}" data-inv-url="${escapeHtml(r.profile_url || '')}" data-inv-notes="${escapeHtml(r.crm_notes || '')}">
+              <td class="py-3 px-3">
+                <div class="font-bold text-slate-900 text-xs">${safeName}</div>
+                <div class="text-[10px] text-slate-500">${safeCat || 'Investor'}</div>
+                <div class="mt-1 flex items-center gap-1.5">
+                  ${r.profile_url ? `<a href="${escapeHtml(r.profile_url)}" target="_blank" class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-semibold">Open Profile ↗</a>` : ''}
+                  <button type="button" onclick="promptInvestorProfileUrlFromEl(this)" class="px-2 py-0.5 rounded bg-white border border-slate-300 text-slate-700 font-mono text-[10px] cursor-pointer">${r.profile_url ? 'Edit Link' : '+ Profile Link'}</button>
+                </div>
+              </td>
+              <td class="py-3 px-3">
+                <select onchange="saveInvestorCrmFromEl(this, { profile_stage: this.value })" class="rounded-lg border px-2 py-1 text-xs font-mono font-bold cursor-pointer ${getInvestorCrmStageStyle(st)}">
+                  <option value="" ${st === '' ? 'selected' : ''}>Not Reviewed</option>
+                  <option value="Viewed" ${st === 'Viewed' ? 'selected' : ''}>Viewed</option>
+                  <option value="Contacted" ${st === 'Contacted' ? 'selected' : ''}>Contacted</option>
+                  <option value="Partnered" ${st === 'Partnered' ? 'selected' : ''}>Partnered</option>
+                  <option value="Invested" ${st === 'Invested' ? 'selected' : ''}>Invested</option>
+                </select>
+              </td>
+              <td class="py-3 px-3">
+                <select onchange="saveInvestorCrmFromEl(this, { managed_by: this.value })" class="rounded-lg border border-slate-300 bg-white px-2.5 py-1 text-xs font-semibold text-slate-800 cursor-pointer min-w-[175px]">
+                  ${mgrOptions.join('')}
+                </select>
+              </td>
+              <td class="py-3 px-3 font-mono text-[11px] text-slate-700">
+                <div>${escapeHtml((r.last_checked || '').slice(0, 16) || '—')}</div>
+                <button type="button" onclick="saveInvestorCrmFromEl(this, { mark_checked: true })" class="text-[10px] text-blue-700 hover:underline font-semibold cursor-pointer mt-1">✓ Check Now</button>
+              </td>
+              <td class="py-3 px-3">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <button type="button" onclick="saveInvestorCrmFromEl(this, { new_activity: ${!r.new_activity} })" class="px-2 py-0.5 rounded border text-[10px] font-semibold cursor-pointer ${r.new_activity ? 'bg-sky-100 text-sky-900 border-sky-300' : 'bg-white text-slate-600 border-slate-300'}">${r.new_activity ? '● New Activity' : 'Log Activity'}</button>
+                  <button type="button" onclick="saveInvestorCrmFromEl(this, { action_needed: ${!r.action_needed} })" class="px-2 py-0.5 rounded border text-[10px] font-semibold cursor-pointer ${r.action_needed ? 'bg-rose-100 text-rose-800 border-rose-300' : 'bg-emerald-50 text-emerald-800 border-emerald-200'}">${r.action_needed ? '⚠ Action Due' : 'Up to Date'}</button>
+                </div>
+              </td>
+              <td class="py-3 px-3 max-w-xs">
+                <div class="text-xs text-slate-700">${escapeHtml(r.crm_notes || 'No notes yet')}</div>
+                <button type="button" onclick="promptInvestorNotesFromEl(this)" class="text-[10px] text-blue-700 hover:underline font-semibold cursor-pointer mt-1">+ Edit Note</button>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      } catch (e) {
+        console.error('Failed loading investor CRM pipeline:', e);
+      }
+    }
   </script>
 </body>
 </html>
